@@ -17,7 +17,6 @@ import sys
 from pathlib import Path
 from typing import Dict, List
 
-# Global constraints: Use AL-* prefix, not ALT-*
 REQUIRED_TOP_LEVEL_KEYS = {"welcomeMessage", "submitButton", "errorRequired", "validation"}
 REQUIRED_NESTED_KEYS = {"email", "phone", "name"}
 
@@ -40,6 +39,10 @@ def validate_locale_file(file_path: Path) -> tuple[bool, List[str]]:
         errors.append(f"Invalid JSON: {exc}")
         return False, errors
 
+    if not isinstance(data, dict):
+        errors.append("Locale file must contain a JSON object")
+        return False, errors
+
     # Check top-level required keys
     missing_top_level = REQUIRED_TOP_LEVEL_KEYS - set(data.keys())
     if missing_top_level:
@@ -52,6 +55,8 @@ def validate_locale_file(file_path: Path) -> tuple[bool, List[str]]:
             missing_nested = REQUIRED_NESTED_KEYS - set(validation_data.keys())
             if missing_nested:
                 errors.append(f"Missing nested validation keys: {missing_nested}")
+        else:
+            errors.append("Validation field must be a JSON object")
 
     return len(errors) == 0, errors
 
