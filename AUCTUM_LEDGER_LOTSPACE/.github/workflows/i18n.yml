@@ -62,3 +62,13 @@ jobs:
             --locale localization/02-locale-files/vi-VN.json \
             --locale localization/02-locale-files/de-DE.json \
             --locale localization/02-locale-files/fr-FR.json
+
+      - name: Run validate_locale_files.py on public/locales (strict)
+        run: |
+          cd AUCTUM_LEDGER_LOTSPACE/app
+          python3 scripts/validate_locale_files.py --locale-dir public/locales --strict
+
+      - name: Run i18n_audit.py on public/locales
+        run: |
+          cd AUCTUM_LEDGER_LOTSPACE/app
+          python3 scripts/i18n_audit.py --locale-dir public/locales
