@@ -1,0 +1,124 @@
+{
+  "title": "营销活动",
+  "subtitle": "自动化培育流程与 A/B 测试",
+  "sequence": {
+    "nurtureTimeline": "培育时间线",
+    "step": "第 {{number}} 步",
+    "conversion": "{{rate}}% 转化",
+    "activeRollout": "投放中",
+    "summaryView": "摘要视图",
+    "detailedView": "详细视图",
+    "noObjective": "未定义目标",
+    "campaignDetails": "活动详情",
+    "emailsSent_other": "已发送 {{count}} 封"
+  },
+  "steps": {
+    "alt001": {
+      "label": "新产季介绍",
+      "objective": "向新潜在客户介绍当季到港生豆，促成首次互动",
+      "timing": "第 0 天"
+    },
+    "alt002": {
+      "label": "样品套装邀请",
+      "objective": "邀请烘焙商先杯测再决策，降低采购门槛",
+      "timing": "第 3 天"
+    },
+    "alt003": {
+      "label": "烘焙商案例",
+      "objective": "以同行烘焙商案例和杯测数据建立信任",
+      "timing": "第 7 天"
+    },
+    "alt004": {
+      "label": "库存动态提醒",
+      "objective": "通报剩余库存与到港时间，营造合理的紧迫感",
+      "timing": "第 12 天"
+    },
+    "alt005": {
+      "label": "再互动与反馈",
+      "objective": "重新激活未响应的潜在客户，了解其采购计划",
+      "timing": "第 21 天"
+    }
+  },
+  "metrics": {
+    "totalSent": "发送总量",
+    "openRate": "打开率",
+    "clickRate": "点击率",
+    "conversionRate": "转化率"
+  },
+  "abTest": {
+    "title": "多变量效果分析",
+    "variant": "变体",
+    "sampleSize": "样本量",
+    "conversions": "转化数",
+    "conversionRate": "转化率",
+    "confidenceInterval": "95% 可信区间",
+    "probBest": "最优概率",
+    "status": "状态",
+    "winner": "胜出",
+    "testing": "测试中",
+    "switchVariant": "切换变体：",
+    "control": "对照组"
+  },
+  "status": {
+    "planned": "已计划",
+    "active": "进行中",
+    "completed": "已完成",
+    "paused": "已暂停"
+  },
+  "engagement": {
+    "title": "互动趋势",
+    "opens": "打开数",
+    "clicks": "点击数",
+    "conversions": "转化数"
+  },
+  "emails": {
+    "alt001": {
+      "subject": "新到港：{origin} {varietal} · SCA {sca_cup_score} 分",
+      "preheader": "来自 {origin} 的{process_method}批次——{flavor_notes}。现已到港 Auctum Ledger。",
+      "body": "{contact_first_name}，您好：\n\n最新一批 {origin} 生豆已到港：{varietal}，{process_method}处理，SCA 杯测 {sca_cup_score} 分，带有{flavor_notes}风味。价格 {price_per_lb}/磅，现货 {available_lbs} 磅。\n\n您可以先杯测、再决定——样品 48 小时内发货。\n\n—— {sender_name}，Auctum Ledger",
+      "cta": "查看该批次"
+    },
+    "alt002": {
+      "subject": "在下一季菜单前，先杯测 {origin}",
+      "preheader": "样品套装 48 小时内发货——内含 {origin} {varietal}。",
+      "body": "{contact_first_name}，您好：\n\n先品尝，再决定。{origin} 样品套装内含本周由 Q Grader 评分的 {varietal}（{process_method}，SCA {sca_cup_score} 分）。申请后 48 小时内发货，符合条件的烘焙商可免费获取。\n\n—— {sender_name}，Auctum Ledger",
+      "cta": "申请样品套装"
+    },
+    "alt003": {
+      "subject": "{peer_roaster_name} 如何围绕 {origin} 打造菜单",
+      "preheader": "烘焙商实战案例：SCA {sca_cup_score}+ 分的{process_method}批次。",
+      "body": "{contact_first_name}，您好：\n\n上一产季，{peer_roaster_name} 将我们的 {origin} {varietal}（{process_method}）加入其单一产地菜单，首批 {order_volume_lbs} 磅在 {sell_through_weeks} 周内售罄。我们整理了背后的成功要素与杯测数据，供您参考。\n\n—— {sender_name}，Auctum Ledger",
+      "cta": "阅读完整案例"
+    },
+    "alt004": {
+      "subject": "{origin} {varietal} 仅剩 {available_lbs} 磅",
+      "preheader": "{arrival_date} 到港——售完即止，请提前预订。",
+      "body": "{contact_first_name}，您好：\n\n库存动态提醒：{origin} {varietal}（{process_method}，SCA {sca_cup_score} 分）目前仅剩 {available_lbs} 磅。下一柜将于 {arrival_date} 到港，已预订批次优先发货。现在预订即可锁定 {price_per_lb}/磅 的价格。\n\n—— {sender_name}，Auctum Ledger",
+      "cta": "立即预订"
+    },
+    "alt005": {
+      "subject": "{contact_first_name}，{harvest_window}的采购计划定了吗？",
+      "preheader": "告诉我们您的需求，我们为您匹配最合适的批次。",
+      "body": "{contact_first_name}，您好：\n\n我们注意到这次的 {origin} {varietal} 没有进入您的菜单。如果 {harvest_window}的采购计划尚未确定，欢迎回复告诉我们您的需求——处理方式、分数区间、预算——我们将为您匹配最合适的批次。也欢迎预约 15 分钟与采购顾问聊聊。\n\n—— {sender_name}，Auctum Ledger",
+      "cta": "预约采购咨询"
+    }
+  },
+  "emailFooter": {
+    "unsubscribe": "退订邮件",
+    "managePreferences": "管理订阅偏好",
+    "viewInBrowser": "在浏览器中查看",
+    "sentBecause": "您收到此邮件，是因为 {roaster_name} 已注册 Auctum Ledger。",
+    "postalAddress": "Auctum Ledger, 548 Market St, San Francisco, CA 94104, USA"
+  },
+  "sms": {
+    "alt002": {
+      "body": "【Auctum Ledger】{origin}{varietal}（SCA {sca_cup_score} 分）样品 48 小时内发货。领取样品套装：{sample_kit_url} 退订回T"
+    },
+    "alt004": {
+      "body": "【Auctum Ledger】{origin}{varietal} 仅剩 {available_lbs} 磅。立即预订：{lot_url} 退订回T"
+    }
+  },
+  "create": "创建活动",
+  "activate": "启用",
+  "retire": "停用"
+}

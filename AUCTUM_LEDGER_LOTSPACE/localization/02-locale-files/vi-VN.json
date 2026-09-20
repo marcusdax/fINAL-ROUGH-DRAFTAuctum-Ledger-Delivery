@@ -1,0 +1,686 @@
+{
+  "common": {
+    "appName": "Auctum Ledger",
+    "tagline": "Cà phê hạt thô, mua sắm uy tín.",
+    "nav": {
+      "dashboard": "Bảng điều khiển",
+      "catalog": "Danh mục",
+      "campaigns": "Chiến dịch",
+      "orders": "Đơn hàng",
+      "accounts": "Tài khoản",
+      "analytics": "Phân tích",
+      "settings": "Cài đặt",
+      "help": "Trợ giúp",
+      "reservations": "Đặt trước",
+      "sampleKits": "Bộ mẫu",
+      "automationRules": "Quy tắc tự động hóa",
+      "webhooks": "Webhook",
+      "growth": "Growth",
+      "referrals": "Chương trình giới thiệu"
+    },
+    "actions": {
+      "refresh": "Làm mới"
+    },
+    "buttons": {
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "delete": "Xóa",
+      "edit": "Sửa",
+      "close": "Đóng",
+      "confirm": "Xác nhận",
+      "retry": "Thử lại",
+      "back": "Quay lại",
+      "next": "Tiếp theo",
+      "submit": "Gửi",
+      "search": "Tìm kiếm",
+      "apply": "Áp dụng",
+      "download": "Tải xuống",
+      "share": "Chia sẻ",
+      "clearAll": "Xóa tất cả",
+      "saveView": "Lưu khung hiển thị",
+      "resetFilters": "Đặt lại bộ lọc",
+      "loadMore": "Tải thêm",
+      "copied": "Đã sao chép",
+      "copy": "Sao chép"
+    },
+    "states": {
+      "loading": "Đang tải…",
+      "loadingLots": "Đang tải lô hàng…",
+      "empty": "Chưa có gì ở đây",
+      "offline": "Bạn đang ngoại tuyến"
+    },
+    "labels": {
+      "active": "Hoạt động",
+      "inactive": "Không hoạt động",
+      "new": "Mới",
+      "optional": "Tùy chọn",
+      "required": "Bắt buộc",
+      "all": "Tất cả",
+      "none": "Không có",
+      "yes": "Có",
+      "no": "Không",
+      "viewDetails": "Xem chi tiết",
+      "lastUpdated": "Cập nhật lần cuối",
+      "comingSoon": "Sắp ra mắt"
+    },
+    "languageSwitcher": {
+      "label": "Ngôn ngữ",
+      "en-US": "English (US)",
+      "zh-CN": "简体中文",
+      "es-MX": "Español (México)",
+      "pt-BR": "Português (Brasil)",
+      "vi-VN": "Tiếng Việt",
+      "de-DE": "Deutsch",
+      "fr-FR": "Français"
+    },
+    "a11y": {
+      "skipToContent": "Bỏ qua đến nội dung chính",
+      "openMenu": "Mở menu",
+      "closeMenu": "Đóng menu",
+      "budgetCeilingSlider": "Thanh trượt ngân sách tối đa",
+      "minCupScoreSlider": "Thanh trượt điểm cúp tối thiểu"
+    },
+    "units": {
+      "perLb": "/lb",
+      "lbs": "lbs",
+      "kg": "kg"
+    },
+    "meta": {
+      "title": "Auctum Ledger — Mua sắm cà phê hạt thô đặc túi",
+      "description": "Mua cà phê hạt thô đặc túi có thể truy xuất nguồn gốc theo vùng sản xuất, phương pháp xử lý và điểm cúp SCA. Mẫu được gửi trong 48 giờ."
+    }
+  },
+  "dashboard": {
+    "title": "Bảng điều khiển",
+    "subtitle": "Đường dẫn mua hàng và doanh thu của bạn tại một nét nhìn",
+    "metrics": {
+      "totalSent": "Tổng số đã gửi",
+      "openRate": "Tỷ lệ mở",
+      "clickRate": "Tỷ lệ nhấp",
+      "conversionRate": "Tỷ lệ chuyển đổi",
+      "ltv": "Giá trị vòng đời khách hàng (LTV)",
+      "cac": "Chi phí thu hút khách hàng (CAC)",
+      "paybackPeriod": "Thời gian hoàn vốn",
+      "churnRisk": "Rủi ro rời bỏ",
+      "avgOrderValue": "Giá trị đơn hàng trung bình",
+      "revenue": "Doanh thu",
+      "orders": "Đơn hàng"
+    },
+    "charts": {
+      "engagementOverTime": "Tương tác theo thời gian",
+      "openRatePct": "Tỷ lệ mở %",
+      "clickRatePct": "Tỷ lệ nhấp %",
+      "conversionRatePct": "Tỷ lệ chuyển đổi %"
+    },
+    "benchmark": {
+      "title": "So sánh với đối thủ",
+      "topQuartile": "Tốc độ hàng đầu",
+      "median": "Trung bình",
+      "yourPercentile": "Phần trăm của bạn"
+    },
+    "time": {
+      "last7Days": "7 ngày qua",
+      "last30Days": "30 ngày qua",
+      "last90Days": "90 ngày qua",
+      "customRange": "Khoảng thời gian tùy chỉnh"
+    },
+    "empty": {
+      "title": "Chưa có đủ dữ liệu",
+      "description": "Khi đơn hàng và chiến dịch của bạn bắt đầu hoạt động, các chỉ số sẽ hiện ra ở đây.",
+      "cta": "Kết nối dữ liệu của bạn"
+    }
+  },
+  "catalog": {
+    "title": "Điều hướng nguồn gốc",
+    "sourcingObjective": "Mục tiêu mua hàng",
+    "goals": {
+      "baseline": {
+        "label": "Mua hàng cân bằng",
+        "description": "Phương pháp tiêu chuẩn cân bằng chất lượng, chi phí và bền vững"
+      },
+      "costOptimized": {
+        "label": "Tối ưu chi phí",
+        "description": "Tối đa hóa biên lợi nhuận thông qua mức giá cạnh tranh"
+      },
+      "qualityFirst": {
+        "label": "Ưu tiên chất lượng",
+        "description": "Chọn các lô điểm cúp cao nhất cho dòng sản phẩm cao cấp"
+      },
+      "sustainability": {
+        "label": "ESG tiên phong",
+        "description": "Tối đa hóa các chỉ số bền vững và mua hàng đạo đức"
+      },
+      "supplyChain": {
+        "label": "Chuỗi cung ứng tối ưu",
+        "description": "Tập trung vào hiệu quả logistics và giao hàng dự báo"
+      }
+    },
+    "filters": {
+      "budgetCeiling": "Ngân sách tối đa",
+      "includeOverBudget": "Bao gồm các lô vượt ngân sách",
+      "sortBy": "Sắp xếp theo",
+      "sort": {
+        "weighted": "Trọng số",
+        "price": "Giá",
+        "cup": "Điểm cúp",
+        "esg": "ESG"
+      },
+      "searchLabel": "Tìm kiếm lô hàng",
+      "searchPlaceholder": "Tìm theo nguồn gốc, giống cây, hương vị...",
+      "showAdvanced": "Hiện bộ lọc nâng cao",
+      "hideAdvanced": "Ẩn bộ lọc nâng cao",
+      "origins": "Nguồn gốc",
+      "processing": "Quy trình xử lý",
+      "minCupScore": "Điểm cúp tối thiểu"
+    },
+    "lot": {
+      "overBudget": "Vượt ngân sách",
+      "compositeScore": "Điểm tổng hợp",
+      "sourceThisLot": "Mua lô hàng này",
+      "scoreLabel": "Điểm SCA",
+      "rankLabel": "Hạng",
+      "flavorNotesLabel": "Ghi chú hương vị",
+      "metricBars": {
+        "cost": "Chi phí",
+        "quality": "Chất lượng",
+        "esg": "ESG",
+        "logistics": "Logistics"
+      },
+      "lbsAvailable_one": "{{count}} lb có sẵn",
+      "lbsAvailable_many": "{{count}} lbs có sẵn",
+      "lbsAvailable_other": "{{count}} lbs có sẵn",
+      "moreFlavorNotes_one": "+{{count}} nốt hương vị",
+      "moreFlavorNotes_many": "+{{count}} nốt hương vị",
+      "moreFlavorNotes_other": "+{{count}} nốt hương vị"
+    },
+    "attributes": {
+      "origin": "Nguồn gốc",
+      "varietal": "Giống cây",
+      "processMethod": "Phương pháp xử lý",
+      "elevation": "Độ cao",
+      "cupScore": "Điểm cúp",
+      "scaCupScore": "Điểm cúp SCA",
+      "pricePerLb": "Giá mỗi lb",
+      "harvestWindow": "Thời gian thu hoạch",
+      "estimatedArrival": "Ngày dự kiến",
+      "availableQuantity": "Số lượng có sẵn",
+      "certifications": "Chứng nhận"
+    },
+    "processMethods": {
+      "washed": "tách ướt",
+      "natural": "Tự nhiên",
+      "honey": "Mật ong",
+      "anaerobic": "kỵ khí"
+    },
+    "certifications": {
+      "fairTrade": "Được chứng nhận Fair Trade",
+      "organic": "Hữu cơ",
+      "rainforestAlliance": "Rainforest Alliance"
+    },
+    "origins": {
+      "ethiopia": "Êtiôpia",
+      "colombia": "Colombia",
+      "brazil": "Brasil",
+      "guatemala": "Guatemala",
+      "kenya": "Kenya",
+      "sumatra": "Sumatra",
+      "yirgacheffe": "Yirgacheffe",
+      "huila": "Huila",
+      "costaRica": "Costa Rica",
+      "peru": "Peru"
+    },
+    "empty": {
+      "title": "Không tìm thấy lô hàng nào phù hợp",
+      "cta": "Xóa tất cả bộ lọc"
+    },
+    "resultsSummary_one": "{{lotCount}} lô từ {{originCount}} nguồn gốc",
+    "resultsSummary_many": "{{lotCount}} lô từ {{originCount}} nguồn gốc",
+    "resultsSummary_other": "{{lotCount}} lô từ {{originCount}} nguồn gốc",
+    "table": {
+      "trust": "TIN CẪN"
+    }
+  },
+  "campaigns": {
+    "title": "Chiến dịch",
+    "subtitle": "Tự động hóa và thử nghiệm A/B cho các chuỗi chăm sóc khách hàng",
+    "sequence": {
+      "nurtureTimeline": "Dòng thời gian chăm sóc",
+      "step": "Bước {{number}}",
+      "conversion": "{{rate}}% chuyển đổi",
+      "activeRollout": "Đang triển khai",
+      "summaryView": "Chế độ tóm tắt",
+      "detailedView": "Chế độ chi tiết",
+      "noObjective": "Chưa định nghĩa mục tiêu",
+      "campaignDetails": "Chi tiết chiến dịch",
+      "emailsSent_one": "Đã gửi {{count}} email",
+      "emailsSent_many": "Đã gửi {{count}} email",
+      "emailsSent_other": "Đã gửi {{count}} email"
+    },
+    "steps": {
+      "alt001": {
+        "label": "Giới thiệu vụ mùa mới",
+        "objective": "Giới thiệu các lô đã nhập kho mới nhất cho khách hàng tiềm năng và tạo cuộc tương tác đầu tiên",
+        "timing": "Ngày 0"
+      },
+      "alt002": {
+        "label": "Lời mời bộ mẫu",
+        "objective": "Mời các nhà pha cà phê nếm thử trước khi quyết định và hạ thấp rào cản lựa chọn",
+        "timing": "Ngày 3"
+      },
+      "alt003": {
+        "label": "Nghiên cứu trường hợp nhà pha cà phê",
+        "objective": "Xây dựng niềm tin thông qua câu chuyện của nhà pha cà phê đồng nghiệp, được chứng minh bởi dữ liệu nếm thử",
+        "timing": "Ngày 7"
+      },
+      "alt004": {
+        "label": "Cập nhật tình trạng có hàng",
+        "objective": "Chia sẻ tồn kho còn lại và thời gian dự kiến giao hàng để tạo cảm giác khẩn cấp hợp lý",
+        "timing": "Ngày 12"
+      },
+      "alt005": {
+        "label": "Tái tương tác và phản hồi",
+        "objective": "Kích hoạt lại những khách hàng chưa phản hồi và tìm hiểu kế hoạch mua hàng của họ",
+        "timing": "Ngày 21"
+      }
+    },
+    "metrics": {
+      "totalSent": "Tổng số đã gửi",
+      "openRate": "Tỉ lệ mở",
+      "clickRate": "Tỷ lệ nhấp",
+      "conversionRate": "Tỷ lệ chuyển đổi"
+    },
+    "abTest": {
+      "title": "Phân tích hiệu suất đa biến số",
+      "variant": "Biến thể",
+      "sampleSize": "Kích thước mẫu",
+      "conversions": "Chuyển đổi",
+      "conversionRate": "Tỷ lệ chuyển đổi",
+      "confidenceInterval": "Khoảng tin cậy 95%",
+      "probBest": "Xác suất tốt nhất",
+      "status": "Trạng thái",
+      "winner": "Người thắng",
+      "testing": "Đang thử nghiệm",
+      "switchVariant": "Chuyển biến thể:",
+      "control": "Mẫu điều khiển"
+    },
+    "status": {
+      "planned": "Đã lên kế hoạch",
+      "active": "Đang hoạt động",
+      "completed": "Đã hoàn thành",
+      "paused": "Tạm dừng"
+    },
+    "engagement": {
+      "title": "Tương tác theo thời gian",
+      "opens": "Lượt mở",
+      "clicks": "Lượt nhấp",
+      "conversions": "Chuyển đổi"
+    },
+    "emails": {
+      "alt001": {
+        "subject": "Hàng mới về: {origin} {varietal} · SCA {sca_cup_score}",
+        "preheader": "Lô {process_method} từ {origin} — {flavor_notes}. Vừa mới đến Auctum Ledger.",
+        "body": "Xin chào {contact_first_name},\n\nLô {origin} mới nhất vừa được nhập kho: {varietal}, quy trình {process_method}, đạt {sca_cup_score} điểm trên thang SCA, với hương vị {flavor_notes}. Được định giá {price_per_lb}/lb, còn {available_lbs} lbs có sẵn.\n\nBạn có thể tách cà phê trước khi quyết định — mẫu sẽ được gửi trong vòng 48 giờ.\n\n— {sender_name}, Auctum Ledger",
+        "cta": "Xem lô hàng này"
+      },
+      "alt002": {
+        "subject": "Nếm {origin} trước chu kỳ thực đơn kế tiếp",
+        "preheader": "Bộ mẫu của bạn sẽ được gửi trong 48 giờ — {origin} {varietal} bên trong.",
+        "body": "Xin chào {contact_first_name},\n\nBạn có thể tách cà phê trước khi quyết định. Bộ mẫu {origin} bao gồm {varietal} ({process_method}, SCA {sca_cup_score}) do Q Grader của chúng tôi đánh giá tuần này. Yêu cầu bộ mẫu của bạn và chúng tôi sẽ gửi trong vòng 48 giờ — miễn phí cho các nhà pha cà phê đủ điều kiện.\n\n— {sender_name}, Auctum Ledger",
+        "cta": "Yêu cầu bộ mẫu của bạn"
+      },
+      "alt003": {
+        "subject": "Cách {peer_roaster_name} xây dựng thực đơn xoay quanh {origin}",
+        "preheader": "Nghiên cứu trường hợp nhà pha cà phê: các lô {process_method} đạt SCA {sca_cup_score}+.",
+        "body": "Xin chào {contact_first_name},\n\n{peer_roaster_name} đã thêm {origin} {varietal} ({process_method}) vào thực đơn đơn nguồn gốc và đã bán hết {order_volume_lbs} lb trong vòng {sell_through_weeks} tuần. Đây là những gì giúp thành công, kèm theo dữ liệu nếm thử.\n\n— {sender_name}, Auctum Ledger",
+        "cta": "Đọc nghiên cứu trường hợp"
+      },
+      "alt004": {
+        "subject": "Còn {available_lbs} lb của {origin} {varietal}",
+        "preheader": "Đến kho ngày {arrival_date} — đặt trước khi hết hàng.",
+        "body": "Xin chào {contact_first_name},\n\nCập nhật tình trạng có hàng nhanh: chỉ còn {available_lbs} lb của {origin} {varietal} ({process_method}, SCA {sca_cup_score}). Thùng hàng tiếp theo sẽ đến kho ngày {arrival_date} và các lô đã đặt trước sẽ được ưu tiên giao hàng. Đặt ngay để khóa giá {price_per_lb}/lb.\n\n— {sender_name}, Auctum Ledger",
+        "cta": "Đặt trước lô hàng của bạn"
+      },
+      "alt005": {
+        "subject": "Nghĩ về {harvest_window}, {contact_first_name}?",
+        "preheader": "Dưới đây là những gì bạn đang tìm — chúng tôi sẽ ghép hàng phù hợp.",
+        "body": "Xin chào {contact_first_name},\n\nChúng tôi nhận thấy {origin} {varietal} chưa có trong thực đơn của bạn lần này. Nếu kế hoạch mua hàng cho {harvest_window} của bạn vẫn còn mở, hãy trả lời cho chúng tôi biết bạn đang tìm gì — quy trình, dải điểm số, ngân sách — và chúng tôi sẽ ghép hàng phù hợp. Hoặc đặt lịch 15 phút với nhóm mua hàng của chúng tôi.\n\n— {sender_name}, Auctum Ledger",
+        "cta": "Đặt lịch tư vấn mua hàng"
+      }
+    },
+    "emailFooter": {
+      "unsubscribe": "Hủy đăng ký",
+      "managePreferences": "Quản lý tùy chọn email",
+      "viewInBrowser": "Xem trong trình duyệt",
+      "sentBecause": "Bạn nhận được email này vì {roaster_name} đã đăng ký với Auctum Ledger.",
+      "postalAddress": "Auctum Ledger, 548 Market St, San Francisco, CA 94104, USA"
+    },
+    "sms": {
+      "alt002": {
+        "body": "Auctum Ledger: {origin} {varietal} (SCA {sca_cup_score}) mẫu sẽ được gửi trong 48 giờ. Nhận bộ mẫu: {sample_kit_url} Trả lời STOP để ngừng nhận."
+      },
+      "alt004": {
+        "body": "Auctum Ledger: chỉ còn {available_lbs} lb của {origin} {varietal}. Đặt trước: {lot_url} Trả lời STOP để ngừng nhận."
+      }
+    },
+    "create": "Tạo chiến dịch",
+    "activate": "Kích hoạt",
+    "retire": "Ngưng sử dụng"
+  },
+  "growth": {
+    "overline": "GROWTH INTELLIGENCE",
+    "title": "Growth Dashboard",
+    "subtitle": "Weekly transacting roasters, kit funnel, CAC by channel, churn hazard, K-factor, and campaign lift.",
+    "wtr": {
+      "title": "Weekly Transacting Roasters",
+      "description": "Trailing 7-day active roasters with 4-week moving average"
+    },
+    "kitFunnel": {
+      "title": "Kit Funnel",
+      "description": "Kit Sent → Delivered → Feedback → First Order"
+    },
+    "cacByChannel": {
+      "title": "CAC by Channel",
+      "description": "Blended customer acquisition cost vs. $500 ceiling"
+    },
+    "hazardHeatmap": {
+      "title": "Churn Hazard Heatmap",
+      "description": "Accounts by churn tier and segment"
+    },
+    "kFactor": {
+      "title": "K-Factor",
+      "description": "Viral referral coefficient vs. 0.6 target"
+    },
+    "campaignLift": {
+      "title": "Campaign Lift",
+      "description": "Bayesian posterior probability vs. control"
+    }
+  },
+  "errors": {
+    "title": "Đã có lỗi xảy ra",
+    "generic": "Xin lỗi, đã có lỗi xảy ra. Bạn vui lòng thử lại.",
+    "unknown": "Đã xảy ra lỗi không mong muốn. Vui lòng thử lại sau.",
+    "codes": {
+      "AUTH_SESSION_EXPIRED": "Phiên đăng nhập của bạn đã hết hạn. Vui lòng đăng nhập lại.",
+      "AUTH_INVALID_CREDENTIALS": "Email hoặc mật khẩu không đúng.",
+      "AUTH_FORBIDDEN": "Bạn không có quyền thực hiện hành động này.",
+      "NET_OFFLINE": "Bạn có vẻ đang ngoại tuyến. Kiểm tra kết nối và thử lại.",
+      "NET_TIMEOUT": "Yêu cầu đã hết thời gian chờ. Vui lòng thử lại.",
+      "RATE_LIMITED": "Quá nhiều yêu cầu. Vui lòng đợi một chút và thử lại.",
+      "VAL_REQUIRED_FIELD": "Vui lòng điền đầy đủ các trường bắt buộc.",
+      "VAL_INVALID_EMAIL": "Vui lòng nhập email hợp lệ.",
+      "VAL_BUDGET_RANGE": "Ngân sách tối đa phải nằm giữa {{min}} và {{max}}.",
+      "LOT_NOT_FOUND": "Không tìm thấy lô hàng này; nó có thể không còn khả dụng.",
+      "LOT_OUT_OF_STOCK": "Lô hàng này đã hết.",
+      "ORDER_FAILED": "Không thể xử lý đơn hàng của bạn. Không có bất kỳ khoản phụ cấp nào — vui lòng thử lại.",
+      "PAYMENT_DECLINED": "Thanh toán của bạn bị từ chối. Vui lòng thử phương thức thanh toán khác.",
+      "IDEMPOTENCY_CONFLICT": "Phát hiện nộp trùng lặp. Đơn hàng gốc của bạn không thay đổi.",
+      "SERVER_ERROR": "Máy chủ của chúng tôi đang bận rộn lúc này. Vui lòng thử lại sau."
+    },
+    "cta": {
+      "retry": "Thử lại",
+      "contactSupport": "Liên hệ hỗ trợ",
+      "signInAgain": "Đăng nhập lại"
+    },
+    "insufficientInventory": "Kho không đủ để hoàn thành đơn hàng này.",
+    "idempotencyConflict": "Phát hiện nộp trùng lặp. Đơn hàng gốc của bạn không thay đổi."
+  },
+  "roasters": {
+    "create": "Thêm nhà pha cà phê",
+    "edit": "Sửa nhà pha cà phê",
+    "anonymize": "Anonymize nhà pha cà phê"
+  },
+  "orders": {
+    "create": "Tạo đơn hàng"
+  },
+  "sampleKits": {
+    "create": "Yêu cầu bộ mẫu"
+  },
+  "rules": {
+    "create": "Tạo quy tắc"
+  },
+  "webhooks": {
+    "create": "Tạo webhook"
+  },
+  "agent": {
+    "widgetTitle": "Auctum Coffee Agent",
+    "placeholder": "Ask the agent...",
+    "openChat": "Open coffee agent chat",
+    "closeChat": "Close coffee agent chat",
+    "settings": "Agent Settings",
+    "apiKey": "API Key",
+    "model": "Model",
+    "enabled": "Enabled",
+    "clearChat": "Clear conversation",
+    "emptyState": "Ask the agent about Vietnam coffee, sourcing, roasting, trade, or compliance.",
+    "comingSoon": "{{provider}} support is coming soon. Enable DeepSeek to use the agent now.",
+    "missingKey": "Please add an API key in the agent settings.",
+    "send": "Gửi tin nhắn",
+    "error": "Error: {{message}}",
+    "status": {
+      "streaming": "Thinking..."
+    }
+  },
+  "trust": {
+    "header": "ĐIỂM TIN CẪN",
+    "lastUpdated": "Cập nhật lần cuối",
+    "model": "mô hình",
+    "evidence": "TÀI LIỆU ĐÃ CHẤP NHẬN",
+    "noEvidence": "Chưa có tài liệu nào được chấp nhận. Tải lên bằng chứng để xây dựng niềm tin.",
+    "documentType": "Loại tài liệu",
+    "uploadPrompt": "Kéo tệp vào đây hoặc nhấn để tải lên",
+    "uploadHint": "In báo SCA, hợp đồng hoặc biên lai kho",
+    "uploadButton": "Tải lên tài liệu",
+    "takePhoto": "Chụp ảnh",
+    "chooseFile": "Chọn từ thư viện",
+    "preview": "Xem trước",
+    "documentPreview": "Xem trước tài liệu",
+    "noPreview": "Không có bản xem trước",
+    "reviewTitle": "Kiểm tra trường đã trích xuất",
+    "documentId": "Tài liệu",
+    "acceptAndLink": "Chấp nhận & liên kết đến lô hàng",
+    "rejectReason": "Lý do từ chối",
+    "rejectPlaceholder": "Nhập lý do từ chối...",
+    "confirmReject": "Xác nhận từ chối",
+    "criticalFieldWarning": "Trường quan trọng — phải xác nhận trước khi chấp nhận",
+    "table": {
+      "trust": "TIN CẪN"
+    }
+  },
+  "referrals": {
+    "overline": "CHƯƠNG TRÌNH GIỚI THIỆU",
+    "title": "Chương trình giới thiệu",
+    "subtitle": "Quản lý chương trình giới thiệu của bạn. Theo dõi lời mời, phần thưởng và chia sẻ mã duy nhất của bạn.",
+    "deliveryCardTitle": "Gửi Bộ Mẫu, Nhận Tín Dụng",
+    "deliveryCardBody": "Bạn có biết một người pha cà phê vẫn mua qua PDF? Gửi cho họ một bộ mẫu thật — bao gồm bảng điểm. Bạn nhận được $150 tín dụng rang khi đơn hàng đầu tiên của họ đến.",
+    "yourLink": "Liên kết giới thiệu của bạn",
+    "copyLink": "Sao chép liên kết giới thiệu",
+    "yourCode": "Mã giới thiệu",
+    "openLink": "Mở liên kết",
+    "shareTitle": "Liên kết giới thiệu từ Auctum Ledger",
+    "shareText": "Xem liên kết giới thiệu bộ mẫu này từ Auctum Ledger",
+    "copyError": "Không thể sao chép liên kết",
+    "rewardReferrer": "Bạn nhận được",
+    "roastCredit": "tín dụng rang",
+    "rewardReferee": "Họ nhận được",
+    "offFirstOrder": "giảm giá đơn đầu tiên",
+    "freeKit": "bộ mẫu miễn phí",
+    "simulateQualify": "[mô phỏng đủ điều kiện]",
+    "qualifyNote": "Điều kiện giới thiệu được điều khiển bởi việc giao đơn hàng đầu tiên của người được giới thiệu.",
+    "codeSection": "Mã Giới Thiệu Của Bạn",
+    "viewAllCodes": "Xem tất cả mã",
+    "noCode": "Đang tải…",
+    "referralsList": "Giới Thiệu Của Bạn",
+    "empty": "Chưa có giới thiệu nào. Chia sẻ mã của bạn để bắt đầu.",
+    "ledgerTitle": "Sổ Cái Phần Thưởng Auctum Ledger",
+    "ledgerEmpty": "Chưa có mục phần thưởng nào.",
+    "allCodesTitle": "Tất Cả Mã Giới Thiệu",
+    "codeStatus": "Trạng thái",
+    "anonymous": "Ẩn danh",
+    "detailTitle": "Chi Tiết Giới Thiệu",
+    "orderConfirmationTitle": "Gửi Bộ Mẫu — Nhận Tín Dụng Rang",
+    "detail": {
+      "refCode": "Mã giới thiệu",
+      "status": "Trạng thái",
+      "channel": "Kênh",
+      "referredAt": "Đã giới thiệu vào",
+      "funnel": "Tiến Trình Phễu",
+      "reward": "Phần thưởng đã ghi"
+    },
+    "stats": {
+      "invitesSent": "Lời mời đã gửi",
+      "qualified": "Đủ điều kiện",
+      "kFactor": "Hệ số K",
+      "earned": "Tín dụng đã kiếm được"
+    },
+    "status": {
+      "invited": "Đã mời",
+      "clicked": "Đã nhấp",
+      "signed_up": "Đã đăng ký",
+      "kit_requested": "Đã yêu cầu bộ mẫu",
+      "kit_delivered": "Bộ mẫu đã giao",
+      "feedback_submitted": "Đã gửi phản hồi",
+      "first_order_delivered": "Đơn Hàng Đầu Tiên Đã Giao",
+      "qualified": "Đủ điều kiện",
+      "clawed_back": "Đã thu hồi"
+    },
+    "statusShort": {
+      "invited": "Đã mời",
+      "clicked": "Đã nhấp",
+      "signed_up": "Đã đăng ký",
+      "kit_requested": "Yêu Cầu Bộ Mẫu",
+      "kit_delivered": "Bộ Mẫu Đã Giao",
+      "feedback_submitted": "Phản Hồi",
+      "first_order_delivered": "Đơn 1",
+      "qualified": "Đủ Điều Kiện",
+      "clawed_back": "Đã Thu Hồi"
+    },
+    "tier": {
+      "copper": {
+        "label": "Người Nếm",
+        "description": "0–2 giới thiệu đủ điều kiện"
+      },
+      "greenBuyer": {
+        "label": "Người Mua Xanh",
+        "description": "3–5 giới thiệu đủ điều kiện"
+      },
+      "ledgerCircle": {
+        "label": "Hội Ledger",
+        "description": "6+ giới thiệu đủ điều kiện"
+      }
+    },
+    "channel": {
+      "invite_link": "Liên kết mời",
+      "qr_sticker": "Nhãn dán QR",
+      "email_share": "Email",
+      "instagram_dm": "Tin nhắn Instagram",
+      "event_badge": "Huy hiệu sự kiện",
+      "code_entry": "Nhập mã"
+    },
+    "reviewQueue": {
+      "title": "Hàng Đợi Xem Xét",
+      "noPending": "Không có giới thiệu đang chờ",
+      "pendingReferral": "Giới thiệu đang chờ",
+      "reviewRequired": "Cần xem xét",
+      "reviewReason": "Lý do xem xét",
+      "decision": {
+        "qualify": "Đủ Điều Kiện",
+        "decline": "Từ Chối",
+        "review": "Xem Xét"
+      },
+      "reasons": {
+        "selfReferral": "Tự giới thiệu",
+        "identityGraphMatch": "Phát hiện khớp đồ thị danh tính",
+        "floorNotMet": "Sàn đơn hàng trả tiền đầu tiên không đạt",
+        "velocityExceeded": "Vượt quá giới hạn tốc độ",
+        "ringDetected": "Phát hiện vòng giới thiệu lẫn nhau",
+        "missingBusinessRegistration": "Người được giới thiệu thiếu đăng ký kinh doanh hoặc mã số thuế",
+        "notFound": "Không tìm thấy người giới thiệu hoặc người được giới thiệu"
+      }
+    },
+    "rewardType": {
+      "referrerCredit": "Tín Dụng Người Giới Thiệu",
+      "refereeDiscount": "Giảm Giá Người Được Giới Thiệu"
+    },
+    "rewardStatus": {
+      "pending": "Đang Chờ",
+      "posted": "Đã Ghi",
+      "clawed_back": "Đã Thu Hồi"
+    }
+  },
+  "curriculum": {
+    "title": "Chương Trình Học",
+    "overline": "CURRICULUM LEDGER",
+    "subtitle": "Làm chủ chất lượng cà phê, tuân thủ, tài chính và logistics qua các lộ trình học tập theo vùng.",
+    "tabs": {
+      "overview": "Tổng quan",
+      "lessons": "Bài học",
+      "progress": "Tiến độ"
+    },
+    "noProgress": "Chưa có tiến độ nào được ghi nhận cho mô-đun này.",
+    "trackHeader": {
+      "author": "Tác giả",
+      "region": "Vùng",
+      "prerequisites": "Điều kiện tiên quyết",
+      "milestoneBadge": "Huy Hiệu Cột Mốc",
+      "lessonCompletion": "Hoàn Thành Bài Học",
+      "moduleStatus": "Trạng Thái Mô-đun",
+      "trustScoreBoost": "Tăng Điểm Tin Cậy"
+    },
+    "tracks": {
+      "quality": "Chất Lượng",
+      "compliance": "Tuân Thủ",
+      "finance": "Tài Chính",
+      "logistics": "Logistics"
+    },
+    "trackDesc": {
+      "quality": "Hiệu chuẩn cảm giác, giao thức nếm thử và kỹ năng Q-grader.",
+      "compliance": "Khả năng truy xuất EUDR, thông quan hải quan và yêu cầu thực vật kiểm dịch.",
+      "finance": "Ngân sách nông trại, Sàn Giá Thực Tế và hiểu biết thị trường kỳ hạn.",
+      "logistics": "Xử lý sau thu hoạch, lưu kho và logistics vận chuyển."
+    },
+    "moduleCount_one": "{{count}} mô-đun",
+    "moduleCount_many": "{{count}} mô-đun",
+    "moduleCount_other": "{{count}} mô-đun",
+    "progress": {
+      "notStarted": "Chưa bắt đầu",
+      "inProgress": "Đang tiến hành",
+      "completed": "Đã hoàn thành",
+      "locked": "Đã khóa"
+    },
+    "viewTrack": "Xem Lộ Trình",
+    "noTrack": "Không tìm thấy lộ trình",
+    "noModule": "Không tìm thấy mô-đun.",
+    "lessonControls": {
+      "markComplete": "Đánh Dấu Hoàn Thành",
+      "review": "Xem Xét",
+      "completed": "Đã Hoàn Thành",
+      "completedMessage": "Mô-đun hoàn thành — sẵn sàng xem xét.",
+      "completeModule": "Hoàn Thành Mô-đun"
+    },
+    "ariaLabel": {
+      "courseTabs": "Các tab khóa học",
+      "markLessonComplete": "Đánh dấu {{lesson}} là hoàn thành",
+      "reviewModule": "Xem xét mô-đun",
+      "lessonComplete": "{{lesson}} đã hoàn thành",
+      "completeModule": "Hoàn thành mô-đun"
+    },
+    "authoring": {
+      "title": "Tác Giả Chương Trình",
+      "topicLabel": "Chủ Đề / Mô Tả",
+      "topicPlaceholder": "Mô tả mô-đun bạn muốn tạo...",
+      "trackLabel": "Lộ Trình",
+      "levelLabel": "Cấp Độ",
+      "regionLabel": "Vùng",
+      "generateBtn": "Tạo Với AI",
+      "saveBtn": "Lưu Mô-đun",
+      "cancelBtn": "Hủy",
+      "outlineLabel": "Đại Cương Mô-đun",
+      "contentLabel": "Nội Dung Bài Học",
+      "quizLabel": "Câu Hỏi Trắc Nghiệm",
+      "generated": "Nội Dung Được Tạo Bởi AI",
+      "editMode": "Đang Chỉnh Sửa",
+      "saveSuccess": "Lưu mô-đun thành công",
+      "saveError": "Lưu mô-đun thất bại"
+    }
+  }
+}

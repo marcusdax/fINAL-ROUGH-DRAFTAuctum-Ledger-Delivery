@@ -1,0 +1,40 @@
+{
+  "title": "Tableau de bord",
+  "subtitle": "Votre pipeline d'approvisionnement et vos revenus en un coup d'œil",
+  "metrics": {
+    "totalSent": "Total envoyé",
+    "openRate": "Taux d'ouverture",
+    "clickRate": "Taux de clics",
+    "conversionRate": "Taux de conversion",
+    "ltv": "Valeur vie client (LTV)",
+    "cac": "Coût d'acquisition client (CAC)",
+    "paybackPeriod": "Délai de récupération",
+    "churnRisk": "Risque d'abandon",
+    "avgOrderValue": "Panier moyen",
+    "revenue": "Revenus",
+    "orders": "Commandes"
+  },
+  "charts": {
+    "engagementOverTime": "Engagement dans le temps",
+    "openRatePct": "Taux d'ouverture %",
+    "clickRatePct": "Taux de clics %",
+    "conversionRatePct": "Taux de conversion %"
+  },
+  "benchmark": {
+    "title": "Référence par les pairs",
+    "topQuartile": "Quartile supérieur",
+    "median": "Médiane",
+    "yourPercentile": "Votre percentile"
+  },
+  "time": {
+    "last7Days": "7 derniers jours",
+    "last30Days": "30 derniers jours",
+    "last90Days": "90 derniers jours",
+    "customRange": "Personnalisé"
+  },
+  "empty": {
+    "title": "Pas assez de données",
+    "description": "Une fois vos commandes et campagnes en marche, vos indicateurs apparaîtront ici.",
+    "cta": "Connecter vos données"
+  }
+}

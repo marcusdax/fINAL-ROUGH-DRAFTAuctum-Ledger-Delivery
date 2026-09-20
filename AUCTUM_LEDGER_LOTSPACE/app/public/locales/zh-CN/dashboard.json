@@ -1,0 +1,40 @@
+{
+  "title": "数据总览",
+  "subtitle": "采购与营收，一目了然",
+  "metrics": {
+    "totalSent": "发送总量",
+    "openRate": "打开率",
+    "clickRate": "点击率",
+    "conversionRate": "转化率",
+    "ltv": "客户终身价值 (LTV)",
+    "cac": "获客成本 (CAC)",
+    "paybackPeriod": "回本周期",
+    "churnRisk": "流失风险",
+    "avgOrderValue": "平均订单金额",
+    "revenue": "营收",
+    "orders": "订单"
+  },
+  "charts": {
+    "engagementOverTime": "互动趋势",
+    "openRatePct": "打开率 %",
+    "clickRatePct": "点击率 %",
+    "conversionRatePct": "转化率 %"
+  },
+  "benchmark": {
+    "title": "同行基准",
+    "topQuartile": "前 25%",
+    "median": "中位数",
+    "yourPercentile": "您的百分位"
+  },
+  "time": {
+    "last7Days": "最近 7 天",
+    "last30Days": "最近 30 天",
+    "last90Days": "最近 90 天",
+    "customRange": "自定义范围"
+  },
+  "empty": {
+    "title": "暂无足够数据",
+    "description": "订单和营销活动数据接入后，指标将显示在这里。",
+    "cta": "连接数据"
+  }
+}

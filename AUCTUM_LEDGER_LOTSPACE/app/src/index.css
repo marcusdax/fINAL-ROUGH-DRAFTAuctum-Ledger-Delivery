@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-paper text-ink-900 font-sans;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-brass-600 ring-offset-2 ring-offset-paper;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-parchment-200 bg-paper shadow-card;
+  }
+  .overline {
+    @apply font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-brass-700;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-green-700 text-paper hover:bg-green-800;
+  }
+  .btn-secondary {
+    @apply btn border border-ink-700/25 bg-paper text-ink-700 hover:bg-parchment-100;
+  }
+  .btn-danger {
+    @apply btn bg-red-700 text-paper hover:bg-red-800;
+  }
+  .btn-ghost {
+    @apply btn text-ink-700 hover:bg-parchment-100;
+  }
+  .input {
+    @apply w-full rounded-lg border border-ink-700/25 bg-paper px-3 py-2 text-sm text-ink-900 placeholder:text-ink-900/40 focus:border-brass-600;
+  }
+  .table-base {
+    @apply w-full border-collapse text-sm;
+  }
+  .table-base thead th {
+    @apply border-b border-parchment-200 px-3 py-2 text-left font-mono text-[11px] font-medium uppercase tracking-[0.14em] text-ink-700/70;
+  }
+  .table-base tbody td {
+    @apply border-b border-parchment-200/70 px-3 py-2.5 align-top;
+  }
+}

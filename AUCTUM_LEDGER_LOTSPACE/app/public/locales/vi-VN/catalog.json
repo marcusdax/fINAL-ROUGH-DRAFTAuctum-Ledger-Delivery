@@ -1,0 +1,110 @@
+{
+  "title": "Điều hướng nguồn gốc",
+  "sourcingObjective": "Mục tiêu mua hàng",
+  "goals": {
+    "baseline": {
+      "label": "Mua hàng cân bằng",
+      "description": "Phương pháp tiêu chuẩn cân bằng chất lượng, chi phí và bền vững"
+    },
+    "costOptimized": {
+      "label": "Tối ưu chi phí",
+      "description": "Tối đa hóa biên lợi nhuận thông qua mức giá cạnh tranh"
+    },
+    "qualityFirst": {
+      "label": "Ưu tiên chất lượng",
+      "description": "Chọn các lô điểm cúp cao nhất cho dòng sản phẩm cao cấp"
+    },
+    "sustainability": {
+      "label": "ESG tiên phong",
+      "description": "Tối đa hóa các chỉ số bền vững và mua hàng đạo đức"
+    },
+    "supplyChain": {
+      "label": "Chuỗi cung ứng tối ưu",
+      "description": "Tập trung vào hiệu quả logistics và giao hàng dự báo"
+    }
+  },
+  "filters": {
+    "budgetCeiling": "Ngân sách tối đa",
+    "includeOverBudget": "Bao gồm các lô vượt ngân sách",
+    "sortBy": "Sắp xếp theo",
+    "sort": {
+      "weighted": "Trọng số",
+      "price": "Giá",
+      "cup": "Điểm cúp",
+      "esg": "ESG"
+    },
+    "searchLabel": "Tìm kiếm lô hàng",
+    "searchPlaceholder": "Tìm theo nguồn gốc, giống cây, hương vị...",
+    "showAdvanced": "Hiện bộ lọc nâng cao",
+    "hideAdvanced": "Ẩn bộ lọc nâng cao",
+    "origins": "Nguồn gốc",
+    "processing": "Quy trình xử lý",
+    "minCupScore": "Điểm cúp tối thiểu"
+  },
+  "lot": {
+    "overBudget": "Vượt ngân sách",
+    "compositeScore": "Điểm tổng hợp",
+    "sourceThisLot": "Mua lô hàng này",
+    "scoreLabel": "Điểm SCA",
+    "rankLabel": "Hạng",
+    "flavorNotesLabel": "Ghi chú hương vị",
+    "metricBars": {
+      "cost": "Chi phí",
+      "quality": "Chất lượng",
+      "esg": "ESG",
+      "logistics": "Logistics"
+    },
+    "lbsAvailable_one": "{{count}} lb có sẵn",
+    "lbsAvailable_many": "{{count}} lbs có sẵn",
+    "lbsAvailable_other": "{{count}} lbs có sẵn",
+    "moreFlavorNotes_one": "+{{count}} nốt hương vị",
+    "moreFlavorNotes_many": "+{{count}} nốt hương vị",
+    "moreFlavorNotes_other": "+{{count}} nốt hương vị"
+  },
+  "attributes": {
+    "origin": "Nguồn gốc",
+    "varietal": "Giống cây",
+    "processMethod": "Phương pháp xử lý",
+    "elevation": "Độ cao",
+    "cupScore": "Điểm cúp",
+    "scaCupScore": "Điểm cúp SCA",
+    "pricePerLb": "Giá mỗi lb",
+    "harvestWindow": "Thời gian thu hoạch",
+    "estimatedArrival": "Ngày dự kiến",
+    "availableQuantity": "Số lượng có sẵn",
+    "certifications": "Chứng nhận"
+  },
+  "processMethods": {
+    "washed": "tách ướt",
+    "natural": "Tự nhiên",
+    "honey": "Mật ong",
+    "anaerobic": "kỵ khí"
+  },
+  "certifications": {
+    "fairTrade": "Được chứng nhận Fair Trade",
+    "organic": "Hữu cơ",
+    "rainforestAlliance": "Rainforest Alliance"
+  },
+  "origins": {
+    "ethiopia": "Êtiôpia",
+    "colombia": "Colombia",
+    "brazil": "Brasil",
+    "guatemala": "Guatemala",
+    "kenya": "Kenya",
+    "sumatra": "Sumatra",
+    "yirgacheffe": "Yirgacheffe",
+    "huila": "Huila",
+    "costaRica": "Costa Rica",
+    "peru": "Peru"
+  },
+  "empty": {
+    "title": "Không tìm thấy lô hàng nào phù hợp",
+    "cta": "Xóa tất cả bộ lọc"
+  },
+  "resultsSummary_one": "{{lotCount}} lô từ {{originCount}} nguồn gốc",
+  "resultsSummary_many": "{{lotCount}} lô từ {{originCount}} nguồn gốc",
+  "resultsSummary_other": "{{lotCount}} lô từ {{originCount}} nguồn gốc",
+  "table": {
+    "trust": "TIN CẪN"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Something went wrong",
+  "generic": "Sorry, something went wrong. Please try again.",
+  "unknown": "An unexpected error occurred. Please try again later.",
+  "codes": {
+    "AUTH_SESSION_EXPIRED": "Your session has expired. Please sign in again.",
+    "AUTH_INVALID_CREDENTIALS": "Incorrect email or password.",
+    "AUTH_FORBIDDEN": "You do not have permission to perform this action.",
+    "NET_OFFLINE": "You appear to be offline. Check your connection and try again.",
+    "NET_TIMEOUT": "The request timed out. Please try again.",
+    "RATE_LIMITED": "Too many requests. Please wait a moment and try again.",
+    "VAL_REQUIRED_FIELD": "Please fill in all required fields.",
+    "VAL_INVALID_EMAIL": "Please enter a valid email address.",
+    "VAL_BUDGET_RANGE": "Budget ceiling must be between {{min}} and {{max}}.",
+    "LOT_NOT_FOUND": "This lot could not be found. It may no longer be available.",
+    "LOT_OUT_OF_STOCK": "This lot is sold out.",
+    "ORDER_FAILED": "Your order could not be processed. No charge was made — please try again.",
+    "PAYMENT_DECLINED": "Your payment was declined. Please try a different payment method.",
+    "IDEMPOTENCY_CONFLICT": "Duplicate submission detected. Your original order is unchanged.",
+    "SERVER_ERROR": "Our servers are busy right now. Please try again shortly."
+  },
+  "cta": {
+    "retry": "Try again",
+    "contactSupport": "Contact support",
+    "signInAgain": "Sign in again"
+  },
+  "insufficientInventory": "Insufficient inventory to fulfill this order.",
+  "idempotencyConflict": "Duplicate submission detected. Your original order is unchanged."
+}

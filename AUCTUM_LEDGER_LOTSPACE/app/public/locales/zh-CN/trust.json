@@ -1,0 +1,26 @@
+{
+  "header": "信任分数",
+  "lastUpdated": "上次更新",
+  "model": "模型",
+  "evidence": "已接受的文档",
+  "noEvidence": "没有已接受的文档。上传证据以建立信任。",
+  "documentType": "文档类型",
+  "uploadPrompt": "放置文件或点击上传",
+  "uploadHint": "SCA 报告、合同或仓库收据",
+  "uploadButton": "上传文档",
+  "takePhoto": "拍照",
+  "chooseFile": "从图库选择",
+  "preview": "预览",
+  "documentPreview": "文档预览",
+  "noPreview": "无预览",
+  "reviewTitle": "审核提取的字段",
+  "documentId": "文档",
+  "acceptAndLink": "接受并链接到批次",
+  "rejectReason": "拒绝原因",
+  "rejectPlaceholder": "输入拒绝原因...",
+  "confirmReject": "确认拒绝",
+  "criticalFieldWarning": "关键字段——接受前必须确认",
+  "table": {
+    "trust": "信任"
+  }
+}

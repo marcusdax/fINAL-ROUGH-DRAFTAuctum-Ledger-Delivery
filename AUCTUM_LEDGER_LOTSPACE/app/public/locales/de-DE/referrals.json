@@ -1,0 +1,121 @@
+{
+  "overline": "EMPFEHLUNGEN",
+  "title": "Empfehlungen",
+  "subtitle": "Verwalten Sie Ihr Empfehlungsprogramm. Verfolgen Sie Einladungen, Belohnungen und teilen Sie Ihren einzigartigen Code.",
+  "deliveryCardTitle": "Kit Senden, Guthaben Erhalten",
+  "deliveryCardBody": "Kennen Sie einen Röster, der noch per PDF kauft? Senden Sie ihm ein echtes Kit — mit Cupping-Bögen. Sie erhalten 150 $ Röstguthaben, wenn die erste Bestellung geliefert wird.",
+  "yourLink": "Ihr Empfehlungslink",
+  "copyLink": "Empfehlungslink kopieren",
+  "yourCode": "Empfehlungscode",
+  "openLink": "Link öffnen",
+  "shareTitle": "Empfehlungslink von Auctum Ledger",
+  "shareText": "Sehen Sie sich diese Musterkit-Empfehlung von Auctum Ledger an",
+  "copyError": "Link konnte nicht kopiert werden",
+  "rewardReferrer": "Sie erhalten",
+  "roastCredit": "Röstguthaben",
+  "rewardReferee": "Sie erhalten",
+  "offFirstOrder": "Rabatt auf erste Bestellung",
+  "freeKit": "kostenloses Musterkit",
+  "simulateQualify": "[Qualifikation simulieren]",
+  "qualifyNote": "Die Empfehlungsqualifikation wird durch die Lieferung der ersten Bestellung des Empfängers bestimmt.",
+  "codeSection": "Ihr Empfehlungscode",
+  "viewAllCodes": "Alle Codes anzeigen",
+  "noCode": "Wird geladen…",
+  "referralsList": "Ihre Empfehlungen",
+  "empty": "Noch keine Empfehlungen. Teilen Sie Ihren Code, um zu beginnen.",
+  "ledgerTitle": "Auctum Ledger Belohnungs-Hauptbuch",
+  "ledgerEmpty": "Noch keine Belohnungseinträge.",
+  "allCodesTitle": "Alle Empfehlungscodes",
+  "codeStatus": "Status",
+  "anonymous": "Anonym",
+  "detailTitle": "Empfehlungsdetail",
+  "orderConfirmationTitle": "Kit Senden — Röstguthaben Erhalten",
+  "detail": {
+    "refCode": "Empfehlungscode",
+    "status": "Status",
+    "channel": "Kanal",
+    "referredAt": "Empfohlen am",
+    "funnel": "Trichter-Fortschritt",
+    "reward": "Belohnung verbucht"
+  },
+  "stats": {
+    "invitesSent": "Gesendete Einladungen",
+    "qualified": "Qualifiziert",
+    "kFactor": "K-Faktor",
+    "earned": "Verdiente Guthaben"
+  },
+  "status": {
+    "invited": "Eingeladen",
+    "clicked": "Geklickt",
+    "signed_up": "Registriert",
+    "kit_requested": "Kit Angefordert",
+    "kit_delivered": "Kit Geliefert",
+    "feedback_submitted": "Feedback Eingereicht",
+    "first_order_delivered": "Erste Bestellung Geliefert",
+    "qualified": "Qualifiziert",
+    "clawed_back": "Zurückgefordert"
+  },
+  "statusShort": {
+    "invited": "Eingeladen",
+    "clicked": "Geklickt",
+    "signed_up": "Registriert",
+    "kit_requested": "Kit Angefordert",
+    "kit_delivered": "Kit Geliefert",
+    "feedback_submitted": "Feedback",
+    "first_order_delivered": "1. Bestellung",
+    "qualified": "Qualifiziert",
+    "clawed_back": "Zurückgefordert"
+  },
+  "tier": {
+    "copper": {
+      "label": "Cupper",
+      "description": "0–2 qualifizierte Empfehlungen"
+    },
+    "greenBuyer": {
+      "label": "Green Buyer",
+      "description": "3–5 qualifizierte Empfehlungen"
+    },
+    "ledgerCircle": {
+      "label": "Ledger Circle",
+      "description": "6+ qualifizierte Empfehlungen"
+    }
+  },
+  "channel": {
+    "invite_link": "Einladungslink",
+    "qr_sticker": "QR-Aufkleber",
+    "email_share": "E-Mail",
+    "instagram_dm": "Instagram DM",
+    "event_badge": "Event-Ausweis",
+    "code_entry": "Code-Eingabe"
+  },
+  "reviewQueue": {
+    "title": "Prüfwarteschlange",
+    "noPending": "Keine ausstehenden Empfehlungen",
+    "pendingReferral": "Ausstehende Empfehlung",
+    "reviewRequired": "Prüfung erforderlich",
+    "reviewReason": "Prüfgrund",
+    "decision": {
+      "qualify": "Qualifizieren",
+      "decline": "Ablehnen",
+      "review": "Prüfen"
+    },
+    "reasons": {
+      "selfReferral": "Selbstempfehlung",
+      "identityGraphMatch": "Identitätsgraph-Übereinstimmung erkannt",
+      "floorNotMet": "Mindestwert der ersten bezahlten Bestellung nicht erreicht",
+      "velocityExceeded": "Geschwindigkeitslimit überschritten",
+      "ringDetected": "Gegenseitiger Empfehlungsring erkannt",
+      "missingBusinessRegistration": "Empfänger fehlt Gewerbeanmeldung oder Steuer-ID",
+      "notFound": "Empfehler oder Empfänger nicht gefunden"
+    }
+  },
+  "rewardType": {
+    "referrerCredit": "Empfehler-Guthaben",
+    "refereeDiscount": "Empfänger-Rabatt"
+  },
+  "rewardStatus": {
+    "pending": "Ausstehend",
+    "posted": "Verbuchen",
+    "clawed_back": "Zurückgefordert"
+  }
+}

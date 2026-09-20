@@ -1,0 +1,121 @@
+{
+  "overline": "INDICAÇÕES",
+  "title": "Indicações",
+  "subtitle": "Gerencie seu programa de indicações. Rastreie convites, recompensas e compartilhe seu código único.",
+  "deliveryCardTitle": "Envie um Kit, Ganhe Crédito",
+  "deliveryCardBody": "Conhece um torreador que ainda compra por PDFs? Envie um kit real — inclui folhas de pontuação. Você ganha $150 em crédito de torra quando a primeira compra for entregue.",
+  "yourLink": "Seu link de indicação",
+  "copyLink": "Copiar link de indicação",
+  "yourCode": "Código de indicação",
+  "openLink": "Abrir link",
+  "shareTitle": "Link de indicação do Auctum Ledger",
+  "shareText": "Confira esta indicação de kit de amostras do Auctum Ledger",
+  "copyError": "Falha ao copiar link",
+  "rewardReferrer": "Você recebe",
+  "roastCredit": "crédito de torra",
+  "rewardReferee": "Eles recebem",
+  "offFirstOrder": "de desconto na primeira compra",
+  "freeKit": "kit de amostras grátis",
+  "simulateQualify": "[simular qualificar]",
+  "qualifyNote": "A qualificação de indicação é impulsionada pela entrega da primeira compra do referrer.",
+  "codeSection": "Seu Código de Indicação",
+  "viewAllCodes": "Ver todos os códigos",
+  "noCode": "Carregando…",
+  "referralsList": "Seus Indicados",
+  "empty": "Ainda não há indicações. Compartilhe seu código para começar.",
+  "ledgerTitle": "Livro Razão de Recompensas do Auctum Ledger",
+  "ledgerEmpty": "Ainda não há entradas de recompensas.",
+  "allCodesTitle": "Todos os Códigos de Indicação",
+  "codeStatus": "Status",
+  "anonymous": "Anônimo",
+  "detailTitle": "Detalhe de Indicação",
+  "orderConfirmationTitle": "Envie um Kit — Ganhe Crédito de Torra",
+  "detail": {
+    "refCode": "Código de indicação",
+    "status": "Status",
+    "channel": "Canal",
+    "referredAt": "Indicado em",
+    "funnel": "Progresso do funil",
+    "reward": "Recompensa contabilizada"
+  },
+  "stats": {
+    "invitesSent": "Convites enviados",
+    "qualified": "Qualificados",
+    "kFactor": "K-factor",
+    "earned": "Créditos ganhos"
+  },
+  "status": {
+    "invited": "Convidado",
+    "clicked": "Clicado",
+    "signed_up": "Registrado",
+    "kit_requested": "Kit solicitado",
+    "kit_delivered": "Kit entregue",
+    "feedback_submitted": "Feedback enviado",
+    "first_order_delivered": "Primeiro pedido entregue",
+    "qualified": "Qualificado",
+    "clawed_back": "Reembolsado"
+  },
+  "statusShort": {
+    "invited": "Convidado",
+    "clicked": "Clicado",
+    "signed_up": "Registrado",
+    "kit_requested": "Kit solicitado",
+    "kit_delivered": "Kit entregue",
+    "feedback_submitted": "Feedback",
+    "first_order_delivered": "1º pedido",
+    "qualified": "Qualificado",
+    "clawed_back": "Reembolsado"
+  },
+  "tier": {
+    "copper": {
+      "label": "Catador",
+      "description": "0–2 indicações qualificadas"
+    },
+    "greenBuyer": {
+      "label": "Comprador Verde",
+      "description": "3–5 indicações qualificadas"
+    },
+    "ledgerCircle": {
+      "label": "Círculo Ledger",
+      "description": "6+ indicações qualificadas"
+    }
+  },
+  "channel": {
+    "invite_link": "Link de convite",
+    "qr_sticker": "Adesivo QR",
+    "email_share": "Email",
+    "instagram_dm": "DM do Instagram",
+    "event_badge": "Crachá de evento",
+    "code_entry": "Entrada de código"
+  },
+  "reviewQueue": {
+    "title": "Fila de Revisão",
+    "noPending": "Não há indicações pendentes",
+    "pendingReferral": "Indicação pendente",
+    "reviewRequired": "Revisão necessária",
+    "reviewReason": "Razão da revisão",
+    "decision": {
+      "qualify": "Qualificar",
+      "decline": "Recusar",
+      "review": "Revisar"
+    },
+    "reasons": {
+      "selfReferral": "Auto-indicação",
+      "identityGraphMatch": "Coincidência de identidade detectada",
+      "floorNotMet": "Mínimo do primeiro pedido não atingido",
+      "velocityExceeded": "Limite de velocidade excedido",
+      "ringDetected": "Anel de indicações mutuas detectado",
+      "missingBusinessRegistration": "Falta registro comercial ou ID fiscal do referrer",
+      "notFound": "Não foi possível encontrar o referidor ou o referido"
+    }
+  },
+  "rewardType": {
+    "referrerCredit": "Crédito para quem indica",
+    "refereeDiscount": "Desconto para o indicado"
+  },
+  "rewardStatus": {
+    "pending": "Pendente",
+    "posted": "Contabilizado",
+    "clawed_back": "Reembolsado"
+  }
+}

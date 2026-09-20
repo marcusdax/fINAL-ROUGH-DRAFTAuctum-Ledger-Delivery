@@ -1,0 +1,64 @@
+name: Deploy to Production
+
+on:
+  workflow_run:
+    workflows: ['Docker Build & Push']
+    types:
+      - completed
+    branches:
+      - main
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  deploy:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create deployment payload
+        run: |
+          cat > deployment.json <<EOF
+          {
+            "ref": "main",
+            "required_contexts": ["build"],
+            "auto_merge": false,
+            "description": "Production deployment",
+            "environment": "production"
+          }
+          EOF
+
+      - name: Log deployment start
+        run: |
+          echo "Deployment ready for:"
+          echo "  - Frontend: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-app:latest"
+          echo "  - Backend: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-proxy:latest"
+          echo ""
+          echo "Deployment Instructions:"
+          echo "1. SSH into production server"
+          echo "2. Pull latest images: docker compose pull"
+          echo "3. Restart services: docker compose up -d"
+          echo "4. Verify health: docker compose ps"
+
+      - name: Create GitHub Deployment (optional)
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const deployment = await github.rest.repos.createDeployment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'main',
+              environment: 'production',
+              required_contexts: [],
+              auto_merge: false,
+              description: 'Production deployment from Docker build'
+            });
+            console.log('Deployment created:', deployment.data.id);

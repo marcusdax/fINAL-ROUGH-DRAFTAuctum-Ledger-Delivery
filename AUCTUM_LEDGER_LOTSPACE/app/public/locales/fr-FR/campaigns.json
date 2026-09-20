@@ -1,0 +1,126 @@
+{
+  "title": "Campagnes",
+  "subtitle": "Automatisation et tests A/B pour vos séquences de nurturing",
+  "sequence": {
+    "nurtureTimeline": "Chronologie de nurturing",
+    "step": "Étape {{number}}",
+    "conversion": "{{rate}} % de conversion",
+    "activeRollout": "Déploiement actif",
+    "summaryView": "Vue résumée",
+    "detailedView": "Vue détaillée",
+    "noObjective": "Aucun objectif défini",
+    "campaignDetails": "Détails de la campagne",
+    "emailsSent_one": "{{count}} e-mail envoyé",
+    "emailsSent_many": "{{count}} e-mails envoyés",
+    "emailsSent_other": "{{count}} e-mails envoyés"
+  },
+  "steps": {
+    "alt001": {
+      "label": "Présentation de la nouvelle récolte",
+      "objective": "Présenter les lots fraîchement arrivés à de nouveaux prospects et obtenir la première interaction",
+      "timing": "Jour 0"
+    },
+    "alt002": {
+      "label": "Invitation au kit d'échantillons",
+      "objective": "Inviter les torréfacteurs à goûter avant d'acheter et réduire la friction de décision",
+      "timing": "Jour 3"
+    },
+    "alt003": {
+      "label": "Étude de cas d'un torréfacteur",
+      "objective": "Créer de la confiance avec l'histoire d'un torréfacteur pair, soutenue par des données de tasse",
+      "timing": "Jour 7"
+    },
+    "alt004": {
+      "label": "Avis de disponibilité",
+      "objective": "Partager l'inventaire restant et les dates d'arrivée pour créer une urgence légitime",
+      "timing": "Jour 12"
+    },
+    "alt005": {
+      "label": "Réengagement et retour d'information",
+      "objective": "Réactiver les prospects silencieux et connaître leurs plans d'achat",
+      "timing": "Jour 21"
+    }
+  },
+  "metrics": {
+    "totalSent": "Total envoyés",
+    "openRate": "Taux d'ouverture",
+    "clickRate": "Taux de clics",
+    "conversionRate": "Taux de conversion"
+  },
+  "abTest": {
+    "title": "Analyse de performance multivariée",
+    "variant": "Variante",
+    "sampleSize": "Taille de l'échantillon",
+    "conversions": "Conversions",
+    "conversionRate": "Taux de conversion",
+    "confidenceInterval": "Intervalle de crédibilité à 95 %",
+    "probBest": "Prob. d'être la meilleure",
+    "status": "Statut",
+    "winner": "Gagnante",
+    "testing": "En test",
+    "switchVariant": "Changer de variante :",
+    "control": "Contrôle"
+  },
+  "status": {
+    "planned": "Planifiée",
+    "active": "Active",
+    "completed": "Terminée",
+    "paused": "En pause"
+  },
+  "engagement": {
+    "title": "Engagement dans le temps",
+    "opens": "Ouvertures",
+    "clicks": "Clics",
+    "conversions": "Conversions"
+  },
+  "emails": {
+    "alt001": {
+      "subject": "Nouvel arrivage : {origin} {varietal} · SCA {sca_cup_score}",
+      "preheader": "Lot {process_method} de {origin} — {flavor_notes}. Vient d'arriver chez Auctum Ledger.",
+      "body": "Bonjour {contact_first_name},\n\nNotre dernier lot de {origin} vient d'arriver : {varietal}, processus {process_method}, avec {sca_cup_score} points sur l'échelle SCA, notes de {flavor_notes}. Prix de {price_per_lb}/lb, {available_lbs} lb disponibles.\n\nVous pouvez le goûter avant de décider — les échantillons sont envoyés en 48 heures.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Voir ce lot"
+    },
+    "alt002": {
+      "subject": "Goûtez {origin} avant votre prochain menu",
+      "preheader": "Votre kit d'échantillons part en 48 heures — avec {origin} {varietal}.",
+      "body": "Bonjour {contact_first_name},\n\nGoûtez avant de décider. Le kit d'échantillons de {origin} inclut le {varietal} ({process_method}, SCA {sca_cup_score}) que nos Q graders ont noté cette semaine. Commandez votre kit et nous l'enverrons en 48 heures — gratuit pour les torréfacteurs qualifiés.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Demander le kit d'échantillons"
+    },
+    "alt003": {
+      "subject": "Comment {peer_roaster_name} a construit un menu autour de {origin}",
+      "preheader": "Étude de cas : lots {process_method} avec score SCA {sca_cup_score}+.",
+      "body": "Bonjour {contact_first_name},\n\nLa saison dernière, {peer_roaster_name} a ajouté notre {origin} {varietal} ({process_method}) à son menu mono-origine — et a écoulé ses premiers {order_volume_lbs} lb en {sell_through_weeks} semaines. Voici ce qui a fonctionné, avec les données de dégustation à l'appui.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Lire l'étude de cas"
+    },
+    "alt004": {
+      "subject": "Plus que {available_lbs} lb de {origin} {varietal}",
+      "preheader": "Arrivée le {arrival_date} — réservez avant épuisement.",
+      "body": "Bonjour {contact_first_name},\n\nMise à jour rapide de disponibilité : il ne reste que {available_lbs} lb de {origin} {varietal} ({process_method}, SCA {sca_cup_score}). Le prochain conteneur arrive le {arrival_date} et les lots réservés sont expédiés en premier. Réservez maintenant pour bloquer le prix à {price_per_lb}/lb.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Réserver mon lot"
+    },
+    "alt005": {
+      "subject": "Toujours en recherche pour {harvest_window}, {contact_first_name} ?",
+      "preheader": "Dites-nous ce que vous cherchez — nous trouverons les bons lots.",
+      "body": "Bonjour {contact_first_name},\n\nNous avons remarqué que le {origin} {varietal} n'a pas fait partie de votre menu cette fois. Si vos plans pour {harvest_window} sont encore ouverts, répondez avec ce que vous cherchez — processus, fourchette de score, budget — et nous trouverons les lots correspondants. Ou réservez 15 minutes avec notre équipe d'approvisionnement.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Planifier un appel d'approvisionnement"
+    }
+  },
+  "emailFooter": {
+    "unsubscribe": "Se désabonner",
+    "managePreferences": "Gérer les préférences d'e-mail",
+    "viewInBrowser": "Voir dans le navigateur",
+    "sentBecause": "Vous avez reçu cet e-mail car {roaster_name} est inscrit chez Auctum Ledger.",
+    "postalAddress": "Auctum Ledger, 548 Market St, San Francisco, CA 94104, USA"
+  },
+  "sms": {
+    "alt002": {
+      "body": "Auctum Ledger : échantillons de {origin} {varietal} (SCA {sca_cup_score}) en 48 h. Commandez votre kit : {sample_kit_url} Répondez STOP pour annuler."
+    },
+    "alt004": {
+      "body": "Auctum Ledger : plus que {available_lbs} lb de {origin} {varietal}. Réservez : {lot_url} Répondez STOP pour annuler."
+    }
+  },
+  "create": "Créer une campagne",
+  "activate": "Activer",
+  "retire": "Retirer"
+}

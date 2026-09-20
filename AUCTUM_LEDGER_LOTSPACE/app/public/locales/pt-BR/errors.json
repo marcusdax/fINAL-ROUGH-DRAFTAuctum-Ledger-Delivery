@@ -1,0 +1,29 @@
+{
+  "title": "Algo deu errado",
+  "generic": "Desculpe, algo deu errado. Tente novamente.",
+  "unknown": "Ocorreu um erro inesperado. Tente novamente mais tarde.",
+  "codes": {
+    "AUTH_SESSION_EXPIRED": "Sua sessão expirou. Entre novamente.",
+    "AUTH_INVALID_CREDENTIALS": "E-mail ou senha incorretos.",
+    "AUTH_FORBIDDEN": "Você não tem permissão para realizar esta ação.",
+    "NET_OFFLINE": "Sem conexão. Verifique sua rede e tente novamente.",
+    "NET_TIMEOUT": "A solicitação expirou. Tente novamente.",
+    "RATE_LIMITED": "Muitas solicitações. Aguarde um momento e tente novamente.",
+    "VAL_REQUIRED_FIELD": "Preencha todos os campos obrigatórios.",
+    "VAL_INVALID_EMAIL": "Insira um endereço de e-mail válido.",
+    "VAL_BUDGET_RANGE": "O teto de orçamento deve estar entre {{min}} e {{max}}.",
+    "LOT_NOT_FOUND": "Lote não encontrado; ele pode não estar mais disponível.",
+    "LOT_OUT_OF_STOCK": "Este lote está esgotado.",
+    "ORDER_FAILED": "Não foi possível processar o pedido. Nenhuma cobrança foi feita; tente novamente.",
+    "PAYMENT_DECLINED": "O pagamento foi recusado. Tente outro método de pagamento.",
+    "IDEMPOTENCY_CONFLICT": "Detectamos um envio duplicado; seu pedido original não foi alterado.",
+    "SERVER_ERROR": "O servidor está indisponível no momento. Tente mais tarde."
+  },
+  "cta": {
+    "retry": "Tentar novamente",
+    "contactSupport": "Falar com o suporte",
+    "signInAgain": "Entrar novamente"
+  },
+  "insufficientInventory": "Estoque insuficiente para atender este pedido.",
+  "idempotencyConflict": "Envio duplicado detectado. Seu pedido original não foi alterado."
+}

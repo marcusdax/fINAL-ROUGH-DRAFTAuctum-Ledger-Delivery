@@ -1,0 +1,686 @@
+{
+  "common": {
+    "appName": "Auctum Ledger",
+    "tagline": "Origem verificada. Preço real.",
+    "nav": {
+      "dashboard": "Painel",
+      "catalog": "Catálogo",
+      "campaigns": "Campanhas",
+      "orders": "Pedidos",
+      "accounts": "Contas",
+      "analytics": "Análises",
+      "settings": "Configurações",
+      "help": "Ajuda",
+      "reservations": "Reservas",
+      "sampleKits": "Kits de amostra",
+      "automationRules": "Regras de automação",
+      "webhooks": "Webhooks",
+      "growth": "Growth",
+      "referrals": "Indicações"
+    },
+    "actions": {
+      "refresh": "Refresh"
+    },
+    "buttons": {
+      "save": "Salvar",
+      "cancel": "Cancelar",
+      "delete": "Excluir",
+      "edit": "Editar",
+      "close": "Fechar",
+      "confirm": "Confirmar",
+      "retry": "Tentar novamente",
+      "back": "Voltar",
+      "next": "Próximo",
+      "submit": "Enviar",
+      "search": "Buscar",
+      "apply": "Aplicar",
+      "download": "Baixar",
+      "share": "Compartilhar",
+      "clearAll": "Limpar tudo",
+      "saveView": "Salvar visualização",
+      "resetFilters": "Redefinir filtros",
+      "loadMore": "Carregar mais",
+      "copied": "Copiado",
+      "copy": "Copiar"
+    },
+    "states": {
+      "loading": "Carregando…",
+      "loadingLots": "Carregando lotes…",
+      "empty": "Ainda não há nada aqui",
+      "offline": "Você está offline"
+    },
+    "labels": {
+      "active": "Ativo",
+      "inactive": "Inativo",
+      "new": "Novo",
+      "optional": "Opcional",
+      "required": "Obrigatório",
+      "all": "Todos",
+      "none": "Nenhum",
+      "yes": "Sim",
+      "no": "Não",
+      "viewDetails": "Ver detalhes",
+      "lastUpdated": "Última atualização",
+      "comingSoon": "Em breve"
+    },
+    "languageSwitcher": {
+      "label": "Idioma",
+      "en-US": "English (US)",
+      "zh-CN": "简体中文",
+      "es-MX": "Español (México)",
+      "pt-BR": "Português (Brasil)",
+      "vi-VN": "Tiếng Việt",
+      "de-DE": "Deutsch",
+      "fr-FR": "Français"
+    },
+    "a11y": {
+      "skipToContent": "Pular para o conteúdo principal",
+      "openMenu": "Abrir menu",
+      "closeMenu": "Fechar menu",
+      "budgetCeilingSlider": "Controle deslizante de teto de orçamento",
+      "minCupScoreSlider": "Controle deslizante de pontuação mínima de xícara"
+    },
+    "units": {
+      "perLb": "/lb",
+      "lbs": "lb",
+      "kg": "kg"
+    },
+    "meta": {
+      "title": "Auctum Ledger — Mercado de Café Verde Verificado",
+      "description": "Navegue por café verde verificado por origem, processo e pontuação de xícara SCA. Amostras em 48 horas."
+    }
+  },
+  "dashboard": {
+    "title": "Visão geral",
+    "subtitle": "Seu abastecimento e receita em um relance",
+    "metrics": {
+      "totalSent": "Total enviados",
+      "openRate": "Taxa de abertura",
+      "clickRate": "Taxa de cliques",
+      "conversionRate": "Taxa de conversão",
+      "ltv": "Valor do ciclo de vida do cliente (LTV)",
+      "cac": "Custo de aquisição de clientes (CAC)",
+      "paybackPeriod": "Período de retorno",
+      "churnRisk": "Risco de cancelamento",
+      "avgOrderValue": "Valor médio do pedido",
+      "revenue": "Receita",
+      "orders": "Pedidos"
+    },
+    "charts": {
+      "engagementOverTime": "Engajamento ao longo do tempo",
+      "openRatePct": "Taxa de abertura %",
+      "clickRatePct": "Taxa de cliques %",
+      "conversionRatePct": "Taxa de conversão %"
+    },
+    "benchmark": {
+      "title": "Comparativo com pares",
+      "topQuartile": "Quartil superior",
+      "median": "Mediana",
+      "yourPercentile": "Seu percentil"
+    },
+    "time": {
+      "last7Days": "Últimos 7 dias",
+      "last30Days": "Últimos 30 dias",
+      "last90Days": "Últimos 90 dias",
+      "customRange": "Período personalizado"
+    },
+    "empty": {
+      "title": "Ainda não há dados suficientes",
+      "description": "Quando seus pedidos e campanhas começarem a fluir, suas métricas aparecerão aqui.",
+      "cta": "Conectar dados"
+    }
+  },
+  "catalog": {
+    "title": "Navegador de origens",
+    "sourcingObjective": "Objetivo de compra",
+    "goals": {
+      "baseline": {
+        "label": "Compra equilibrada",
+        "description": "Abordagem padrão que equilibra qualidade, custo e sustentabilidade"
+      },
+      "costOptimized": {
+        "label": "Otimização de custos",
+        "description": "Máxima expansão de margem com preços mais agressivos"
+      },
+      "qualityFirst": {
+        "label": "Qualidade em primeiro lugar",
+        "description": "Priorizar as maiores pontuações de xícara para linhas premium"
+      },
+      "sustainability": {
+        "label": "Campeão de ESG",
+        "description": "Maximizar as métricas de sustentabilidade e compra ética"
+      },
+      "supplyChain": {
+        "label": "Cadeia de suprimentos otimizada",
+        "description": "Foco em eficiência logística e entregas previsíveis"
+      }
+    },
+    "filters": {
+      "budgetCeiling": "Teto de orçamento",
+      "includeOverBudget": "Incluir lotes fora do orçamento",
+      "sortBy": "Ordenar por",
+      "sort": {
+        "weighted": "Ponderado",
+        "price": "Preço",
+        "cup": "Pontuação de xícara",
+        "esg": "ESG"
+      },
+      "searchLabel": "Buscar lotes",
+      "searchPlaceholder": "Buscar por origem, variedade, notas sensoriais…",
+      "showAdvanced": "Mostrar filtros avançados",
+      "hideAdvanced": "Ocultar filtros avançados",
+      "origins": "Origens",
+      "processing": "Processamento",
+      "minCupScore": "Pontuação mínima de xícara"
+    },
+    "lot": {
+      "overBudget": "Fora do orçamento",
+      "compositeScore": "Pontuação composta",
+      "sourceThisLot": "Comprar este lote",
+      "scoreLabel": "Pontuação SCA",
+      "rankLabel": "Posição",
+      "flavorNotesLabel": "Notas sensoriais",
+      "metricBars": {
+        "cost": "Custo",
+        "quality": "Qualidade",
+        "esg": "ESG",
+        "logistics": "Logística"
+      },
+      "lbsAvailable_one": "{{count}} lb disponível",
+      "lbsAvailable_many": "{{count}} lbs disponíveis",
+      "lbsAvailable_other": "{{count}} lbs disponíveis",
+      "moreFlavorNotes_one": "+{{count}} nota a mais",
+      "moreFlavorNotes_many": "+{{count}} notas a mais",
+      "moreFlavorNotes_other": "+{{count}} notas a mais"
+    },
+    "attributes": {
+      "origin": "Origem",
+      "varietal": "Variedade",
+      "processMethod": "Método de processamento",
+      "elevation": "Altitude",
+      "cupScore": "Pontuação de xícara",
+      "scaCupScore": "Pontuação de xícara SCA",
+      "pricePerLb": "Preço por libra",
+      "harvestWindow": "Janela de safra",
+      "estimatedArrival": "Chegada estimada",
+      "availableQuantity": "Quantidade disponível",
+      "certifications": "Certificações"
+    },
+    "processMethods": {
+      "washed": "Lavado",
+      "natural": "Natural",
+      "honey": "Honey",
+      "anaerobic": "Anaeróbico"
+    },
+    "certifications": {
+      "fairTrade": "Certificação de Comércio Justo",
+      "organic": "Certificação orgânica",
+      "rainforestAlliance": "Rainforest Alliance"
+    },
+    "origins": {
+      "ethiopia": "Etiópia",
+      "colombia": "Colômbia",
+      "brazil": "Brasil",
+      "guatemala": "Guatemala",
+      "kenya": "Quênia",
+      "sumatra": "Sumatra",
+      "yirgacheffe": "Yirgacheffe",
+      "huila": "Huila",
+      "costaRica": "Costa Rica",
+      "peru": "Peru"
+    },
+    "empty": {
+      "title": "Nenhum lote corresponde aos seus critérios",
+      "cta": "Limpar todos os filtros"
+    },
+    "resultsSummary_one": "{{lotCount}} lote de {{originCount}} origens",
+    "resultsSummary_many": "{{lotCount}} lotes de {{originCount}} origens",
+    "resultsSummary_other": "{{lotCount}} lotes de {{originCount}} origens",
+    "table": {
+      "trust": "CONFIANÇA"
+    }
+  },
+  "campaigns": {
+    "title": "Campanhas",
+    "subtitle": "Automação e testes A/B para seus fluxos de nutrição",
+    "sequence": {
+      "nurtureTimeline": "Linha do tempo de nutrição",
+      "step": "Etapa {{number}}",
+      "conversion": "{{rate}}% de conversão",
+      "activeRollout": "Distribuição ativa",
+      "summaryView": "Visão resumida",
+      "detailedView": "Visão detalhada",
+      "noObjective": "Nenhum objetivo definido",
+      "campaignDetails": "Detalhes da campanha",
+      "emailsSent_one": "{{count}} e-mail enviado",
+      "emailsSent_many": "{{count}} e-mails enviados",
+      "emailsSent_other": "{{count}} e-mails enviados"
+    },
+    "steps": {
+      "alt001": {
+        "label": "Apresentação da nova safra",
+        "objective": "Apresentar os lotes recém-chegados a novos prospects e conquistar a primeira interação",
+        "timing": "Dia 0"
+      },
+      "alt002": {
+        "label": "Convite ao kit de amostras",
+        "objective": "Convidar os torradores a provar antes de comprar e reduzir a barreira de decisão",
+        "timing": "Dia 3"
+      },
+      "alt003": {
+        "label": "Caso de sucesso de um torrador",
+        "objective": "Gerar confiança com a história de um torrador par, respaldada por dados de xícara",
+        "timing": "Dia 7"
+      },
+      "alt004": {
+        "label": "Aviso de disponibilidade",
+        "objective": "Compartilhar o estoque restante e as datas de chegada para criar urgência legítima",
+        "timing": "Dia 12"
+      },
+      "alt005": {
+        "label": "Reengajamento e feedback",
+        "objective": "Reengajar prospects sem resposta e entender seus planos de compra",
+        "timing": "Dia 21"
+      }
+    },
+    "metrics": {
+      "totalSent": "Total enviados",
+      "openRate": "Taxa de abertura",
+      "clickRate": "Taxa de cliques",
+      "conversionRate": "Taxa de conversão"
+    },
+    "abTest": {
+      "title": "Análise de desempenho multivariado",
+      "variant": "Variante",
+      "sampleSize": "Tamanho da amostra",
+      "conversions": "Conversões",
+      "conversionRate": "Taxa de conversão",
+      "confidenceInterval": "Intervalo de credibilidade de 95%",
+      "probBest": "Prob. de ser a melhor",
+      "status": "Status",
+      "winner": "Vencedora",
+      "testing": "Em teste",
+      "switchVariant": "Trocar variante:",
+      "control": "Controle"
+    },
+    "status": {
+      "planned": "Planejada",
+      "active": "Ativa",
+      "completed": "Concluída",
+      "paused": "Pausada"
+    },
+    "engagement": {
+      "title": "Engajamento ao longo do tempo",
+      "opens": "Aberturas",
+      "clicks": "Cliques",
+      "conversions": "Conversões"
+    },
+    "emails": {
+      "alt001": {
+        "subject": "Recém-chegado: {origin} {varietal} · SCA {sca_cup_score}",
+        "preheader": "Lote {process_method} de {origin} — {flavor_notes}. Acabou de chegar na Auctum Ledger.",
+        "body": "Olá, {contact_first_name}:\n\nNosso lote mais recente de {origin} acaba de chegar: {varietal}, processo {process_method}, com {sca_cup_score} pontos na escala SCA e notas de {flavor_notes}. Preço de {price_per_lb}/lb, com {available_lbs} lb disponíveis.\n\nVocê pode provar antes de decidir — as amostras são enviadas em 48 horas.\n\n— {sender_name}, Auctum Ledger",
+        "cta": "Ver este lote"
+      },
+      "alt002": {
+        "subject": "Prove {origin} antes do seu próximo cardápio",
+        "preheader": "Seu kit de amostras é enviado em 48 horas — inclui {origin} {varietal}.",
+        "body": "Olá, {contact_first_name}:\n\nProve antes de decidir. O kit de amostras de {origin} inclui o {varietal} ({process_method}, SCA {sca_cup_score}) que nossos Q graders pontuaram esta semana. Peça seu kit e enviaremos em 48 horas — gratuito para torradores qualificados.\n\n— {sender_name}, Auctum Ledger",
+        "cta": "Solicitar kit de amostras"
+      },
+      "alt003": {
+        "subject": "Como {peer_roaster_name} montou um cardápio em torno de {origin}",
+        "preheader": "Caso de sucesso: lotes {process_method} com pontuação SCA {sca_cup_score}+.",
+        "body": "Olá, {contact_first_name}:\n\nNa safra passada, {peer_roaster_name} adicionou nosso {origin} {varietal} ({process_method}) ao cardápio de origem única e esgotou as primeiras {order_volume_lbs} lb em {sell_through_weeks} semanas. Contamos o que fez dar certo, com os dados de degustação como respaldo.\n\n— {sender_name}, Auctum Ledger",
+        "cta": "Ler o caso de sucesso"
+      },
+      "alt004": {
+        "subject": "Restam {available_lbs} lb de {origin} {varietal}",
+        "preheader": "Chega em {arrival_date} — reserve antes que acabe.",
+        "body": "Olá, {contact_first_name}:\n\nUm aviso rápido de disponibilidade: restam apenas {available_lbs} lb do {origin} {varietal} ({process_method}, SCA {sca_cup_score}). O próximo contêiner chega em {arrival_date} e os lotes reservados são enviados primeiro. Reserve agora para garantir o preço de {price_per_lb}/lb.\n\n— {sender_name}, Auctum Ledger",
+        "cta": "Reservar meu lote"
+      },
+      "alt005": {
+        "subject": "Ainda comprando para {harvest_window}, {contact_first_name}?",
+        "preheader": "Conte o que você procura — encontramos os lotes certos para você.",
+        "body": "Olá, {contact_first_name}:\n\nPercebemos que o {origin} {varietal} não entrou no seu cardápio desta vez. Se seus planos para {harvest_window} ainda estiverem abertos, responda contando o que procura — processo, faixa de pontuação, orçamento — e encontramos os lotes certos. Ou agende 15 minutos com nossa equipe de sourcing.\n\n— {sender_name}, Auctum Ledger",
+        "cta": "Agendar uma conversa"
+      }
+    },
+    "emailFooter": {
+      "unsubscribe": "Cancelar inscrição",
+      "managePreferences": "Gerenciar preferências de e-mail",
+      "viewInBrowser": "Ver no navegador",
+      "sentBecause": "Você recebeu este e-mail porque {roaster_name} está cadastrado na Auctum Ledger.",
+      "postalAddress": "Auctum Ledger, 548 Market St, San Francisco, CA 94104, USA"
+    },
+    "sms": {
+      "alt002": {
+        "body": "Auctum Ledger: amostras de {origin} {varietal} (SCA {sca_cup_score}) em 48h. Peça seu kit: {sample_kit_url} Responda SAIR para cancelar."
+      },
+      "alt004": {
+        "body": "Auctum Ledger: restam apenas {available_lbs} lb de {origin} {varietal}. Reserve: {lot_url} Responda SAIR para cancelar."
+      }
+    },
+    "create": "Criar campanha",
+    "activate": "Ativar",
+    "retire": "Desativar"
+  },
+  "growth": {
+    "overline": "GROWTH INTELLIGENCE",
+    "title": "Growth Dashboard",
+    "subtitle": "Weekly transacting roasters, kit funnel, CAC by channel, churn hazard, K-factor, and campaign lift.",
+    "wtr": {
+      "title": "Weekly Transacting Roasters",
+      "description": "Trailing 7-day active roasters with 4-week moving average"
+    },
+    "kitFunnel": {
+      "title": "Kit Funnel",
+      "description": "Kit Sent → Delivered → Feedback → First Order"
+    },
+    "cacByChannel": {
+      "title": "CAC by Channel",
+      "description": "Blended customer acquisition cost vs. $500 ceiling"
+    },
+    "hazardHeatmap": {
+      "title": "Churn Hazard Heatmap",
+      "description": "Accounts by churn tier and segment"
+    },
+    "kFactor": {
+      "title": "K-Factor",
+      "description": "Viral referral coefficient vs. 0.6 target"
+    },
+    "campaignLift": {
+      "title": "Campaign Lift",
+      "description": "Bayesian posterior probability vs. control"
+    }
+  },
+  "errors": {
+    "title": "Algo deu errado",
+    "generic": "Desculpe, algo deu errado. Tente novamente.",
+    "unknown": "Ocorreu um erro inesperado. Tente novamente mais tarde.",
+    "codes": {
+      "AUTH_SESSION_EXPIRED": "Sua sessão expirou. Entre novamente.",
+      "AUTH_INVALID_CREDENTIALS": "E-mail ou senha incorretos.",
+      "AUTH_FORBIDDEN": "Você não tem permissão para realizar esta ação.",
+      "NET_OFFLINE": "Sem conexão. Verifique sua rede e tente novamente.",
+      "NET_TIMEOUT": "A solicitação expirou. Tente novamente.",
+      "RATE_LIMITED": "Muitas solicitações. Aguarde um momento e tente novamente.",
+      "VAL_REQUIRED_FIELD": "Preencha todos os campos obrigatórios.",
+      "VAL_INVALID_EMAIL": "Insira um endereço de e-mail válido.",
+      "VAL_BUDGET_RANGE": "O teto de orçamento deve estar entre {{min}} e {{max}}.",
+      "LOT_NOT_FOUND": "Lote não encontrado; ele pode não estar mais disponível.",
+      "LOT_OUT_OF_STOCK": "Este lote está esgotado.",
+      "ORDER_FAILED": "Não foi possível processar o pedido. Nenhuma cobrança foi feita; tente novamente.",
+      "PAYMENT_DECLINED": "O pagamento foi recusado. Tente outro método de pagamento.",
+      "IDEMPOTENCY_CONFLICT": "Detectamos um envio duplicado; seu pedido original não foi alterado.",
+      "SERVER_ERROR": "O servidor está indisponível no momento. Tente mais tarde."
+    },
+    "cta": {
+      "retry": "Tentar novamente",
+      "contactSupport": "Falar com o suporte",
+      "signInAgain": "Entrar novamente"
+    },
+    "insufficientInventory": "Estoque insuficiente para atender este pedido.",
+    "idempotencyConflict": "Envio duplicado detectado. Seu pedido original não foi alterado."
+  },
+  "roasters": {
+    "create": "Adicionar torrador",
+    "edit": "Editar torrador",
+    "anonymize": "Anonimizar torrador"
+  },
+  "orders": {
+    "create": "Criar pedido"
+  },
+  "sampleKits": {
+    "create": "Solicitar kit de amostras"
+  },
+  "rules": {
+    "create": "Criar regra"
+  },
+  "webhooks": {
+    "create": "Criar webhook"
+  },
+  "agent": {
+    "widgetTitle": "Auctum Coffee Agent",
+    "placeholder": "Ask the agent...",
+    "openChat": "Open coffee agent chat",
+    "closeChat": "Close coffee agent chat",
+    "settings": "Agent Settings",
+    "apiKey": "API Key",
+    "model": "Model",
+    "enabled": "Enabled",
+    "clearChat": "Clear conversation",
+    "emptyState": "Ask the agent about Vietnam coffee, sourcing, roasting, trade, or compliance.",
+    "comingSoon": "{{provider}} support is coming soon. Enable DeepSeek to use the agent now.",
+    "missingKey": "Please add an API key in the agent settings.",
+    "send": "Enviar mensagem",
+    "error": "Error: {{message}}",
+    "status": {
+      "streaming": "Thinking..."
+    }
+  },
+"trust": {
+    "header": "PONTUAÇÃO DE CONFIANÇA",
+    "lastUpdated": "Última atualização",
+    "model": "modelo",
+    "evidence": "DOCUMENTOS ACEITOS",
+    "noEvidence": "Ainda não há documentos aceitos. Envie evidências para construir confiança.",
+    "documentType": "Tipo de documento",
+    "uploadPrompt": "Solte o arquivo ou clique para carregar",
+    "uploadHint": "Relatório SCA, contrato ou recibo de armazém",
+    "uploadButton": "Carregar documento",
+    "takePhoto": "Tirar foto",
+    "chooseFile": "Escolher da galeria",
+    "preview": "Pré-visualização",
+    "documentPreview": "Pré-visualização do documento",
+    "noPreview": "Sem pré-visualização",
+    "reviewTitle": "Revisar campos extraídos",
+    "documentId": "Documento",
+    "acceptAndLink": "Aceitar e vincular ao lote",
+    "rejectReason": "Motivo do rejeição",
+    "rejectPlaceholder": "Digite o motivo da rejeição...",
+    "confirmReject": "Confirmar rejeição",
+    "criticalFieldWarning": "Campo crítico — deve ser confirmado antes de aceitar",
+    "table": {
+      "trust": "CONFIANÇA"
+    }
+  },
+  "referrals": {
+    "overline": "INDICAÇÕES",
+    "title": "Indicações",
+    "subtitle": "Gerencie seu programa de indicações. Rastreie convites, recompensas e compartilhe seu código único.",
+    "deliveryCardTitle": "Envie um Kit, Ganhe Crédito",
+    "deliveryCardBody": "Conhece um torreador que ainda compra por PDFs? Envie um kit real — inclui folhas de pontuação. Você ganha $150 em crédito de torra quando a primeira compra for entregue.",
+    "yourLink": "Seu link de indicação",
+    "copyLink": "Copiar link de indicação",
+    "yourCode": "Código de indicação",
+    "openLink": "Abrir link",
+    "shareTitle": "Link de indicação do Auctum Ledger",
+    "shareText": "Confira esta indicação de kit de amostras do Auctum Ledger",
+    "copyError": "Falha ao copiar link",
+    "rewardReferrer": "Você recebe",
+    "roastCredit": "crédito de torra",
+    "rewardReferee": "Eles recebem",
+    "offFirstOrder": "de desconto na primeira compra",
+    "freeKit": "kit de amostras grátis",
+    "simulateQualify": "[simular qualificar]",
+    "qualifyNote": "A qualificação de indicação é impulsionada pela entrega da primeira compra do referrer.",
+    "codeSection": "Seu Código de Indicação",
+    "viewAllCodes": "Ver todos os códigos",
+    "noCode": "Carregando…",
+    "referralsList": "Seus Indicados",
+    "empty": "Ainda não há indicações. Compartilhe seu código para começar.",
+    "ledgerTitle": "Livro Razão de Recompensas do Auctum Ledger",
+    "ledgerEmpty": "Ainda não há entradas de recompensas.",
+    "allCodesTitle": "Todos os Códigos de Indicação",
+    "codeStatus": "Status",
+    "anonymous": "Anônimo",
+    "detailTitle": "Detalhe de Indicação",
+    "orderConfirmationTitle": "Envie um Kit — Ganhe Crédito de Torra",
+    "detail": {
+      "refCode": "Código de indicação",
+      "status": "Status",
+      "channel": "Canal",
+      "referredAt": "Indicado em",
+      "funnel": "Progresso do funil",
+      "reward": "Recompensa contabilizada"
+    },
+    "stats": {
+      "invitesSent": "Convites enviados",
+      "qualified": "Qualificados",
+      "kFactor": "K-factor",
+      "earned": "Créditos ganhos"
+    },
+    "status": {
+      "invited": "Convidado",
+      "clicked": "Clicado",
+      "signed_up": "Registrado",
+      "kit_requested": "Kit solicitado",
+      "kit_delivered": "Kit entregue",
+      "feedback_submitted": "Feedback enviado",
+      "first_order_delivered": "Primeiro pedido entregue",
+      "qualified": "Qualificado",
+      "clawed_back": "Reembolsado"
+    },
+    "statusShort": {
+      "invited": "Convidado",
+      "clicked": "Clicado",
+      "signed_up": "Registrado",
+      "kit_requested": "Kit solicitado",
+      "kit_delivered": "Kit entregue",
+      "feedback_submitted": "Feedback",
+      "first_order_delivered": "1º pedido",
+      "qualified": "Qualificado",
+      "clawed_back": "Reembolsado"
+    },
+    "tier": {
+      "copper": {
+        "label": "Catador",
+        "description": "0–2 indicações qualificadas"
+      },
+      "greenBuyer": {
+        "label": "Comprador Verde",
+        "description": "3–5 indicações qualificadas"
+      },
+      "ledgerCircle": {
+        "label": "Círculo Ledger",
+        "description": "6+ indicações qualificadas"
+      }
+    },
+    "channel": {
+      "invite_link": "Link de convite",
+      "qr_sticker": "Adesivo QR",
+      "email_share": "Email",
+      "instagram_dm": "DM do Instagram",
+      "event_badge": "Crachá de evento",
+      "code_entry": "Entrada de código"
+    },
+    "reviewQueue": {
+      "title": "Fila de Revisão",
+      "noPending": "Não há indicações pendentes",
+      "pendingReferral": "Indicação pendente",
+      "reviewRequired": "Revisão necessária",
+      "reviewReason": "Razão da revisão",
+      "decision": {
+        "qualify": "Qualificar",
+        "decline": "Recusar",
+        "review": "Revisar"
+      },
+      "reasons": {
+        "selfReferral": "Auto-indicação",
+        "identityGraphMatch": "Coincidência de identidade detectada",
+        "floorNotMet": "Mínimo do primeiro pedido não atingido",
+        "velocityExceeded": "Limite de velocidade excedido",
+        "ringDetected": "Anel de indicações mutuas detectado",
+        "missingBusinessRegistration": "Falta registro comercial ou ID fiscal do referrer",
+        "notFound": "Não foi possível encontrar o referidor ou o referido"
+      }
+    },
+    "rewardType": {
+      "referrerCredit": "Crédito para quem indica",
+      "refereeDiscount": "Desconto para o indicado"
+    },
+    "rewardStatus": {
+      "pending": "Pendente",
+      "posted": "Contabilizado",
+      "clawed_back": "Reembolsado"
+    }
+  },
+  "curriculum": {
+    "title": "Curriculum",
+    "overline": "CURRICULUM LEDGER",
+    "subtitle": "Master coffee quality, compliance, finance, and logistics through region-specific learning tracks.",
+    "tabs": {
+      "overview": "Visão geral",
+      "lessons": "Aulas",
+      "progress": "Progresso"
+    },
+    "noProgress": "No progress recorded yet for this module.",
+    "trackHeader": {
+      "author": "Autor",
+      "region": "Região",
+      "prerequisites": "Pré-requisitos",
+      "milestoneBadge": "Insígnia de marco",
+      "lessonCompletion": "Aulas concluídas",
+      "moduleStatus": "Status do módulo",
+      "trustScoreBoost": "Aumento de pontuação de confiança"
+    },
+    "tracks": {
+      "quality": "Quality",
+      "compliance": "Compliance",
+      "finance": "Finance",
+      "logistics": "Logistics"
+    },
+    "trackDesc": {
+      "quality": "Sensory calibration, cupping protocols, and Q-grader skills.",
+      "compliance": "EUDR traceability, customs clearance, and phytosanitary requirements.",
+      "finance": "Farm budgets, True Price Floor, and futures market literacy.",
+      "logistics": "Post-harvest handling, storage, and shipping logistics."
+    },
+    "moduleCount_one": "{{count}} módulo",
+    "moduleCount_many": "{{count}} módulos",
+    "moduleCount_other": "{{count}} módulos",
+    "progress": {
+      "notStarted": "Not started",
+      "inProgress": "In progress",
+      "completed": "Completed",
+      "locked": "Locked"
+    },
+    "viewTrack": "View Track",
+    "noTrack": "No track found",
+    "noModule": "Module not found.",
+    "lessonControls": {
+      "markComplete": "Mark Complete",
+      "review": "Review",
+      "completed": "Completed",
+      "completedMessage": "Module complete — ready for review.",
+      "completeModule": "Complete Module"
+    },
+    "ariaLabel": {
+      "courseTabs": "Course tabs",
+      "markLessonComplete": "Mark {{lesson}} as complete",
+      "reviewModule": "Review module",
+      "lessonComplete": "{{lesson}} completed",
+      "completeModule": "Complete module"
+    },
+    "authoring": {
+      "title": "Curriculum Author",
+      "topicLabel": "Topic / Description",
+      "topicPlaceholder": "Describe the module you want to generate...",
+      "trackLabel": "Track",
+      "levelLabel": "Level",
+      "regionLabel": "Region",
+      "generateBtn": "Generate with AI",
+      "saveBtn": "Save Module",
+      "cancelBtn": "Cancel",
+      "outlineLabel": "Module Outline",
+      "contentLabel": "Lesson Content",
+      "quizLabel": "Quiz Questions",
+      "generated": "AI-Generated Content",
+      "editMode": "Editing",
+      "saveSuccess": "Module saved successfully",
+      "saveError": "Failed to save module"
+    }
+  }
+}

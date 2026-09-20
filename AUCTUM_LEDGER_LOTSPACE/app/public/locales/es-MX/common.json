@@ -1,0 +1,91 @@
+{
+  "appName": "Auctum Ledger",
+  "tagline": "Origen verificado. Precio verdadero.",
+  "nav": {
+    "dashboard": "Panel",
+    "catalog": "Catálogo",
+    "campaigns": "Campañas",
+    "orders": "Pedidos",
+    "accounts": "Cuentas",
+    "analytics": "Analítica",
+    "settings": "Configuración",
+    "help": "Ayuda",
+    "reservations": "Reservas",
+    "sampleKits": "Kits de muestra",
+    "automationRules": "Reglas de automatización",
+    "webhooks": "Webhooks",
+    "growth": "Growth",
+    "referrals": "Referidos"
+  },
+  "actions": {
+    "refresh": "Refresh"
+  },
+  "buttons": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "retry": "Reintentar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "submit": "Enviar",
+    "search": "Buscar",
+    "apply": "Aplicar",
+    "download": "Descargar",
+    "share": "Compartir",
+    "clearAll": "Borrar todo",
+    "saveView": "Guardar vista",
+    "resetFilters": "Restablecer filtros",
+    "loadMore": "Cargar más",
+    "copied": "Copiado",
+    "copy": "Copiar"
+  },
+  "states": {
+    "loading": "Cargando…",
+    "loadingLots": "Cargando lotes…",
+    "empty": "Aún no hay nada aquí",
+    "offline": "Sin conexión"
+  },
+  "labels": {
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "new": "Nuevo",
+    "optional": "Opcional",
+    "required": "Obligatorio",
+    "all": "Todos",
+    "none": "Ninguno",
+    "yes": "Sí",
+    "no": "No",
+    "viewDetails": "Ver detalhes",
+    "lastUpdated": "Última actualización",
+    "comingSoon": "Próximamente"
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "en-US": "English (US)",
+    "zh-CN": "简体中文",
+    "es-MX": "Español (México)",
+    "pt-BR": "Português (Brasil)",
+    "vi-VN": "Tiếng Việt",
+    "de-DE": "Deutsch",
+    "fr-FR": "Français"
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido principal",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "budgetCeilingSlider": "Control deslizante de techo de presupuesto",
+    "minCupScoreSlider": "Control deslizante de puntaje de taza mínimo"
+  },
+  "units": {
+    "perLb": "/lb",
+    "lbs": "lb",
+    "kg": "kg"
+  },
+  "meta": {
+    "title": "Auctum Ledger — Mercado de Café Verde Verificado",
+    "description": "Explore café verde verificado por origen, proceso y puntaje de taza SCA. Muestras en 48 horas."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "title": "Navigateur d'origines",
+  "sourcingObjective": "Objectif d'approvisionnement",
+  "goals": {
+    "baseline": {
+      "label": "Approvisionnement équilibré",
+      "description": "Approche standard équilibrant qualité, coût et durabilité"
+    },
+    "costOptimized": {
+      "label": "Optimisation des coûts",
+      "description": "Maximisation des marges par des prix agressifs"
+    },
+    "qualityFirst": {
+      "label": "Qualité en premier",
+      "description": "Privilégier les meilleurs scores de dégustation pour les lignes premium"
+    },
+    "sustainability": {
+      "label": "Champion ESG",
+      "description": "Maximiser les indicateurs de durabilité et d'approvisionnement éthique"
+    },
+    "supplyChain": {
+      "label": "Chaîne d'approvisionnement optimisée",
+      "description": "Focalisation sur l'efficacité logistique et la livraison prévisible"
+    }
+  },
+  "filters": {
+    "budgetCeiling": "Plafond budgétaire",
+    "includeOverBudget": "Inclure les lots hors budget",
+    "sortBy": "Trier par",
+    "sort": {
+      "weighted": "Pondéré",
+      "price": "Prix",
+      "cup": "Score de dégustation",
+      "esg": "ESG"
+    },
+    "searchLabel": "Rechercher des lots",
+    "searchPlaceholder": "Rechercher par origine, variétal, notes sensorielles…",
+    "showAdvanced": "Afficher les filtres avancés",
+    "hideAdvanced": "Masquer les filtres avancés",
+    "origins": "Origines",
+    "processing": "Transformation",
+    "minCupScore": "Score de dégustation minimum"
+  },
+  "lot": {
+    "overBudget": "Hors budget",
+    "compositeScore": "Score composite",
+    "sourceThisLot": "Approvisionner ce lot",
+    "scoreLabel": "Score SCA",
+    "rankLabel": "Rang",
+    "flavorNotesLabel": "Notes sensorielles",
+    "metricBars": {
+      "cost": "Coût",
+      "quality": "Qualité",
+      "esg": "ESG",
+      "logistics": "Logistique"
+    },
+    "lbsAvailable_one": "{{count}} lb disponible",
+    "lbsAvailable_many": "{{count}} lbs disponibles",
+    "lbsAvailable_other": "{{count}} lbs disponibles",
+    "moreFlavorNotes_one": "+{{count}} note",
+    "moreFlavorNotes_many": "+{{count}} notes",
+    "moreFlavorNotes_other": "+{{count}} notes"
+  },
+  "attributes": {
+    "origin": "Origine",
+    "varietal": "Variétal",
+    "processMethod": "Méthode de transformation",
+    "elevation": "Altitude",
+    "cupScore": "Score de dégustation",
+    "scaCupScore": "Score de dégustation SCA",
+    "pricePerLb": "Prix par lb",
+    "harvestWindow": "Fenêtre de récolte",
+    "estimatedArrival": "Arrivée estimée",
+    "availableQuantity": "Quantité disponible",
+    "certifications": "Certifications"
+  },
+  "processMethods": {
+    "washed": "Lavé",
+    "natural": "Naturel",
+    "honey": "Miel",
+    "anaerobic": "Anaérobie"
+  },
+  "certifications": {
+    "fairTrade": "Certifié Commerce Équitable",
+    "organic": "Certifié Bio",
+    "rainforestAlliance": "Rainforest Alliance"
+  },
+  "origins": {
+    "ethiopia": "Éthiopie",
+    "colombia": "Colombie",
+    "brazil": "Brésil",
+    "guatemala": "Guatemala",
+    "kenya": "Kenya",
+    "sumatra": "Sumatra",
+    "yirgacheffe": "Yirgacheffe",
+    "huila": "Huila",
+    "costaRica": "Costa Rica",
+    "peru": "Pérou"
+  },
+  "empty": {
+    "title": "Aucun lot ne correspond à vos critères",
+    "cta": "Supprimer tous les filtres"
+  },
+  "resultsSummary_one": "{{lotCount}} lot de {{originCount}} origines",
+  "resultsSummary_many": "{{lotCount}} lots de {{originCount}} origines",
+  "resultsSummary_other": "{{lotCount}} lots de {{originCount}} origines",
+  "table": {
+    "trust": "CONFIANCE"
+  }
+}

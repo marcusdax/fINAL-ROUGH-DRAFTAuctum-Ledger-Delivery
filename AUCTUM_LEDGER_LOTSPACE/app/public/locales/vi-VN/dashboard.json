@@ -1,0 +1,40 @@
+{
+  "title": "Bảng điều khiển",
+  "subtitle": "Đường dẫn mua hàng và doanh thu của bạn tại một nét nhìn",
+  "metrics": {
+    "totalSent": "Tổng số đã gửi",
+    "openRate": "Tỷ lệ mở",
+    "clickRate": "Tỷ lệ nhấp",
+    "conversionRate": "Tỷ lệ chuyển đổi",
+    "ltv": "Giá trị vòng đời khách hàng (LTV)",
+    "cac": "Chi phí thu hút khách hàng (CAC)",
+    "paybackPeriod": "Thời gian hoàn vốn",
+    "churnRisk": "Rủi ro rời bỏ",
+    "avgOrderValue": "Giá trị đơn hàng trung bình",
+    "revenue": "Doanh thu",
+    "orders": "Đơn hàng"
+  },
+  "charts": {
+    "engagementOverTime": "Tương tác theo thời gian",
+    "openRatePct": "Tỷ lệ mở %",
+    "clickRatePct": "Tỷ lệ nhấp %",
+    "conversionRatePct": "Tỷ lệ chuyển đổi %"
+  },
+  "benchmark": {
+    "title": "So sánh với đối thủ",
+    "topQuartile": "Tốc độ hàng đầu",
+    "median": "Trung bình",
+    "yourPercentile": "Phần trăm của bạn"
+  },
+  "time": {
+    "last7Days": "7 ngày qua",
+    "last30Days": "30 ngày qua",
+    "last90Days": "90 ngày qua",
+    "customRange": "Khoảng thời gian tùy chỉnh"
+  },
+  "empty": {
+    "title": "Chưa có đủ dữ liệu",
+    "description": "Khi đơn hàng và chiến dịch của bạn bắt đầu hoạt động, các chỉ số sẽ hiện ra ở đây.",
+    "cta": "Kết nối dữ liệu của bạn"
+  }
+}

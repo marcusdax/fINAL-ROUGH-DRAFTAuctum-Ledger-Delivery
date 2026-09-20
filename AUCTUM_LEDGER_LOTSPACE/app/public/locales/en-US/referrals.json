@@ -1,0 +1,121 @@
+{
+  "overline": "REFERRALS",
+  "title": "Referrals",
+  "subtitle": "Manage your referral program. Track invites, rewards, and share your unique code.",
+  "deliveryCardTitle": "Send a Kit, Get Credit",
+  "deliveryCardBody": "Know a roaster still buying off PDFs? Send them a real kit — scoresheets included. You get $150 of roast credit when their first order lands.",
+  "yourLink": "Your referral link",
+  "copyLink": "Copy referral link",
+  "yourCode": "Referral code",
+  "openLink": "Open link",
+  "shareTitle": "Referral link from Auctum Ledger",
+  "shareText": "Check out this sample kit referral from Auctum Ledger",
+  "copyError": "Failed to copy link",
+  "rewardReferrer": "You get",
+  "roastCredit": "roast credit",
+  "rewardReferee": "They get",
+  "offFirstOrder": "off first order",
+  "freeKit": "free sample kit",
+  "simulateQualify": "[simulate qualify]",
+  "qualifyNote": "Referral qualification is driven by referee first-order delivery.",
+  "codeSection": "Your Referral Code",
+  "viewAllCodes": "View all codes",
+  "noCode": "Loading…",
+  "referralsList": "Your Referrals",
+  "empty": "No referrals yet. Share your code to get started.",
+  "ledgerTitle": "Reward Ledger",
+  "ledgerEmpty": "No reward entries yet.",
+  "allCodesTitle": "All Referral Codes",
+  "codeStatus": "Status",
+  "anonymous": "Anonymous",
+  "detailTitle": "Referral Detail",
+  "orderConfirmationTitle": "Send a Kit — Get Roast Credit",
+  "detail": {
+    "refCode": "Referral code",
+    "status": "Status",
+    "channel": "Channel",
+    "referredAt": "Referred at",
+    "funnel": "Funnel Progress",
+    "reward": "Reward posted"
+  },
+  "stats": {
+    "invitesSent": "Invites sent",
+    "qualified": "Qualified",
+    "kFactor": "K-factor",
+    "earned": "Earned credits"
+  },
+  "status": {
+    "invited": "Invited",
+    "clicked": "Clicked",
+    "signed_up": "Signed Up",
+    "kit_requested": "Kit Requested",
+    "kit_delivered": "Kit Delivered",
+    "feedback_submitted": "Feedback Submitted",
+    "first_order_delivered": "First Order Delivered",
+    "qualified": "Qualified",
+    "clawed_back": "Clawed Back"
+  },
+  "statusShort": {
+    "invited": "Invited",
+    "clicked": "Clicked",
+    "signed_up": "Signed Up",
+    "kit_requested": "Kit Requested",
+    "kit_delivered": "Kit Delivered",
+    "feedback_submitted": "Feedback",
+    "first_order_delivered": "1st Order",
+    "qualified": "Qualified",
+    "clawed_back": "Clawed Back"
+  },
+  "tier": {
+    "copper": {
+      "label": "Cupper",
+      "description": "0–2 qualified referrals"
+    },
+    "greenBuyer": {
+      "label": "Green Buyer",
+      "description": "3–5 qualified referrals"
+    },
+    "ledgerCircle": {
+      "label": "Ledger Circle",
+      "description": "6+ qualified referrals"
+    }
+  },
+  "channel": {
+    "invite_link": "Invite link",
+    "qr_sticker": "QR sticker",
+    "email_share": "Email",
+    "instagram_dm": "Instagram DM",
+    "event_badge": "Event badge",
+    "code_entry": "Code entry"
+  },
+  "reviewQueue": {
+    "title": "Review Queue",
+    "noPending": "No pending referrals",
+    "pendingReferral": "Pending referral",
+    "reviewRequired": "Review required",
+    "reviewReason": "Review reason",
+    "decision": {
+      "qualify": "Qualify",
+      "decline": "Decline",
+      "review": "Review"
+    },
+    "reasons": {
+      "selfReferral": "Self-referral",
+      "identityGraphMatch": "Identity graph match detected",
+      "floorNotMet": "First paid order floor not met",
+      "velocityExceeded": "Velocity limit exceeded",
+      "ringDetected": "Mutual referral ring detected",
+      "missingBusinessRegistration": "Referee missing business registration or tax ID",
+      "notFound": "Referrer or referee not found"
+    }
+  },
+  "rewardType": {
+    "referrerCredit": "Referrer Credit",
+    "refereeDiscount": "Referee Discount"
+  },
+  "rewardStatus": {
+    "pending": "Pending",
+    "posted": "Posted",
+    "clawed_back": "Clawed Back"
+  }
+}

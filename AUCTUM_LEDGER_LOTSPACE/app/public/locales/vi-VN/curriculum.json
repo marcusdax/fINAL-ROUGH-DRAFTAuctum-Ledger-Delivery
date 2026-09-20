@@ -1,0 +1,76 @@
+{
+  "title": "Chương Trình Học",
+  "overline": "CURRICULUM LEDGER",
+  "subtitle": "Làm chủ chất lượng cà phê, tuân thủ, tài chính và logistics qua các lộ trình học tập theo vùng.",
+  "tabs": {
+    "overview": "Tổng quan",
+    "lessons": "Bài học",
+    "progress": "Tiến độ"
+  },
+  "noProgress": "Chưa có tiến độ nào được ghi nhận cho mô-đun này.",
+  "trackHeader": {
+    "author": "Tác giả",
+    "region": "Vùng",
+    "prerequisites": "Điều kiện tiên quyết",
+    "milestoneBadge": "Huy Hiệu Cột Mốc",
+    "lessonCompletion": "Hoàn Thành Bài Học",
+    "moduleStatus": "Trạng Thái Mô-đun",
+    "trustScoreBoost": "Tăng Điểm Tin Cậy"
+  },
+  "tracks": {
+    "quality": "Chất Lượng",
+    "compliance": "Tuân Thủ",
+    "finance": "Tài Chính",
+    "logistics": "Logistics"
+  },
+  "trackDesc": {
+    "quality": "Hiệu chuẩn cảm giác, giao thức nếm thử và kỹ năng Q-grader.",
+    "compliance": "Khả năng truy xuất EUDR, thông quan hải quan và yêu cầu thực vật kiểm dịch.",
+    "finance": "Ngân sách nông trại, Sàn Giá Thực Tế và hiểu biết thị trường kỳ hạn.",
+    "logistics": "Xử lý sau thu hoạch, lưu kho và logistics vận chuyển."
+  },
+  "moduleCount_one": "{{count}} mô-đun",
+  "moduleCount_many": "{{count}} mô-đun",
+  "moduleCount_other": "{{count}} mô-đun",
+  "progress": {
+    "notStarted": "Chưa bắt đầu",
+    "inProgress": "Đang tiến hành",
+    "completed": "Đã hoàn thành",
+    "locked": "Đã khóa"
+  },
+  "viewTrack": "Xem Lộ Trình",
+  "noTrack": "Không tìm thấy lộ trình",
+  "noModule": "Không tìm thấy mô-đun.",
+  "lessonControls": {
+    "markComplete": "Đánh Dấu Hoàn Thành",
+    "review": "Xem Xét",
+    "completed": "Đã Hoàn Thành",
+    "completedMessage": "Mô-đun hoàn thành — sẵn sàng xem xét.",
+    "completeModule": "Hoàn Thành Mô-đun"
+  },
+  "ariaLabel": {
+    "courseTabs": "Các tab khóa học",
+    "markLessonComplete": "Đánh dấu {{lesson}} là hoàn thành",
+    "reviewModule": "Xem xét mô-đun",
+    "lessonComplete": "{{lesson}} đã hoàn thành",
+    "completeModule": "Hoàn thành mô-đun"
+  },
+  "authoring": {
+    "title": "Tác Giả Chương Trình",
+    "topicLabel": "Chủ Đề / Mô Tả",
+    "topicPlaceholder": "Mô tả mô-đun bạn muốn tạo...",
+    "trackLabel": "Lộ Trình",
+    "levelLabel": "Cấp Độ",
+    "regionLabel": "Vùng",
+    "generateBtn": "Tạo Với AI",
+    "saveBtn": "Lưu Mô-đun",
+    "cancelBtn": "Hủy",
+    "outlineLabel": "Đại Cương Mô-đun",
+    "contentLabel": "Nội Dung Bài Học",
+    "quizLabel": "Câu Hỏi Trắc Nghiệm",
+    "generated": "Nội Dung Được Tạo Bởi AI",
+    "editMode": "Đang Chỉnh Sửa",
+    "saveSuccess": "Lưu mô-đun thành công",
+    "saveError": "Lưu mô-đun thất bại"
+  }
+}

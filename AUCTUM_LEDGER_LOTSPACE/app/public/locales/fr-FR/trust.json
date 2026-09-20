@@ -1,0 +1,26 @@
+{
+  "header": "SCORE DE CONFIANCE",
+  "lastUpdated": "Dernière mise à jour",
+  "model": "modèle",
+  "evidence": "DOCUMENTS ACCEPTÉS",
+  "noEvidence": "Aucun document accepté pour l'instant. Téléchargez des preuves pour construire la confiance.",
+  "documentType": "Type de document",
+  "uploadPrompt": "Déposez le fichier ici ou cliquez pour télécharger",
+  "uploadHint": "Rapport SCA, contrat ou reçu d'entrepôt",
+  "uploadButton": "Télécharger le document",
+  "takePhoto": "Prendre une photo",
+  "chooseFile": "Choisir dans la galerie",
+  "preview": "Aperçu",
+  "documentPreview": "Aperçu du document",
+  "noPreview": "Pas d'aperçu disponible",
+  "reviewTitle": "Vérifier les champs extraits",
+  "documentId": "Document",
+  "acceptAndLink": "Accepter et Lier au Lot",
+  "rejectReason": "Raison du Rejet",
+  "rejectPlaceholder": "Entrez la raison du rejet...",
+  "confirmReject": "Confirmer le Rejet",
+  "criticalFieldWarning": "Champ critique — doit être confirmé avant d'accepter",
+  "table": {
+    "trust": "CONFIANCE"
+  }
+}

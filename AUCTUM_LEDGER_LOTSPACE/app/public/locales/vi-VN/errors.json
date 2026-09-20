@@ -1,0 +1,29 @@
+{
+  "title": "Đã có lỗi xảy ra",
+  "generic": "Xin lỗi, đã có lỗi xảy ra. Bạn vui lòng thử lại.",
+  "unknown": "Đã xảy ra lỗi không mong muốn. Vui lòng thử lại sau.",
+  "codes": {
+    "AUTH_SESSION_EXPIRED": "Phiên đăng nhập của bạn đã hết hạn. Vui lòng đăng nhập lại.",
+    "AUTH_INVALID_CREDENTIALS": "Email hoặc mật khẩu không đúng.",
+    "AUTH_FORBIDDEN": "Bạn không có quyền thực hiện hành động này.",
+    "NET_OFFLINE": "Bạn có vẻ đang ngoại tuyến. Kiểm tra kết nối và thử lại.",
+    "NET_TIMEOUT": "Yêu cầu đã hết thời gian chờ. Vui lòng thử lại.",
+    "RATE_LIMITED": "Quá nhiều yêu cầu. Vui lòng đợi một chút và thử lại.",
+    "VAL_REQUIRED_FIELD": "Vui lòng điền đầy đủ các trường bắt buộc.",
+    "VAL_INVALID_EMAIL": "Vui lòng nhập email hợp lệ.",
+    "VAL_BUDGET_RANGE": "Ngân sách tối đa phải nằm giữa {{min}} và {{max}}.",
+    "LOT_NOT_FOUND": "Không tìm thấy lô hàng này; nó có thể không còn khả dụng.",
+    "LOT_OUT_OF_STOCK": "Lô hàng này đã hết.",
+    "ORDER_FAILED": "Không thể xử lý đơn hàng của bạn. Không có bất kỳ khoản phụ cấp nào — vui lòng thử lại.",
+    "PAYMENT_DECLINED": "Thanh toán của bạn bị từ chối. Vui lòng thử phương thức thanh toán khác.",
+    "IDEMPOTENCY_CONFLICT": "Phát hiện nộp trùng lặp. Đơn hàng gốc của bạn không thay đổi.",
+    "SERVER_ERROR": "Máy chủ của chúng tôi đang bận rộn lúc này. Vui lòng thử lại sau."
+  },
+  "cta": {
+    "retry": "Thử lại",
+    "contactSupport": "Liên hệ hỗ trợ",
+    "signInAgain": "Đăng nhập lại"
+  },
+  "insufficientInventory": "Kho không đủ để hoàn thành đơn hàng này.",
+  "idempotencyConflict": "Phát hiện nộp trùng lặp. Đơn hàng gốc của bạn không thay đổi."
+}

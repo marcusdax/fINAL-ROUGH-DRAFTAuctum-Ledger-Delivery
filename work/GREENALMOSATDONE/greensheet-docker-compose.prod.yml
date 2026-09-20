@@ -1,0 +1,10 @@
+services:
+  proxy:
+    image: ghcr.io/marcusdax/greensheet-proxy:latest
+    pull_policy: always
+    restart: always
+
+  app:
+    image: ghcr.io/marcusdax/greensheet-app:latest
+    pull_policy: always
+    restart: always

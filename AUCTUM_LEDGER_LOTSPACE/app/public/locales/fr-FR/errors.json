@@ -1,0 +1,29 @@
+{
+  "title": "Quelque chose s'est mal passé",
+  "generic": "Désolé, quelque chose s'est mal passé. Veuillez réessayer.",
+  "unknown": "Une erreur inattendue s'est produite. Veuillez réessayer plus tard.",
+  "codes": {
+    "AUTH_SESSION_EXPIRED": "Votre session a expiré. Veuillez vous reconnecter.",
+    "AUTH_INVALID_CREDENTIALS": "E-mail ou mot de passe incorrect.",
+    "AUTH_FORBIDDEN": "Vous n'avez pas l'autorisation d'effectuer cette action.",
+    "NET_OFFLINE": "Vous semblez hors ligne. Vérifiez votre connexion et réessayez.",
+    "NET_TIMEOUT": "La demande a expiré. Veuillez réessayer.",
+    "RATE_LIMITED": "Trop de demandes. Veuillez patienter un instant et réessayer.",
+    "VAL_REQUIRED_FIELD": "Veuillez remplir tous les champs obligatoires.",
+    "VAL_INVALID_EMAIL": "Veuillez entrer une adresse e-mail valide.",
+    "VAL_BUDGET_RANGE": "Le plafond budgétaire doit être entre {{min}} et {{max}}.",
+    "LOT_NOT_FOUND": "Ce lot n'a pas été trouvé. Il n'est peut-être plus disponible.",
+    "LOT_OUT_OF_STOCK": "Ce lot est en rupture de stock.",
+    "ORDER_FAILED": "Votre commande n'a pas pu être traitée. Aucun frais n'a été facturé — veuillez réessayer.",
+    "PAYMENT_DECLINED": "Votre paiement a été refusé. Veuillez essayer un autre mode de paiement.",
+    "IDEMPOTENCY_CONFLICT": "Soumission en double détectée. Votre commande originale est inchangée.",
+    "SERVER_ERROR": "Nos serveurs sont occupés en ce moment. Veuillez réessayer sous peu."
+  },
+  "cta": {
+    "retry": "Réessayer",
+    "contactSupport": "Contacter le support",
+    "signInAgain": "Se reconnecter"
+  },
+  "insufficientInventory": "Inventaire insuffisant pour exécuter cette commande.",
+  "idempotencyConflict": "Soumission en double détectée. Votre commande originale est inchangée."
+}

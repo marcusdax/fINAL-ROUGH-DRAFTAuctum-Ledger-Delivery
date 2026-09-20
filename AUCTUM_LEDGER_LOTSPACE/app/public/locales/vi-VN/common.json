@@ -1,0 +1,91 @@
+{
+  "appName": "Auctum Ledger",
+  "tagline": "Cà phê hạt thô, mua sắm uy tín.",
+  "nav": {
+    "dashboard": "Bảng điều khiển",
+    "catalog": "Danh mục",
+    "campaigns": "Chiến dịch",
+    "orders": "Đơn hàng",
+    "accounts": "Tài khoản",
+    "analytics": "Phân tích",
+    "settings": "Cài đặt",
+    "help": "Trợ giúp",
+    "reservations": "Đặt trước",
+    "sampleKits": "Bộ mẫu",
+    "automationRules": "Quy tắc tự động hóa",
+    "webhooks": "Webhook",
+    "growth": "Growth",
+    "referrals": "Chương trình giới thiệu"
+  },
+  "actions": {
+    "refresh": "Làm mới"
+  },
+  "buttons": {
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "delete": "Xóa",
+    "edit": "Sửa",
+    "close": "Đóng",
+    "confirm": "Xác nhận",
+    "retry": "Thử lại",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "submit": "Gửi",
+    "search": "Tìm kiếm",
+    "apply": "Áp dụng",
+    "download": "Tải xuống",
+    "share": "Chia sẻ",
+    "clearAll": "Xóa tất cả",
+    "saveView": "Lưu khung hiển thị",
+    "resetFilters": "Đặt lại bộ lọc",
+    "loadMore": "Tải thêm",
+    "copied": "Đã sao chép",
+    "copy": "Sao chép"
+  },
+  "states": {
+    "loading": "Đang tải…",
+    "loadingLots": "Đang tải lô hàng…",
+    "empty": "Chưa có gì ở đây",
+    "offline": "Bạn đang ngoại tuyến"
+  },
+  "labels": {
+    "active": "Hoạt động",
+    "inactive": "Không hoạt động",
+    "new": "Mới",
+    "optional": "Tùy chọn",
+    "required": "Bắt buộc",
+    "all": "Tất cả",
+    "none": "Không có",
+    "yes": "Có",
+    "no": "Không",
+    "viewDetails": "Xem chi tiết",
+    "lastUpdated": "Cập nhật lần cuối",
+    "comingSoon": "Sắp ra mắt"
+  },
+  "languageSwitcher": {
+    "label": "Ngôn ngữ",
+    "en-US": "English (US)",
+    "zh-CN": "简体中文",
+    "es-MX": "Español (México)",
+    "pt-BR": "Português (Brasil)",
+    "vi-VN": "Tiếng Việt",
+    "de-DE": "Deutsch",
+    "fr-FR": "Français"
+  },
+  "a11y": {
+    "skipToContent": "Bỏ qua đến nội dung chính",
+    "openMenu": "Mở menu",
+    "closeMenu": "Đóng menu",
+    "budgetCeilingSlider": "Thanh trượt ngân sách tối đa",
+    "minCupScoreSlider": "Thanh trượt điểm cúp tối thiểu"
+  },
+  "units": {
+    "perLb": "/lb",
+    "lbs": "lbs",
+    "kg": "kg"
+  },
+  "meta": {
+    "title": "Auctum Ledger — Mua sắm cà phê hạt thô đặc túi",
+    "description": "Mua cà phê hạt thô đặc túi có thể truy xuất nguồn gốc theo vùng sản xuất, phương pháp xử lý và điểm cúp SCA. Mẫu được gửi trong 48 giờ."
+  }
+}

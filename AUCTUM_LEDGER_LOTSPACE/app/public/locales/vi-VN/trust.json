@@ -1,0 +1,26 @@
+{
+  "header": "ĐIỂM TIN CẪN",
+  "lastUpdated": "Cập nhật lần cuối",
+  "model": "mô hình",
+  "evidence": "TÀI LIỆU ĐÃ CHẤP NHẬN",
+  "noEvidence": "Chưa có tài liệu nào được chấp nhận. Tải lên bằng chứng để xây dựng niềm tin.",
+  "documentType": "Loại tài liệu",
+  "uploadPrompt": "Kéo tệp vào đây hoặc nhấn để tải lên",
+  "uploadHint": "In báo SCA, hợp đồng hoặc biên lai kho",
+  "uploadButton": "Tải lên tài liệu",
+  "takePhoto": "Chụp ảnh",
+  "chooseFile": "Chọn từ thư viện",
+  "preview": "Xem trước",
+  "documentPreview": "Xem trước tài liệu",
+  "noPreview": "Không có bản xem trước",
+  "reviewTitle": "Kiểm tra trường đã trích xuất",
+  "documentId": "Tài liệu",
+  "acceptAndLink": "Chấp nhận & liên kết đến lô hàng",
+  "rejectReason": "Lý do từ chối",
+  "rejectPlaceholder": "Nhập lý do từ chối...",
+  "confirmReject": "Xác nhận từ chối",
+  "criticalFieldWarning": "Trường quan trọng — phải xác nhận trước khi chấp nhận",
+  "table": {
+    "trust": "TIN CẪN"
+  }
+}

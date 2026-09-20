@@ -1,0 +1,121 @@
+{
+  "overline": "CHƯƠNG TRÌNH GIỚI THIỆU",
+  "title": "Chương trình giới thiệu",
+  "subtitle": "Quản lý chương trình giới thiệu của bạn. Theo dõi lời mời, phần thưởng và chia sẻ mã duy nhất của bạn.",
+  "deliveryCardTitle": "Gửi Bộ Mẫu, Nhận Tín Dụng",
+  "deliveryCardBody": "Bạn có biết một người pha cà phê vẫn mua qua PDF? Gửi cho họ một bộ mẫu thật — bao gồm bảng điểm. Bạn nhận được $150 tín dụng rang khi đơn hàng đầu tiên của họ đến.",
+  "yourLink": "Liên kết giới thiệu của bạn",
+  "copyLink": "Sao chép liên kết giới thiệu",
+  "yourCode": "Mã giới thiệu",
+  "openLink": "Mở liên kết",
+  "shareTitle": "Liên kết giới thiệu từ Auctum Ledger",
+  "shareText": "Xem liên kết giới thiệu bộ mẫu này từ Auctum Ledger",
+  "copyError": "Không thể sao chép liên kết",
+  "rewardReferrer": "Bạn nhận được",
+  "roastCredit": "tín dụng rang",
+  "rewardReferee": "Họ nhận được",
+  "offFirstOrder": "giảm giá đơn đầu tiên",
+  "freeKit": "bộ mẫu miễn phí",
+  "simulateQualify": "[mô phỏng đủ điều kiện]",
+  "qualifyNote": "Điều kiện giới thiệu được điều khiển bởi việc giao đơn hàng đầu tiên của người được giới thiệu.",
+  "codeSection": "Mã Giới Thiệu Của Bạn",
+  "viewAllCodes": "Xem tất cả mã",
+  "noCode": "Đang tải…",
+  "referralsList": "Giới Thiệu Của Bạn",
+  "empty": "Chưa có giới thiệu nào. Chia sẻ mã của bạn để bắt đầu.",
+  "ledgerTitle": "Sổ Cái Phần Thưởng Auctum Ledger",
+  "ledgerEmpty": "Chưa có mục phần thưởng nào.",
+  "allCodesTitle": "Tất Cả Mã Giới Thiệu",
+  "codeStatus": "Trạng thái",
+  "anonymous": "Ẩn danh",
+  "detailTitle": "Chi Tiết Giới Thiệu",
+  "orderConfirmationTitle": "Gửi Bộ Mẫu — Nhận Tín Dụng Rang",
+  "detail": {
+    "refCode": "Mã giới thiệu",
+    "status": "Trạng thái",
+    "channel": "Kênh",
+    "referredAt": "Đã giới thiệu vào",
+    "funnel": "Tiến Trình Phễu",
+    "reward": "Phần thưởng đã ghi"
+  },
+  "stats": {
+    "invitesSent": "Lời mời đã gửi",
+    "qualified": "Đủ điều kiện",
+    "kFactor": "Hệ số K",
+    "earned": "Tín dụng đã kiếm được"
+  },
+  "status": {
+    "invited": "Đã mời",
+    "clicked": "Đã nhấp",
+    "signed_up": "Đã đăng ký",
+    "kit_requested": "Đã yêu cầu bộ mẫu",
+    "kit_delivered": "Bộ mẫu đã giao",
+    "feedback_submitted": "Đã gửi phản hồi",
+    "first_order_delivered": "Đơn Hàng Đầu Tiên Đã Giao",
+    "qualified": "Đủ điều kiện",
+    "clawed_back": "Đã thu hồi"
+  },
+  "statusShort": {
+    "invited": "Đã mời",
+    "clicked": "Đã nhấp",
+    "signed_up": "Đã đăng ký",
+    "kit_requested": "Yêu Cầu Bộ Mẫu",
+    "kit_delivered": "Bộ Mẫu Đã Giao",
+    "feedback_submitted": "Phản Hồi",
+    "first_order_delivered": "Đơn 1",
+    "qualified": "Đủ Điều Kiện",
+    "clawed_back": "Đã Thu Hồi"
+  },
+  "tier": {
+    "copper": {
+      "label": "Người Nếm",
+      "description": "0–2 giới thiệu đủ điều kiện"
+    },
+    "greenBuyer": {
+      "label": "Người Mua Xanh",
+      "description": "3–5 giới thiệu đủ điều kiện"
+    },
+    "ledgerCircle": {
+      "label": "Hội Ledger",
+      "description": "6+ giới thiệu đủ điều kiện"
+    }
+  },
+  "channel": {
+    "invite_link": "Liên kết mời",
+    "qr_sticker": "Nhãn dán QR",
+    "email_share": "Email",
+    "instagram_dm": "Tin nhắn Instagram",
+    "event_badge": "Huy hiệu sự kiện",
+    "code_entry": "Nhập mã"
+  },
+  "reviewQueue": {
+    "title": "Hàng Đợi Xem Xét",
+    "noPending": "Không có giới thiệu đang chờ",
+    "pendingReferral": "Giới thiệu đang chờ",
+    "reviewRequired": "Cần xem xét",
+    "reviewReason": "Lý do xem xét",
+    "decision": {
+      "qualify": "Đủ Điều Kiện",
+      "decline": "Từ Chối",
+      "review": "Xem Xét"
+    },
+    "reasons": {
+      "selfReferral": "Tự giới thiệu",
+      "identityGraphMatch": "Phát hiện khớp đồ thị danh tính",
+      "floorNotMet": "Sàn đơn hàng trả tiền đầu tiên không đạt",
+      "velocityExceeded": "Vượt quá giới hạn tốc độ",
+      "ringDetected": "Phát hiện vòng giới thiệu lẫn nhau",
+      "missingBusinessRegistration": "Người được giới thiệu thiếu đăng ký kinh doanh hoặc mã số thuế",
+      "notFound": "Không tìm thấy người giới thiệu hoặc người được giới thiệu"
+    }
+  },
+  "rewardType": {
+    "referrerCredit": "Tín Dụng Người Giới Thiệu",
+    "refereeDiscount": "Giảm Giá Người Được Giới Thiệu"
+  },
+  "rewardStatus": {
+    "pending": "Đang Chờ",
+    "posted": "Đã Ghi",
+    "clawed_back": "Đã Thu Hồi"
+  }
+}

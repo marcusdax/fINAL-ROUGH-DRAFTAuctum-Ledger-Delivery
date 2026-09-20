@@ -1,0 +1,53 @@
+name: Deploy to Production
+
+on:
+  workflow_run:
+    workflows: ['Docker Build & Push']
+    types:
+      - completed
+    branches:
+      - main
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: marcusdax/auctum-ledger
+
+jobs:
+  deploy:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+      deployments: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Log deployment start
+        run: |
+          echo "Auctum Ledger production images ready:"
+          echo "  - Frontend: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-app:latest"
+          echo "  - Backend:  ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-proxy:latest"
+          echo ""
+          echo "Deployment instructions (see deploy.sh):"
+          echo "1. SSH into the production server"
+          echo "2. ./deploy.sh production"
+          echo "   (pulls GHCR images, runs migrations, restarts services)"
+          echo "3. Verify: docker compose ps && curl http://localhost:3001/health"
+
+      - name: Create GitHub Deployment record
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const deployment = await github.rest.repos.createDeployment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'main',
+              environment: 'production',
+              required_contexts: [],
+              auto_merge: false,
+              description: 'Auctum Ledger production deployment from Docker build'
+            });
+            console.log('Deployment created:', deployment.data.id);

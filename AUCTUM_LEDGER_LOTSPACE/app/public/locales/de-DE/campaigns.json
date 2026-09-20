@@ -1,0 +1,125 @@
+{
+  "title": "Kampagnen",
+  "subtitle": "Automatisierung und A/B-Tests für Ihre Pflegesequenzen",
+  "sequence": {
+    "nurtureTimeline": "Pflege-Zeitachse",
+    "step": "Schritt {{number}}",
+    "conversion": "{{rate}}% Konversion",
+    "activeRollout": "Aktive Rollout",
+    "summaryView": "Zusammenfassungsansicht",
+    "detailedView": "Detailansicht",
+    "noObjective": "Kein Ziel definiert",
+    "campaignDetails": "Kampagnen-Details",
+    "emailsSent_one": "{{count}} E-Mail gesendet",
+    "emailsSent_other": "{{count}} E-Mails gesendet"
+  },
+  "steps": {
+    "alt001": {
+      "label": "Neue Ernte vorstellen",
+      "objective": "Neu angekommene Lose bei neuen Interessenten vorstellen und die erste Interaktion erzielen",
+      "timing": "Tag 0"
+    },
+    "alt002": {
+      "label": "Musterkit-Einladung",
+      "objective": "Röster zum Kuppen vor dem Kauf einladen und die Entscheidungshürde senken",
+      "timing": "Tag 3"
+    },
+    "alt003": {
+      "label": "Röster Fallstudie",
+      "objective": "Vertrauen durch eine Peer-Röster-Geschichte aufbauen, gestützt durch Kupdaten",
+      "timing": "Tag 7"
+    },
+    "alt004": {
+      "label": "Verfügbarkeitsaktualisierung",
+      "objective": "Restbestand und Ankunftsdaten teilen, um eine legitime Dringlichkeit zu schaffen",
+      "timing": "Tag 12"
+    },
+    "alt005": {
+      "label": "Wiederaufnahme und Feedback",
+      "objective": "Stille Interessenten reaktivieren und ihre Beschaffungspläne erfahren",
+      "timing": "Tag 21"
+    }
+  },
+  "metrics": {
+    "totalSent": "Gesamt gesendet",
+    "openRate": "Öffnungsrate",
+    "clickRate": "Klickraten",
+    "conversionRate": "Konversionsrate"
+  },
+  "abTest": {
+    "title": "Multivariate Leistungsanalyse",
+    "variant": "Variante",
+    "sampleSize": "Stichprobengröße",
+    "conversions": "Konversionen",
+    "conversionRate": "Konversionsrate",
+    "confidenceInterval": "95% Glaubwürdiges Intervall",
+    "probBest": "Wahrscheinlichkeit beste",
+    "status": "Status",
+    "winner": "Gewinner",
+    "testing": "Test läuft",
+    "switchVariant": "Variante wechseln:",
+    "control": "Kontrolle"
+  },
+  "status": {
+    "planned": "Geplant",
+    "active": "Aktiv",
+    "completed": "Abgeschlossen",
+    "paused": "Pausiert"
+  },
+  "engagement": {
+    "title": "Engagement im Verlauf",
+    "opens": "Öffnungen",
+    "clicks": "Klicks",
+    "conversions": "Konversionen"
+  },
+  "emails": {
+    "alt001": {
+      "subject": "Neu in Lager: {origin} {varietal} · SCA {sca_cup_score}",
+      "preheader": "{process_method}-Los aus {origin} — {flavor_notes}. Gerade bei Auctum Ledger eingetroffen.",
+      "body": "Sehr geehrte(r) {contact_first_name},\n\nUnser neuestes {origin}-Los ist gerade eingetroffen: {varietal}, {process_method}-Verfahren, mit {sca_cup_score} Punkten auf der SCA-Skala, mit Geschmackshinweisen von {flavor_notes}. Es ist für {price_per_lb}/lb geprisst mit {available_lbs} lbs verfügbar.\n\nSie können es käufen, bevor Sie sich festlegen — Proben werden innerhalb von 48 Stunden versendet.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Dieses Los ansehen"
+    },
+    "alt002": {
+      "subject": "Kuppen Sie {origin} vor Ihrem nächsten Menüzyklus",
+      "preheader": "Ihr Musterkit wird in 48 Stunden versendet — {origin} {varietal} enthalten.",
+      "body": "Sehr geehrte(r) {contact_first_name},\n\nKosten Sie, bevor Sie sich festlegen. Das Musterkit von {origin} enthält {varietal} ({process_method}, SCA {sca_cup_score}), das unsere Q Grader diese Woche bewertet haben. Fordern Sie Ihr Kit an und wir senden es innerhalb von 48 Stunden — kostenlos für qualifizierte Röster.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Musterkit anfordern"
+    },
+    "alt003": {
+      "subject": "Wie {peer_roaster_name} ein Menü um {origin} gebaut hat",
+      "preheader": "Eine Röster-Fallstudie: {process_method}-Lose mit SCA {sca_cup_score}+.",
+      "body": "Sehr geehrte(r) {contact_first_name},\n\nLetzte Saison hat {peer_roaster_name} unser {origin} {varietal} ({process_method}) in sein Einzelherkunfts-Menü aufgenommen — und die ersten {order_volume_lbs} lbs innerhalb von {sell_through_weeks} Wochen verkauft. Hier ist, was funktioniert hat, mit den Kupdaten dahinter.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Fallstudie lesen"
+    },
+    "alt004": {
+      "subject": "Nur noch {available_lbs} lbs von {origin} {varietal} übrig",
+      "preheader": "Ankunft am {arrival_date} — reservieren, bevor es weg ist.",
+      "body": "Hallo {contact_first_name},\n\nEine schnelle Verfügbarkeitsaktualisierung: Es sind nur noch {available_lbs} lbs von {origin} {varietal} ({process_method}, SCA {sca_cup_score}) übrig. Der nächste Container kommt am {arrival_date} an, und reservierte Lose werden zuerst versendet. Reservieren Sie jetzt, um {price_per_lb}/lb zu sichern.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Ihr Los reservieren"
+    },
+    "alt005": {
+      "subject": "Noch auf der Suche nach {harvest_window}, {contact_first_name}?",
+      "preheader": "Sagen Sie uns, worum es geht — wir finden die richtigen Lose.",
+      "body": "Hallo {contact_first_name},\n\nWir haben bemerkt, dass {origin} {varietal} diesmal nicht in Ihr Menü gelangt ist. Wenn Ihre Pläne für {harvest_window} noch offen sind, antworten Sie mit, worum es geht — Verfahren, Punktewerte-Bereich, Budget — und wir finden die passenden Lose. Oder buchen Sie 15 Minuten mit unserem Beschaffungsteam.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Beschaffungsgespräch buchen"
+    }
+  },
+  "emailFooter": {
+    "unsubscribe": "Abmelden",
+    "managePreferences": "E-Mail-Einstellungen verwalten",
+    "viewInBrowser": "Im Browser ansehen",
+    "sentBecause": "Sie haben diese E-Mail erhalten, weil {roaster_name} bei Auctum Ledger registriert ist.",
+    "postalAddress": "Auctum Ledger, 548 Market St, San Francisco, CA 94104, USA"
+  },
+  "sms": {
+    "alt002": {
+      "body": "Auctum Ledger: {origin} {varietal} (SCA {sca_cup_score}) Proben verschicken in 48 Std. Holen Sie sich Ihr Kit: {sample_kit_url} Antwort STOP zum Abmelden."
+    },
+    "alt004": {
+      "body": "Auctum Ledger: nur noch {available_lbs} lbs von {origin} {varietal}. Reservieren: {lot_url} Antwort STOP zum Abmelden."
+    }
+  },
+  "create": "Kampagne erstellen",
+  "activate": "Aktivieren",
+  "retire": "Ruhen stellen"
+}

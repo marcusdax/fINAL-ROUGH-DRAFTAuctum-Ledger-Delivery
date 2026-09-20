@@ -1,0 +1,64 @@
+name: i18n
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'localization/**'
+      - 'app/public/locales/**'
+      - 'app/src/**'
+      - 'scripts/**'
+      - '.github/workflows/i18n.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'localization/**'
+      - 'app/public/locales/**'
+      - 'app/src/**'
+      - 'scripts/**'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check JSON validity of all locale files
+        run: |
+          python3 - <<'EOF'
+          import glob, json, sys
+          files = sorted(glob.glob('localization/02-locale-files/*.json')) + \
+                  sorted(glob.glob('app/public/locales/*/*.json'))
+          if not files:
+              sys.exit('No locale files found')
+          for path in files:
+              with open(path, encoding='utf-8') as fh:
+                  json.load(fh)
+              print(f'OK  {path}')
+          EOF
+
+      - name: Validate locale files (parity, plurals, placeholders, brand tokens)
+        run: |
+          python3 scripts/i18n_audit.py \
+            --source localization/02-locale-files/en-US.json \
+            localization/02-locale-files/*.json
+
+      - name: Audit i18n key usage vs locale files
+        run: |
+          python3 scripts/validate_locale_files.py \
+            --src app/src \
+            --locale localization/02-locale-files/en-US.json \
+            --locale localization/02-locale-files/zh-CN.json \
+            --locale localization/02-locale-files/es-MX.json \
+            --locale localization/02-locale-files/pt-BR.json \
+            --locale localization/02-locale-files/vi-VN.json \
+            --locale localization/02-locale-files/de-DE.json \
+            --locale localization/02-locale-files/fr-FR.json

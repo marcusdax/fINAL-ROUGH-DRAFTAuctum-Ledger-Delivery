@@ -1,0 +1,29 @@
+{
+  "title": "出错了",
+  "generic": "抱歉，出了点问题，请重试。",
+  "unknown": "发生未知错误，请稍后重试。",
+  "codes": {
+    "AUTH_SESSION_EXPIRED": "登录已过期，请重新登录。",
+    "AUTH_INVALID_CREDENTIALS": "邮箱或密码不正确。",
+    "AUTH_FORBIDDEN": "您没有权限执行此操作。",
+    "NET_OFFLINE": "网络连接已断开，请检查网络后重试。",
+    "NET_TIMEOUT": "请求超时，请重试。",
+    "RATE_LIMITED": "操作过于频繁，请稍后再试。",
+    "VAL_REQUIRED_FIELD": "请填写所有必填字段。",
+    "VAL_INVALID_EMAIL": "请输入有效的邮箱地址。",
+    "VAL_BUDGET_RANGE": "预算上限需在 {{min}} 至 {{max}} 之间。",
+    "LOT_NOT_FOUND": "未找到该批次，可能已下架。",
+    "LOT_OUT_OF_STOCK": "该批次已售罄。",
+    "ORDER_FAILED": "订单提交失败，未产生扣款，请重试。",
+    "PAYMENT_DECLINED": "支付被拒绝，请更换支付方式。",
+    "IDEMPOTENCY_CONFLICT": "检测到重复提交，您的原订单未受影响。",
+    "SERVER_ERROR": "服务器繁忙，请稍后重试。"
+  },
+  "cta": {
+    "retry": "重试",
+    "contactSupport": "联系客服",
+    "signInAgain": "重新登录"
+  },
+  "insufficientInventory": "库存不足，无法完成此订单。",
+  "idempotencyConflict": "检测到重复提交，您的原始订单未更改。"
+}
