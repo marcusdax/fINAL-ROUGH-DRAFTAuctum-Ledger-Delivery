@@ -1,0 +1,29 @@
+{
+  "title": "Etwas ist schiefgelaufen",
+  "generic": "Entschuldigung, etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+  "unknown": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
+  "codes": {
+    "AUTH_SESSION_EXPIRED": "Ihre Sitzung ist abgelaufen. Bitte melden Sie sich erneut an.",
+    "AUTH_INVALID_CREDENTIALS": "E-Mail oder Passwort falsch.",
+    "AUTH_FORBIDDEN": "Sie haben keine Berechtigung, diese Aktion auszuführen.",
+    "NET_OFFLINE": "Sie scheinen offline zu sein. Überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+    "NET_TIMEOUT": "Die Anfrage hat das Zeitlimit überschritten. Bitte versuchen Sie es erneut.",
+    "RATE_LIMITED": "Zu viele Anfragen. Bitte warten Sie einen Moment und versuchen Sie es erneut.",
+    "VAL_REQUIRED_FIELD": "Bitte füllen Sie alle Pflichtfelder aus.",
+    "VAL_INVALID_EMAIL": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "VAL_BUDGET_RANGE": "Der Budgetdeckel muss zwischen {{min}} und {{max}} liegen.",
+    "LOT_NOT_FOUND": "Dieses Los wurde nicht gefunden. Es ist möglicherweise nicht mehr verfügbar.",
+    "LOT_OUT_OF_STOCK": "Dieses Los ist ausverkauft.",
+    "ORDER_FAILED": "Ihre Bestellung konnte nicht verarbeitet werden. Es wurde nichts abgebucht — bitte versuchen Sie es erneut.",
+    "PAYMENT_DECLINED": "Ihre Zahlung wurde abgelehnt. Bitte versuchen Sie eine andere Zahlungsmethode.",
+    "IDEMPOTENCY_CONFLICT": "Duplikatvorschlag erkannt. Ihre ursprüngliche Bestellung ist unverändert.",
+    "SERVER_ERROR": "Unser Server ist gerade ausgelastet. Bitte versuchen Sie es in Kürze erneut."
+  },
+  "cta": {
+    "retry": "Erneut versuchen",
+    "contactSupport": "Support kontaktieren",
+    "signInAgain": "Erneut anmelden"
+  },
+  "insufficientInventory": "Nicht genügend Lagerbestand, um diese Bestellung zu erfüllen.",
+  "idempotencyConflict": "Duplikatvorschlag erkannt. Ihre ursprüngliche Bestellung ist unverändert."
+}

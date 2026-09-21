@@ -1,0 +1,76 @@
+{
+  "title": "Programme",
+  "overline": "CURRICULUM LEDGER",
+  "subtitle": "Maîtrisez la qualité du café, la conformité, la finance et la logistique grâce à des parcours d'apprentissage spécifiques par région.",
+  "tabs": {
+    "overview": "Aperçu",
+    "lessons": "Leçons",
+    "progress": "Progression"
+  },
+  "noProgress": "Aucune progression enregistrée pour ce module.",
+  "trackHeader": {
+    "author": "Auteur",
+    "region": "Région",
+    "prerequisites": "Prérequis",
+    "milestoneBadge": "Badge d'Étape",
+    "lessonCompletion": "Achèvement des Leçons",
+    "moduleStatus": "Statut du Module",
+    "trustScoreBoost": "Boost du Score de Confiance"
+  },
+  "tracks": {
+    "quality": "Qualité",
+    "compliance": "Conformité",
+    "finance": "Finance",
+    "logistics": "Logistique"
+  },
+  "trackDesc": {
+    "quality": "Calibration sensorielle, protocoles de dégustation et compétences de Q-Grader.",
+    "compliance": "Traçabilité EUDR, dédouanement et exigences phytosanitaires.",
+    "finance": "Budgets d'exploitation, True Price Floor et culture des marchés à terme.",
+    "logistics": "Manutention post-récolte, stockage et logistique d'expédition."
+  },
+  "moduleCount_one": "{{count}} module",
+  "moduleCount_many": "{{count}} modules",
+  "moduleCount_other": "{{count}} modules",
+  "progress": {
+    "notStarted": "Non commencé",
+    "inProgress": "En cours",
+    "completed": "Terminé",
+    "locked": "Verrouillé"
+  },
+  "viewTrack": "Voir le Parcours",
+  "noTrack": "Aucun parcours trouvé",
+  "noModule": "Module non trouvé.",
+  "lessonControls": {
+    "markComplete": "Marquer Terminé",
+    "review": "Réviser",
+    "completed": "Terminé",
+    "completedMessage": "Module terminé — prêt pour la révision.",
+    "completeModule": "Terminer le Module"
+  },
+  "ariaLabel": {
+    "courseTabs": "Onglets du cours",
+    "markLessonComplete": "Marquer {{lesson}} comme terminé",
+    "reviewModule": "Réviser le module",
+    "lessonComplete": "{{lesson}} terminé",
+    "completeModule": "Terminer le module"
+  },
+  "authoring": {
+    "title": "Auteur du Programme",
+    "topicLabel": "Sujet / Description",
+    "topicPlaceholder": "Décrivez le module que vous voulez générer...",
+    "trackLabel": "Parcours",
+    "levelLabel": "Niveau",
+    "regionLabel": "Région",
+    "generateBtn": "Générer avec l'IA",
+    "saveBtn": "Enregistrer le Module",
+    "cancelBtn": "Annuler",
+    "outlineLabel": "Plan du Module",
+    "contentLabel": "Contenu de la Leçon",
+    "quizLabel": "Questions du Quiz",
+    "generated": "Contenu Généré par l'IA",
+    "editMode": "Édition",
+    "saveSuccess": "Module enregistré avec succès",
+    "saveError": "Échec de l'enregistrement du module"
+  }
+}

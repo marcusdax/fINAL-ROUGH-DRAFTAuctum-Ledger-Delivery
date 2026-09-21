@@ -1,0 +1,26 @@
+{
+  "header": "TRUST SCORE",
+  "lastUpdated": "Last updated",
+  "model": "model",
+  "evidence": "ACCEPTED DOCUMENTS",
+  "noEvidence": "No accepted documents yet. Upload evidence to build trust.",
+  "documentType": "Document Type",
+  "uploadPrompt": "Drop file here or click to upload",
+  "uploadHint": "SCA report, contract, or warehouse receipt",
+  "uploadButton": "Upload document",
+  "takePhoto": "Take Photo",
+  "chooseFile": "Choose from Gallery",
+  "preview": "Preview",
+  "documentPreview": "Document preview",
+  "noPreview": "No preview available",
+  "reviewTitle": "Review Extracted Fields",
+  "documentId": "Document",
+  "acceptAndLink": "Accept & Link to Lot",
+  "rejectReason": "Rejection Reason",
+  "rejectPlaceholder": "Enter reason for rejection...",
+  "confirmReject": "Confirm Rejection",
+  "criticalFieldWarning": "Critical field — must confirm before accepting",
+  "table": {
+    "trust": "TRUST"
+  }
+}

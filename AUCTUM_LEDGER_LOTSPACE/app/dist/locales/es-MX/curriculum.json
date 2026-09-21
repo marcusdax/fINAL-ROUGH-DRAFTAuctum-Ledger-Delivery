@@ -1,0 +1,76 @@
+{
+  "title": "Currículum",
+  "overline": "CURRICULUM LEDGER",
+  "subtitle": "Domina la calidad del café, el cumplimiento, las finanzas y la logística a través de rutas de aprendizaje específicas por región.",
+  "tabs": {
+    "overview": "Resumen",
+    "lessons": "Lecciones",
+    "progress": "Progreso"
+  },
+  "noProgress": "Aún no hay progreso registrado para este módulo.",
+  "trackHeader": {
+    "author": "Autor",
+    "region": "Región",
+    "prerequisites": "Requisitos previos",
+    "milestoneBadge": "Insignia de hito",
+    "lessonCompletion": "Lecciones completadas",
+    "moduleStatus": "Estado del módulo",
+    "trustScoreBoost": "Aumento de puntuación de confianza"
+  },
+  "tracks": {
+    "quality": "Calidad",
+    "compliance": "Cumplimiento",
+    "finance": "Finanzas",
+    "logistics": "Logística"
+  },
+  "trackDesc": {
+    "quality": "Calibración sensorial, protocolos de cata y habilidades de Q-Grader.",
+    "compliance": "Trazabilidad EUDR, despacho aduanero y requisitos fitosanitarios.",
+    "finance": "Presupuestos de finca, Precio Mínimo Real y alfabetización en mercados de futuros.",
+    "logistics": "Manejo post-cosecha, almacenamiento y logística de envío."
+  },
+  "moduleCount_one": "{{count}} módulo",
+  "moduleCount_many": "{{count}} módulos",
+  "moduleCount_other": "{{count}} módulos",
+  "progress": {
+    "notStarted": "No iniciado",
+    "inProgress": "En progreso",
+    "completed": "Completado",
+    "locked": "Bloqueado"
+  },
+  "viewTrack": "Ver ruta",
+  "noTrack": "No se encontró ruta",
+  "noModule": "Módulo no encontrado.",
+  "lessonControls": {
+    "markComplete": "Marcar como completado",
+    "review": "Revisar",
+    "completed": "Completado",
+    "completedMessage": "Módulo completado — listo para revisión.",
+    "completeModule": "Completar módulo"
+  },
+  "ariaLabel": {
+    "courseTabs": "Pestañas del curso",
+    "markLessonComplete": "Marcar {{lesson}} como completado",
+    "reviewModule": "Revisar módulo",
+    "lessonComplete": "{{lesson}} completado",
+    "completeModule": "Completar módulo"
+  },
+  "authoring": {
+    "title": "Autor del Currículum",
+    "topicLabel": "Tema / Descripción",
+    "topicPlaceholder": "Describe el módulo que quieres generar...",
+    "trackLabel": "Ruta",
+    "levelLabel": "Nivel",
+    "regionLabel": "Región",
+    "generateBtn": "Generar con IA",
+    "saveBtn": "Guardar módulo",
+    "cancelBtn": "Cancelar",
+    "outlineLabel": "Esquema del módulo",
+    "contentLabel": "Contenido de la lección",
+    "quizLabel": "Preguntas del cuestionario",
+    "generated": "Contenido generado por IA",
+    "editMode": "Editando",
+    "saveSuccess": "Módulo guardado exitosamente",
+    "saveError": "Error al guardar el módulo"
+  }
+}

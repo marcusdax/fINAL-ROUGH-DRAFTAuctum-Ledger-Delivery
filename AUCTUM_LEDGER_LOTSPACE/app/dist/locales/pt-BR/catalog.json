@@ -1,0 +1,110 @@
+{
+  "title": "Navegador de origens",
+  "sourcingObjective": "Objetivo de compra",
+  "goals": {
+    "baseline": {
+      "label": "Compra equilibrada",
+      "description": "Abordagem padrão que equilibra qualidade, custo e sustentabilidade"
+    },
+    "costOptimized": {
+      "label": "Otimização de custos",
+      "description": "Máxima expansão de margem com preços mais agressivos"
+    },
+    "qualityFirst": {
+      "label": "Qualidade em primeiro lugar",
+      "description": "Priorizar as maiores pontuações de xícara para linhas premium"
+    },
+    "sustainability": {
+      "label": "Campeão de ESG",
+      "description": "Maximizar as métricas de sustentabilidade e compra ética"
+    },
+    "supplyChain": {
+      "label": "Cadeia de suprimentos otimizada",
+      "description": "Foco em eficiência logística e entregas previsíveis"
+    }
+  },
+  "filters": {
+    "budgetCeiling": "Teto de orçamento",
+    "includeOverBudget": "Incluir lotes fora do orçamento",
+    "sortBy": "Ordenar por",
+    "sort": {
+      "weighted": "Ponderado",
+      "price": "Preço",
+      "cup": "Pontuação de xícara",
+      "esg": "ESG"
+    },
+    "searchLabel": "Buscar lotes",
+    "searchPlaceholder": "Buscar por origem, variedade, notas sensoriais…",
+    "showAdvanced": "Mostrar filtros avançados",
+    "hideAdvanced": "Ocultar filtros avançados",
+    "origins": "Origens",
+    "processing": "Processamento",
+    "minCupScore": "Pontuação mínima de xícara"
+  },
+  "lot": {
+    "overBudget": "Fora do orçamento",
+    "compositeScore": "Pontuação composta",
+    "sourceThisLot": "Comprar este lote",
+    "scoreLabel": "Pontuação SCA",
+    "rankLabel": "Posição",
+    "flavorNotesLabel": "Notas sensoriais",
+    "metricBars": {
+      "cost": "Custo",
+      "quality": "Qualidade",
+      "esg": "ESG",
+      "logistics": "Logística"
+    },
+    "lbsAvailable_one": "{{count}} lb disponível",
+    "lbsAvailable_many": "{{count}} lbs disponíveis",
+    "lbsAvailable_other": "{{count}} lbs disponíveis",
+    "moreFlavorNotes_one": "+{{count}} nota a mais",
+    "moreFlavorNotes_many": "+{{count}} notas a mais",
+    "moreFlavorNotes_other": "+{{count}} notas a mais"
+  },
+  "attributes": {
+    "origin": "Origem",
+    "varietal": "Variedade",
+    "processMethod": "Método de processamento",
+    "elevation": "Altitude",
+    "cupScore": "Pontuação de xícara",
+    "scaCupScore": "Pontuação de xícara SCA",
+    "pricePerLb": "Preço por libra",
+    "harvestWindow": "Janela de safra",
+    "estimatedArrival": "Chegada estimada",
+    "availableQuantity": "Quantidade disponível",
+    "certifications": "Certificações"
+  },
+  "processMethods": {
+    "washed": "Lavado",
+    "natural": "Natural",
+    "honey": "Honey",
+    "anaerobic": "Anaeróbico"
+  },
+  "certifications": {
+    "fairTrade": "Certificação de Comércio Justo",
+    "organic": "Certificação orgânica",
+    "rainforestAlliance": "Rainforest Alliance"
+  },
+  "origins": {
+    "ethiopia": "Etiópia",
+    "colombia": "Colômbia",
+    "brazil": "Brasil",
+    "guatemala": "Guatemala",
+    "kenya": "Quênia",
+    "sumatra": "Sumatra",
+    "yirgacheffe": "Yirgacheffe",
+    "huila": "Huila",
+    "costaRica": "Costa Rica",
+    "peru": "Peru"
+  },
+  "empty": {
+    "title": "Nenhum lote corresponde aos seus critérios",
+    "cta": "Limpar todos os filtros"
+  },
+  "resultsSummary_one": "{{lotCount}} lote de {{originCount}} origens",
+  "resultsSummary_many": "{{lotCount}} lotes de {{originCount}} origens",
+  "resultsSummary_other": "{{lotCount}} lotes de {{originCount}} origens",
+  "table": {
+    "trust": "CONFIANÇA"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "header": "VERTRAUENSSCORE",
+  "lastUpdated": "Zuletzt aktualisiert",
+  "model": "Modell",
+  "evidence": "AKZEPTIERTE DOKUMENTE",
+  "noEvidence": "Noch keine akzeptierten Dokumente vorhanden. Laden Sie Nachweise hoch, um Vertrauen aufzubauen.",
+  "documentType": "Dokumenttyp",
+  "uploadPrompt": "Datei hier ablegen oder klicken, um hochzuladen",
+  "uploadHint": "SCA-Bericht, Vertrag oder Lagerbeleg",
+  "uploadButton": "Dokument hochladen",
+  "takePhoto": "Foto aufnehmen",
+  "chooseFile": "Aus Galerie wählen",
+  "preview": "Vorschau",
+  "documentPreview": "Dokumentvorschau",
+  "noPreview": "Keine Vorschau verfügbar",
+  "reviewTitle": "Extrahierte Felder überprüfen",
+  "documentId": "Dokument",
+  "acceptAndLink": "Akzeptieren & mit Los verknüpfen",
+  "rejectReason": "Ablehnungsgrund",
+  "rejectPlaceholder": "Grund für Ablehnung eingeben...",
+  "confirmReject": "Ablehnung bestätigen",
+  "criticalFieldWarning": "Kritisches Feld — muss vor der Annahme bestätigt werden",
+  "table": {
+    "trust": "VERTRAUEN"
+  }
+}

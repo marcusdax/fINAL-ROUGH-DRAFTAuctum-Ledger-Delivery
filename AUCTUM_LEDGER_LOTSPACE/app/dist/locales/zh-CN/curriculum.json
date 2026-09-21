@@ -1,0 +1,75 @@
+{
+  "title": "课程体系",
+  "overline": "CURRICULUM LEDGER",
+  "subtitle": "通过特定地区的学习路径，掌握咖啡品质、合规、金融和物流知识。",
+  "tabs": {
+    "overview": "概述",
+    "lessons": "课时",
+    "progress": "进度"
+  },
+  "noProgress": "该模块暂无进度记录。",
+  "trackHeader": {
+    "author": "作者",
+    "region": "地区",
+    "prerequisites": "先决条件",
+    "milestoneBadge": "里程碑徽章",
+    "lessonCompletion": "课时完成",
+    "moduleStatus": "模块状态",
+    "trustScoreBoost": "信任分加成"
+  },
+  "tracks": {
+    "quality": "品质",
+    "compliance": "合规",
+    "finance": "金融",
+    "logistics": "物流"
+  },
+  "trackDesc": {
+    "quality": "感官校准、杯测协议和 Q-Grader 技能。",
+    "compliance": "EUDR 可追溯性、海关通关和检疫要求。",
+    "finance": "农场预算、真实价格底线和期货市场知识。",
+    "logistics": "收获后处理、仓储和运输物流。"
+  },
+  "moduleCount_one": "{{count}} 模块",
+  "moduleCount_other": "{{count}} 模块",
+  "progress": {
+    "notStarted": "未开始",
+    "inProgress": "进行中",
+    "completed": "已完成",
+    "locked": "已锁定"
+  },
+  "viewTrack": "查看路径",
+  "noTrack": "未找到路径",
+  "noModule": "未找到模块。",
+  "lessonControls": {
+    "markComplete": "标记完成",
+    "review": "复习",
+    "completed": "已完成",
+    "completedMessage": "模块已完成 — 可供复习。",
+    "completeModule": "完成模块"
+  },
+  "ariaLabel": {
+    "courseTabs": "课程标签",
+    "markLessonComplete": "将 {{lesson}} 标记为完成",
+    "reviewModule": "复习模块",
+    "lessonComplete": "{{lesson}} 已完成",
+    "completeModule": "完成模块"
+  },
+  "authoring": {
+    "title": "课程创作",
+    "topicLabel": "主题 / 描述",
+    "topicPlaceholder": "描述您想要生成的模块...",
+    "trackLabel": "路径",
+    "levelLabel": "级别",
+    "regionLabel": "地区",
+    "generateBtn": "使用 AI 生成",
+    "saveBtn": "保存模块",
+    "cancelBtn": "取消",
+    "outlineLabel": "模块大纲",
+    "contentLabel": "课时内容",
+    "quizLabel": "测验题",
+    "generated": "AI 生成内容",
+    "editMode": "编辑中",
+    "saveSuccess": "模块保存成功",
+    "saveError": "保存模块失败"
+  }
+}

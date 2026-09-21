@@ -1,0 +1,126 @@
+{
+  "title": "Chiến dịch",
+  "subtitle": "Tự động hóa và thử nghiệm A/B cho các chuỗi chăm sóc khách hàng",
+  "sequence": {
+    "nurtureTimeline": "Dòng thời gian chăm sóc",
+    "step": "Bước {{number}}",
+    "conversion": "{{rate}}% chuyển đổi",
+    "activeRollout": "Đang triển khai",
+    "summaryView": "Chế độ tóm tắt",
+    "detailedView": "Chế độ chi tiết",
+    "noObjective": "Chưa định nghĩa mục tiêu",
+    "campaignDetails": "Chi tiết chiến dịch",
+    "emailsSent_one": "Đã gửi {{count}} email",
+    "emailsSent_many": "Đã gửi {{count}} email",
+    "emailsSent_other": "Đã gửi {{count}} email"
+  },
+  "steps": {
+    "alt001": {
+      "label": "Giới thiệu vụ mùa mới",
+      "objective": "Giới thiệu các lô đã nhập kho mới nhất cho khách hàng tiềm năng và tạo cuộc tương tác đầu tiên",
+      "timing": "Ngày 0"
+    },
+    "alt002": {
+      "label": "Lời mời bộ mẫu",
+      "objective": "Mời các nhà pha cà phê nếm thử trước khi quyết định và hạ thấp rào cản lựa chọn",
+      "timing": "Ngày 3"
+    },
+    "alt003": {
+      "label": "Nghiên cứu trường hợp nhà pha cà phê",
+      "objective": "Xây dựng niềm tin thông qua câu chuyện của nhà pha cà phê đồng nghiệp, được chứng minh bởi dữ liệu nếm thử",
+      "timing": "Ngày 7"
+    },
+    "alt004": {
+      "label": "Cập nhật tình trạng có hàng",
+      "objective": "Chia sẻ tồn kho còn lại và thời gian dự kiến giao hàng để tạo cảm giác khẩn cấp hợp lý",
+      "timing": "Ngày 12"
+    },
+    "alt005": {
+      "label": "Tái tương tác và phản hồi",
+      "objective": "Kích hoạt lại những khách hàng chưa phản hồi và tìm hiểu kế hoạch mua hàng của họ",
+      "timing": "Ngày 21"
+    }
+  },
+  "metrics": {
+    "totalSent": "Tổng số đã gửi",
+    "openRate": "Tỉ lệ mở",
+    "clickRate": "Tỷ lệ nhấp",
+    "conversionRate": "Tỷ lệ chuyển đổi"
+  },
+  "abTest": {
+    "title": "Phân tích hiệu suất đa biến số",
+    "variant": "Biến thể",
+    "sampleSize": "Kích thước mẫu",
+    "conversions": "Chuyển đổi",
+    "conversionRate": "Tỷ lệ chuyển đổi",
+    "confidenceInterval": "Khoảng tin cậy 95%",
+    "probBest": "Xác suất tốt nhất",
+    "status": "Trạng thái",
+    "winner": "Người thắng",
+    "testing": "Đang thử nghiệm",
+    "switchVariant": "Chuyển biến thể:",
+    "control": "Mẫu điều khiển"
+  },
+  "status": {
+    "planned": "Đã lên kế hoạch",
+    "active": "Đang hoạt động",
+    "completed": "Đã hoàn thành",
+    "paused": "Tạm dừng"
+  },
+  "engagement": {
+    "title": "Tương tác theo thời gian",
+    "opens": "Lượt mở",
+    "clicks": "Lượt nhấp",
+    "conversions": "Chuyển đổi"
+  },
+  "emails": {
+    "alt001": {
+      "subject": "Hàng mới về: {origin} {varietal} · SCA {sca_cup_score}",
+      "preheader": "Lô {process_method} từ {origin} — {flavor_notes}. Vừa mới đến Auctum Ledger.",
+      "body": "Xin chào {contact_first_name},\n\nLô {origin} mới nhất vừa được nhập kho: {varietal}, quy trình {process_method}, đạt {sca_cup_score} điểm trên thang SCA, với hương vị {flavor_notes}. Được định giá {price_per_lb}/lb, còn {available_lbs} lbs có sẵn.\n\nBạn có thể tách cà phê trước khi quyết định — mẫu sẽ được gửi trong vòng 48 giờ.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Xem lô hàng này"
+    },
+    "alt002": {
+      "subject": "Nếm {origin} trước chu kỳ thực đơn kế tiếp",
+      "preheader": "Bộ mẫu của bạn sẽ được gửi trong 48 giờ — {origin} {varietal} bên trong.",
+      "body": "Xin chào {contact_first_name},\n\nBạn có thể tách cà phê trước khi quyết định. Bộ mẫu {origin} bao gồm {varietal} ({process_method}, SCA {sca_cup_score}) do Q Grader của chúng tôi đánh giá tuần này. Yêu cầu bộ mẫu của bạn và chúng tôi sẽ gửi trong vòng 48 giờ — miễn phí cho các nhà pha cà phê đủ điều kiện.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Yêu cầu bộ mẫu của bạn"
+    },
+    "alt003": {
+      "subject": "Cách {peer_roaster_name} xây dựng thực đơn xoay quanh {origin}",
+      "preheader": "Nghiên cứu trường hợp nhà pha cà phê: các lô {process_method} đạt SCA {sca_cup_score}+.",
+      "body": "Xin chào {contact_first_name},\n\n{peer_roaster_name} đã thêm {origin} {varietal} ({process_method}) vào thực đơn đơn nguồn gốc và đã bán hết {order_volume_lbs} lb trong vòng {sell_through_weeks} tuần. Đây là những gì giúp thành công, kèm theo dữ liệu nếm thử.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Đọc nghiên cứu trường hợp"
+    },
+    "alt004": {
+      "subject": "Còn {available_lbs} lb của {origin} {varietal}",
+      "preheader": "Đến kho ngày {arrival_date} — đặt trước khi hết hàng.",
+      "body": "Xin chào {contact_first_name},\n\nCập nhật tình trạng có hàng nhanh: chỉ còn {available_lbs} lb của {origin} {varietal} ({process_method}, SCA {sca_cup_score}). Thùng hàng tiếp theo sẽ đến kho ngày {arrival_date} và các lô đã đặt trước sẽ được ưu tiên giao hàng. Đặt ngay để khóa giá {price_per_lb}/lb.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Đặt trước lô hàng của bạn"
+    },
+    "alt005": {
+      "subject": "Nghĩ về {harvest_window}, {contact_first_name}?",
+      "preheader": "Dưới đây là những gì bạn đang tìm — chúng tôi sẽ ghép hàng phù hợp.",
+      "body": "Xin chào {contact_first_name},\n\nChúng tôi nhận thấy {origin} {varietal} chưa có trong thực đơn của bạn lần này. Nếu kế hoạch mua hàng cho {harvest_window} của bạn vẫn còn mở, hãy trả lời cho chúng tôi biết bạn đang tìm gì — quy trình, dải điểm số, ngân sách — và chúng tôi sẽ ghép hàng phù hợp. Hoặc đặt lịch 15 phút với nhóm mua hàng của chúng tôi.\n\n— {sender_name}, Auctum Ledger",
+      "cta": "Đặt lịch tư vấn mua hàng"
+    }
+  },
+  "emailFooter": {
+    "unsubscribe": "Hủy đăng ký",
+    "managePreferences": "Quản lý tùy chọn email",
+    "viewInBrowser": "Xem trong trình duyệt",
+    "sentBecause": "Bạn nhận được email này vì {roaster_name} đã đăng ký với Auctum Ledger.",
+    "postalAddress": "Auctum Ledger, 548 Market St, San Francisco, CA 94104, USA"
+  },
+  "sms": {
+    "alt002": {
+      "body": "Auctum Ledger: {origin} {varietal} (SCA {sca_cup_score}) mẫu sẽ được gửi trong 48 giờ. Nhận bộ mẫu: {sample_kit_url} Trả lời STOP để ngừng nhận."
+    },
+    "alt004": {
+      "body": "Auctum Ledger: chỉ còn {available_lbs} lb của {origin} {varietal}. Đặt trước: {lot_url} Trả lời STOP để ngừng nhận."
+    }
+  },
+  "create": "Tạo chiến dịch",
+  "activate": "Kích hoạt",
+  "retire": "Ngưng sử dụng"
+}

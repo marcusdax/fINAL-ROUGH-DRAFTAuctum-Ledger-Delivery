@@ -1,0 +1,107 @@
+{
+  "title": "Herkunftsnavigator",
+  "sourcingObjective": "Beschaffungsziel",
+  "goals": {
+    "baseline": {
+      "label": "Ausgewogene Beschaffung",
+      "description": "Standardansatz zur Balance von Qualität, Kosten und Nachhaltigkeit"
+    },
+    "costOptimized": {
+      "label": "Kostenoptimierung",
+      "description": "Maximale Margenerweiterung durch aggressive Preise"
+    },
+    "qualityFirst": {
+      "label": "Qualität im Fokus",
+      "description": "Priorisierung der höchsten Kupppunktzahlen für Premiumprodukte"
+    },
+    "sustainability": {
+      "label": "ESG-Vorkäufer",
+      "description": "Maximierung von Nachhaltigkeits- und ethischen Beschaffungskennzahlen"
+    },
+    "supplyChain": {
+      "label": "Optimierte Lieferkette",
+      "description": "Fokus auf logistische Effizienz und vorhersehbare Lieferung"
+    }
+  },
+  "filters": {
+    "budgetCeiling": "Budgetdeckel",
+    "includeOverBudget": "Über-Budget-Lose einbeziehen",
+    "sortBy": "Sortieren nach",
+    "sort": {
+      "weighted": "Gewichtet",
+      "price": "Preis",
+      "cup": "Kupppunktzahl",
+      "esg": "ESG"
+    },
+    "searchLabel": "Lose suchen",
+    "searchPlaceholder": "Suche nach Herkunft, Sorte, Geschmackshinweisen…",
+    "showAdvanced": "Erweiterte Filter anzeigen",
+    "hideAdvanced": "Erweiterte Filter ausblenden",
+    "origins": "Herkünfte",
+    "processing": "Verarbeitung",
+    "minCupScore": "Minimale Kupppunktzahl"
+  },
+  "lot": {
+    "overBudget": "Über Budget",
+    "compositeScore": "Zusammensetzte Punktzahl",
+    "sourceThisLot": "Dieses Los beziehen",
+    "scoreLabel": "SCA-Punktzahl",
+    "rankLabel": "Rang",
+    "flavorNotesLabel": "Geschmacksnoten",
+    "metricBars": {
+      "cost": "Kosten",
+      "quality": "Qualität",
+      "esg": "ESG",
+      "logistics": "Logistik"
+    },
+    "lbsAvailable_one": "{{count}} lb verfügbar",
+    "lbsAvailable_other": "{{count}} lbs verfügbar",
+    "moreFlavorNotes_one": "+{{count}} weitere Notiz",
+    "moreFlavorNotes_other": "+{{count}} weitere Notizen"
+  },
+  "attributes": {
+    "origin": "Herkunft",
+    "varietal": "Sorte",
+    "processMethod": "Verarbeitungsmethode",
+    "elevation": "Höhe",
+    "cupScore": "Kupppunktzahl",
+    "scaCupScore": "SCA-Kupppunktzahl",
+    "pricePerLb": "Preis pro lb",
+    "harvestWindow": "Erntezeitraum",
+    "estimatedArrival": "Geschätzte Ankunft",
+    "availableQuantity": "Verfügbare Menge",
+    "certifications": "Zertifizierungen"
+  },
+  "processMethods": {
+    "washed": "Waschen",
+    "natural": "Natürlich",
+    "honey": "Honig",
+    "anaerobic": "Anaerob"
+  },
+  "certifications": {
+    "fairTrade": "Fair-Trade-zertifiziert",
+    "organic": "Bio-zertifiziert",
+    "rainforestAlliance": "Rainforest Alliance"
+  },
+  "origins": {
+    "ethiopia": "Äthiopien",
+    "colombia": "Kolumbien",
+    "brazil": "Brasilien",
+    "guatemala": "Guatemala",
+    "kenya": "Kenia",
+    "sumatra": "Sumatra",
+    "yirgacheffe": "Yirgacheffe",
+    "huila": "Huila",
+    "costaRica": "Costa Rica",
+    "peru": "Peru"
+  },
+  "empty": {
+    "title": "Keine Lose entsprechen Ihren Kriterien",
+    "cta": "Alle Filter löschen"
+  },
+  "resultsSummary_one": "{{lotCount}} Los aus {{originCount}} Herkünften",
+  "resultsSummary_other": "{{lotCount}} Lose aus {{originCount}} Herkünften",
+  "table": {
+    "trust": "VERTRAUEN"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "overline": "PARRAINAGES",
+  "title": "Parrainages",
+  "subtitle": "Gérez votre programme de parrainage. Suivez les invitations, les récompenses et partagez votre code unique.",
+  "deliveryCardTitle": "Envoyez un Kit, Obtenez du Crédit",
+  "deliveryCardBody": "Connaissez-vous un torréfacteur qui achète encore sur PDF ? Envoyez-lui un vrai kit — avec fiches de dégustation. Vous obtenez 150 $ de crédit de torréfaction quand leur première commande est livrée.",
+  "yourLink": "Votre lien de parrainage",
+  "copyLink": "Copier le lien de parrainage",
+  "yourCode": "Code de parrainage",
+  "openLink": "Ouvrir le lien",
+  "shareTitle": "Lien de parrainage de Auctum Ledger",
+  "shareText": "Découvrez cette recommandation de kit d'échantillons de Auctum Ledger",
+  "copyError": "Échec de la copie du lien",
+  "rewardReferrer": "Vous recevez",
+  "roastCredit": "crédit de torréfaction",
+  "rewardReferee": "Ils reçoivent",
+  "offFirstOrder": "de réduction sur la première commande",
+  "freeKit": "kit d'échantillons gratuit",
+  "simulateQualify": "[simuler la qualification]",
+  "qualifyNote": "La qualification du parrainage est déterminée par la livraison de la première commande du filleul.",
+  "codeSection": "Votre Code de Parrainage",
+  "viewAllCodes": "Voir tous les codes",
+  "noCode": "Chargement…",
+  "referralsList": "Vos Parrainages",
+  "empty": "Aucun parrainage pour l'instant. Partagez votre code pour commencer.",
+  "ledgerTitle": "Grand Livre des Récompenses Auctum Ledger",
+  "ledgerEmpty": "Aucune entrée de récompense pour l'instant.",
+  "allCodesTitle": "Tous les Codes de Parrainage",
+  "codeStatus": "Statut",
+  "anonymous": "Anonyme",
+  "detailTitle": "Détail du Parrainage",
+  "orderConfirmationTitle": "Envoyez un Kit — Obtenez du Crédit de Torréfaction",
+  "detail": {
+    "refCode": "Code de parrainage",
+    "status": "Statut",
+    "channel": "Canal",
+    "referredAt": "Parrainé le",
+    "funnel": "Progression de l'entonnoir",
+    "reward": "Récompense enregistrée"
+  },
+  "stats": {
+    "invitesSent": "Invitations envoyées",
+    "qualified": "Qualifiés",
+    "kFactor": "Facteur K",
+    "earned": "Crédits gagnés"
+  },
+  "status": {
+    "invited": "Invité",
+    "clicked": "Clic",
+    "signed_up": "Inscrit",
+    "kit_requested": "Kit Demandé",
+    "kit_delivered": "Kit Livré",
+    "feedback_submitted": "Feedback Soumis",
+    "first_order_delivered": "Première Commande Livrée",
+    "qualified": "Qualifié",
+    "clawed_back": "Récupéré"
+  },
+  "statusShort": {
+    "invited": "Invité",
+    "clicked": "Clic",
+    "signed_up": "Inscrit",
+    "kit_requested": "Kit Demandé",
+    "kit_delivered": "Kit Livré",
+    "feedback_submitted": "Feedback",
+    "first_order_delivered": "1re Cmd",
+    "qualified": "Qualifié",
+    "clawed_back": "Récupéré"
+  },
+  "tier": {
+    "copper": {
+      "label": "Cuppeur",
+      "description": "0–2 parrainages qualifiés"
+    },
+    "greenBuyer": {
+      "label": "Acheteur Vert",
+      "description": "3–5 parrainages qualifiés"
+    },
+    "ledgerCircle": {
+      "label": "Cercle Ledger",
+      "description": "6+ parrainages qualifiés"
+    }
+  },
+  "channel": {
+    "invite_link": "Lien d'invitation",
+    "qr_sticker": "Autocollant QR",
+    "email_share": "E-mail",
+    "instagram_dm": "DM Instagram",
+    "event_badge": "Badge d'événement",
+    "code_entry": "Saisie de code"
+  },
+  "reviewQueue": {
+    "title": "File d'Attente de Révision",
+    "noPending": "Aucun parrainage en attente",
+    "pendingReferral": "Parrainage en attente",
+    "reviewRequired": "Révision requise",
+    "reviewReason": "Raison de la révision",
+    "decision": {
+      "qualify": "Qualifier",
+      "decline": "Refuser",
+      "review": "Réviser"
+    },
+    "reasons": {
+      "selfReferral": "Auto-parrainage",
+      "identityGraphMatch": "Correspondance de graphe d'identité détectée",
+      "floorNotMet": "Plancher de la première commande payante non atteint",
+      "velocityExceeded": "Limite de vélocité dépassée",
+      "ringDetected": "Anneau de parrainage mutuel détecté",
+      "missingBusinessRegistration": "Filleul sans inscription d'entreprise ou ID fiscal",
+      "notFound": "Parrain ou filleul non trouvé"
+    }
+  },
+  "rewardType": {
+    "referrerCredit": "Crédit Parrain",
+    "refereeDiscount": "Réduction Filleul"
+  },
+  "rewardStatus": {
+    "pending": "En Attente",
+    "posted": "Enregistré",
+    "clawed_back": "Récupéré"
+  }
+}

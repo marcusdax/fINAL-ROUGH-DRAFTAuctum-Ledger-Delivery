@@ -1,0 +1,40 @@
+{
+  "title": "Panel general",
+  "subtitle": "Su abastecimiento e ingresos de un vistazo",
+  "metrics": {
+    "totalSent": "Total enviados",
+    "openRate": "Tasa de apertura",
+    "clickRate": "Tasa de clics",
+    "conversionRate": "Tasa de conversión",
+    "ltv": "Valor de vida del cliente (LTV)",
+    "cac": "Costo de adquisición de clientes (CAC)",
+    "paybackPeriod": "Periodo de recuperación",
+    "churnRisk": "Riesgo de abandono",
+    "avgOrderValue": "Valor promedio del pedido",
+    "revenue": "Ingresos",
+    "orders": "Pedidos"
+  },
+  "charts": {
+    "engagementOverTime": "Interacción en el tiempo",
+    "openRatePct": "Tasa de apertura %",
+    "clickRatePct": "Tasa de clics %",
+    "conversionRatePct": "Tasa de conversión %"
+  },
+  "benchmark": {
+    "title": "Comparación con pares",
+    "topQuartile": "Cuartil superior",
+    "median": "Mediana",
+    "yourPercentile": "Su percentil"
+  },
+  "time": {
+    "last7Days": "Últimos 7 días",
+    "last30Days": "Últimos 30 días",
+    "last90Days": "Últimos 90 días",
+    "customRange": "Rango personalizado"
+  },
+  "empty": {
+    "title": "Aún no hay datos suficientes",
+    "description": "Cuando sus pedidos y campañas comiencen a fluir, sus métricas aparecerán aquí.",
+    "cta": "Conectar datos"
+  }
+}

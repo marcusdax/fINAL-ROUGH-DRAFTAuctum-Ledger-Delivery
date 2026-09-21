@@ -1,0 +1,40 @@
+{
+  "title": "Dashboard",
+  "subtitle": "Your sourcing pipeline and revenue at a glance",
+  "metrics": {
+    "totalSent": "Total sent",
+    "openRate": "Open rate",
+    "clickRate": "Click rate",
+    "conversionRate": "Conversion rate",
+    "ltv": "Customer lifetime value (LTV)",
+    "cac": "Customer acquisition cost (CAC)",
+    "paybackPeriod": "Payback period",
+    "churnRisk": "Churn risk",
+    "avgOrderValue": "Average order value",
+    "revenue": "Revenue",
+    "orders": "Orders"
+  },
+  "charts": {
+    "engagementOverTime": "Engagement over time",
+    "openRatePct": "Open rate %",
+    "clickRatePct": "Click rate %",
+    "conversionRatePct": "Conversion rate %"
+  },
+  "benchmark": {
+    "title": "Peer benchmark",
+    "topQuartile": "Top quartile",
+    "median": "Median",
+    "yourPercentile": "Your percentile"
+  },
+  "time": {
+    "last7Days": "Last 7 days",
+    "last30Days": "Last 30 days",
+    "last90Days": "Last 90 days",
+    "customRange": "Custom range"
+  },
+  "empty": {
+    "title": "Not enough data yet",
+    "description": "Once your orders and campaigns start flowing, your metrics will appear here.",
+    "cta": "Connect your data"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "title": "Origin Navigator",
+  "sourcingObjective": "Sourcing objective",
+  "goals": {
+    "baseline": {
+      "label": "Balanced sourcing",
+      "description": "Standard approach balancing quality, cost, and sustainability"
+    },
+    "costOptimized": {
+      "label": "Cost optimization",
+      "description": "Maximum margin expansion through aggressive pricing"
+    },
+    "qualityFirst": {
+      "label": "Quality focus",
+      "description": "Prioritize highest cup scores for premium product lines"
+    },
+    "sustainability": {
+      "label": "ESG champion",
+      "description": "Maximize sustainability and ethical sourcing metrics"
+    },
+    "supplyChain": {
+      "label": "Supply chain optimized",
+      "description": "Focus on logistics efficiency and predictable delivery"
+    }
+  },
+  "filters": {
+    "budgetCeiling": "Budget ceiling",
+    "includeOverBudget": "Include out-of-budget lots",
+    "sortBy": "Sort by",
+    "sort": {
+      "weighted": "Weighted",
+      "price": "Price",
+      "cup": "Cup score",
+      "esg": "ESG"
+    },
+    "searchLabel": "Search lots",
+    "searchPlaceholder": "Search by origin, varietal, flavor notes…",
+    "showAdvanced": "Show advanced filters",
+    "hideAdvanced": "Hide advanced filters",
+    "origins": "Origins",
+    "processing": "Processing",
+    "minCupScore": "Minimum cup score"
+  },
+  "lot": {
+    "overBudget": "Over budget",
+    "compositeScore": "Composite score",
+    "sourceThisLot": "Source this lot",
+    "scoreLabel": "SCA score",
+    "rankLabel": "Rank",
+    "flavorNotesLabel": "Flavor notes",
+    "metricBars": {
+      "cost": "Cost",
+      "quality": "Quality",
+      "esg": "ESG",
+      "logistics": "Logistics"
+    },
+    "lbsAvailable_one": "{{count}} lb available",
+    "lbsAvailable_other": "{{count}} lbs available",
+    "moreFlavorNotes_one": "+{{count}} more note",
+    "moreFlavorNotes_other": "+{{count}} more notes"
+  },
+  "attributes": {
+    "origin": "Origin",
+    "varietal": "Varietal",
+    "processMethod": "Process method",
+    "elevation": "Elevation",
+    "cupScore": "Cup score",
+    "scaCupScore": "SCA cup score",
+    "pricePerLb": "Price per lb",
+    "harvestWindow": "Harvest window",
+    "estimatedArrival": "Estimated arrival",
+    "availableQuantity": "Available quantity",
+    "certifications": "Certifications"
+  },
+  "processMethods": {
+    "washed": "Washed",
+    "natural": "Natural",
+    "honey": "Honey",
+    "anaerobic": "Anaerobic"
+  },
+  "certifications": {
+    "fairTrade": "Fair Trade certified",
+    "organic": "Organic certified",
+    "rainforestAlliance": "Rainforest Alliance"
+  },
+  "origins": {
+    "ethiopia": "Ethiopia",
+    "colombia": "Colombia",
+    "brazil": "Brazil",
+    "guatemala": "Guatemala",
+    "kenya": "Kenya",
+    "sumatra": "Sumatra",
+    "yirgacheffe": "Yirgacheffe",
+    "huila": "Huila",
+    "costaRica": "Costa Rica",
+    "peru": "Peru"
+  },
+  "empty": {
+    "title": "No lots match your criteria",
+    "cta": "Clear all filters"
+  },
+  "resultsSummary_one": "{{lotCount}} lot from {{originCount}} origins",
+  "resultsSummary_other": "{{lotCount}} lots from {{originCount}} origins",
+  "table": {
+    "trust": "TRUST"
+  }
+}

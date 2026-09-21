@@ -1,0 +1,26 @@
+{
+  "header": "PUNTUACIÓN DE CONFIANZA",
+  "lastUpdated": "Última actualización",
+  "model": "modelo",
+  "evidence": "DOCUMENTOS ACEPTADOS",
+  "noEvidence": "Aún no hay documentos aceptados. Sube evidencia para construir confianza.",
+  "documentType": "Tipo de documento",
+  "uploadPrompt": "Suelta el archivo o haz clic para subir",
+  "uploadHint": "Informe SCA, contrato o recibo de almacén",
+  "uploadButton": "Subir documento",
+  "takePhoto": "Tomar foto",
+  "chooseFile": "Elegir de la galería",
+  "preview": "Vista previa",
+  "documentPreview": "Vista previa del documento",
+  "noPreview": "Sin vista previa",
+  "reviewTitle": "Revisionar campos extraídos",
+  "documentId": "Documento",
+  "acceptAndLink": "Aceptar y vincular al lote",
+  "rejectReason": "Razón de rechazo",
+  "rejectPlaceholder": "Ingresa la razón del rechazo...",
+  "confirmReject": "Confirmar rechazo",
+  "criticalFieldWarning": "Campo crítico — debe confirmarse antes de aceptar",
+  "table": {
+    "trust": "CONFIANZA"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "title": "产地导航",
+  "sourcingObjective": "采购目标",
+  "goals": {
+    "baseline": {
+      "label": "均衡采购",
+      "description": "在品质、成本与可持续性之间取得平衡的标准方案"
+    },
+    "costOptimized": {
+      "label": "成本优化",
+      "description": "以更具竞争力的价格实现利润最大化"
+    },
+    "qualityFirst": {
+      "label": "品质优先",
+      "description": "为高端产品线优先选择最高杯测分数的批次"
+    },
+    "sustainability": {
+      "label": "ESG 先锋",
+      "description": "最大化可持续性与道德采购指标"
+    },
+    "supplyChain": {
+      "label": "供应链优化",
+      "description": "聚焦物流效率与可预期的交付"
+    }
+  },
+  "filters": {
+    "budgetCeiling": "预算上限",
+    "includeOverBudget": "包含超出预算的批次",
+    "sortBy": "排序方式",
+    "sort": {
+      "weighted": "综合评分",
+      "price": "价格",
+      "cup": "杯测分数",
+      "esg": "ESG"
+    },
+    "searchLabel": "搜索批次",
+    "searchPlaceholder": "按产地、品种或风味描述搜索…",
+    "showAdvanced": "显示高级筛选",
+    "hideAdvanced": "隐藏高级筛选",
+    "origins": "产地",
+    "processing": "处理方式",
+    "minCupScore": "最低杯测分数"
+  },
+  "lot": {
+    "overBudget": "超出预算",
+    "compositeScore": "综合评分",
+    "sourceThisLot": "采购此批次",
+    "scoreLabel": "SCA 杯测分",
+    "rankLabel": "排名",
+    "flavorNotesLabel": "风味描述",
+    "metricBars": {
+      "cost": "成本",
+      "quality": "品质",
+      "esg": "ESG",
+      "logistics": "物流"
+    },
+    "lbsAvailable_other": "{{count}} 磅现货",
+    "moreFlavorNotes_other": "另有 {{count}} 项风味"
+  },
+  "attributes": {
+    "origin": "产地",
+    "varietal": "品种",
+    "processMethod": "处理方式",
+    "elevation": "海拔",
+    "cupScore": "杯测分数",
+    "scaCupScore": "SCA 杯测分数",
+    "pricePerLb": "每磅价格",
+    "harvestWindow": "采收窗口",
+    "estimatedArrival": "预计到港",
+    "availableQuantity": "现货数量",
+    "certifications": "认证"
+  },
+  "processMethods": {
+    "washed": "水洗",
+    "natural": "日晒",
+    "honey": "蜜处理",
+    "anaerobic": "厌氧发酵"
+  },
+  "certifications": {
+    "fairTrade": "公平贸易认证",
+    "organic": "有机认证",
+    "rainforestAlliance": "雨林联盟认证"
+  },
+  "origins": {
+    "ethiopia": "埃塞俄比亚",
+    "colombia": "哥伦比亚",
+    "brazil": "巴西",
+    "guatemala": "危地马拉",
+    "kenya": "肯尼亚",
+    "sumatra": "苏门答腊",
+    "yirgacheffe": "耶加雪菲",
+    "huila": "乌伊拉",
+    "costaRica": "哥斯达黎加",
+    "peru": "秘鲁"
+  },
+  "empty": {
+    "title": "没有符合筛选条件的批次",
+    "cta": "清除全部筛选"
+  },
+  "resultsSummary_other": "来自 {{originCount}} 个产地的 {{lotCount}} 个批次",
+  "table": {
+    "trust": "信任"
+  }
+}

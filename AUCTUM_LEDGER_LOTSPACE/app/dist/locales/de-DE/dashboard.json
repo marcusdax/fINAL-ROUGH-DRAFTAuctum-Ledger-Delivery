@@ -1,0 +1,40 @@
+{
+  "title": "Dashboard",
+  "subtitle": "Ihr Beschaffungsablauf und Umsatz auf einen Blick",
+  "metrics": {
+    "totalSent": "Gesamt gesendet",
+    "openRate": "Öffnungsrate",
+    "clickRate": "Klickraten",
+    "conversionRate": "Konversionsrate",
+    "ltv": "Kundenlebenswert (LTV)",
+    "cac": "Kundenakquisekosten (CAC)",
+    "paybackPeriod": "Amortisationszeitraum",
+    "churnRisk": "Abwanderungsrisiko",
+    "avgOrderValue": "Durchschnittlicher Bestellwert",
+    "revenue": "Umsatz",
+    "orders": "Bestellungen"
+  },
+  "charts": {
+    "engagementOverTime": "Engagement im Verlauf",
+    "openRatePct": "Öffnungsrate %",
+    "clickRatePct": "Klickraten %",
+    "conversionRatePct": "Konversionsrate %"
+  },
+  "benchmark": {
+    "title": "Branchenvergleich",
+    "topQuartile": "Oberstes Quartil",
+    "median": "Median",
+    "yourPercentile": "Ihr Perzentil"
+  },
+  "time": {
+    "last7Days": "Letzte 7 Tage",
+    "last30Days": "Letzte 30 Tage",
+    "last90Days": "Letzte 90 Tage",
+    "customRange": "Individueller Zeitraum"
+  },
+  "empty": {
+    "title": "Noch nicht genug Daten",
+    "description": "Sobald Ihre Bestellungen und Kampagnen einlaufen, werden Ihre Kennzahlen hier angezeigt.",
+    "cta": "Daten verbinden"
+  }
+}

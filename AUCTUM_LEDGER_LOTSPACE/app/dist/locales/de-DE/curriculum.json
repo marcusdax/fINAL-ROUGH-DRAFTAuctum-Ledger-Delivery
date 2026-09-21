@@ -1,0 +1,75 @@
+{
+  "title": "Lehrplan",
+  "overline": "CURRICULUM LEDGER",
+  "subtitle": "Meistern Sie Kaffeequalität, Compliance, Finanzen und Logistik durch regionalspezifische Lernpfade.",
+  "tabs": {
+    "overview": "Übersicht",
+    "lessons": "Lektionen",
+    "progress": "Fortschritt"
+  },
+  "noProgress": "Noch kein Fortschritt für dieses Modul aufgezeichnet.",
+  "trackHeader": {
+    "author": "Autor",
+    "region": "Region",
+    "prerequisites": "Voraussetzungen",
+    "milestoneBadge": "Meilenstein-Abzeichen",
+    "lessonCompletion": "Lektionsabschluss",
+    "moduleStatus": "Modulstatus",
+    "trustScoreBoost": "Trust-Score-Boost"
+  },
+  "tracks": {
+    "quality": "Qualität",
+    "compliance": "Compliance",
+    "finance": "Finanzen",
+    "logistics": "Logistik"
+  },
+  "trackDesc": {
+    "quality": "Sensorische Kalibrierung, Cupping-Protokolle und Q-Grader-Fähigkeiten.",
+    "compliance": "EUDR-Rückverfolgbarkeit, Zollabfertigung und phytosanitäre Anforderungen.",
+    "finance": "Bauernhaushaltspläne, True Price Floor und Futures-Marktkenntnisse.",
+    "logistics": "Nacherntebehandlung, Lagerung und Versandlogistik."
+  },
+  "moduleCount_one": "{{count}} Modul",
+  "moduleCount_other": "{{count}} Module",
+  "progress": {
+    "notStarted": "Nicht begonnen",
+    "inProgress": "In Bearbeitung",
+    "completed": "Abgeschlossen",
+    "locked": "Gesperrt"
+  },
+  "viewTrack": "Pfad Anzeigen",
+  "noTrack": "Kein Pfad Gefunden",
+  "noModule": "Modul Nicht Gefunden.",
+  "lessonControls": {
+    "markComplete": "Als Abgeschlossen Markieren",
+    "review": "Überprüfen",
+    "completed": "Abgeschlossen",
+    "completedMessage": "Modul Abgeschlossen — Bereit Für Überprüfung.",
+    "completeModule": "Modul Abgeschlossen"
+  },
+  "ariaLabel": {
+    "courseTabs": "Kurs-Tabs",
+    "markLessonComplete": "{{lesson}} Als Abgeschlossen Markieren",
+    "reviewModule": "Modul Überprüfen",
+    "lessonComplete": "{{lesson}} Abgeschlossen",
+    "completeModule": "Modul Abschließen"
+  },
+  "authoring": {
+    "title": "Lehrplan-Autor",
+    "topicLabel": "Thema / Beschreibung",
+    "topicPlaceholder": "Beschreiben Sie Das Zu Generierende Modul...",
+    "trackLabel": "Pfad",
+    "levelLabel": "Ebene",
+    "regionLabel": "Region",
+    "generateBtn": "Mit KI Generieren",
+    "saveBtn": "Modul Speichern",
+    "cancelBtn": "Abbrechen",
+    "outlineLabel": "Modulübersicht",
+    "contentLabel": "Lektionsinhalt",
+    "quizLabel": "Quizfragen",
+    "generated": "KI-Generierter Inhalt",
+    "editMode": "Bearbeitung",
+    "saveSuccess": "Modul Erfolgreich Gespeichert",
+    "saveError": "Modul Speichern Fehlgeschlagen"
+  }
+}

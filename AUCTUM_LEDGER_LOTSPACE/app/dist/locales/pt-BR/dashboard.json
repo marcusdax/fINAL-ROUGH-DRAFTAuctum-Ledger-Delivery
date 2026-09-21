@@ -1,0 +1,40 @@
+{
+  "title": "Visão geral",
+  "subtitle": "Seu abastecimento e receita em um relance",
+  "metrics": {
+    "totalSent": "Total enviados",
+    "openRate": "Taxa de abertura",
+    "clickRate": "Taxa de cliques",
+    "conversionRate": "Taxa de conversão",
+    "ltv": "Valor do ciclo de vida do cliente (LTV)",
+    "cac": "Custo de aquisição de clientes (CAC)",
+    "paybackPeriod": "Período de retorno",
+    "churnRisk": "Risco de cancelamento",
+    "avgOrderValue": "Valor médio do pedido",
+    "revenue": "Receita",
+    "orders": "Pedidos"
+  },
+  "charts": {
+    "engagementOverTime": "Engajamento ao longo do tempo",
+    "openRatePct": "Taxa de abertura %",
+    "clickRatePct": "Taxa de cliques %",
+    "conversionRatePct": "Taxa de conversão %"
+  },
+  "benchmark": {
+    "title": "Comparativo com pares",
+    "topQuartile": "Quartil superior",
+    "median": "Mediana",
+    "yourPercentile": "Seu percentil"
+  },
+  "time": {
+    "last7Days": "Últimos 7 dias",
+    "last30Days": "Últimos 30 dias",
+    "last90Days": "Últimos 90 dias",
+    "customRange": "Período personalizado"
+  },
+  "empty": {
+    "title": "Ainda não há dados suficientes",
+    "description": "Quando seus pedidos e campanhas começarem a fluir, suas métricas aparecerão aqui.",
+    "cta": "Conectar dados"
+  }
+}
