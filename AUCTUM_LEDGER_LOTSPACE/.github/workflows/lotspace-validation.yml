@@ -1,0 +1,16 @@
+name: LotSpace Validation
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: cd app && npm ci
+      - run: cd app && npm run typecheck:server
+      - run: cd app && npm run test:run
+      - run: cd app && npx oxlint .

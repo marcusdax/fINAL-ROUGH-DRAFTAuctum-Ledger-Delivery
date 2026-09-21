@@ -52,7 +52,7 @@ jobs:
 
       - name: Run tests
         working-directory: app
-        run: npm run test:run
+        run: npx vitest run services/
 
   docker-build-test:
     runs-on: ubuntu-latest

@@ -12,6 +12,11 @@ import { referralsRouter } from './referrals.js';
 import { roastersRouter } from './roasters.js';
 import { sampleKitsRouter } from './sample-kits.js';
 import { webhooksRouter } from './webhooks.js';
+import { spacesRouter } from '../../services/spaces/index.js';
+import { feedsRouter } from '../../services/feeds/index.js';
+import { reputationRouter } from '../../services/reputation/index.js';
+import { connectionsRouter } from '../../services/connections/index.js';
+import { integrationRouter } from '../../services/integration/index.js';
 
 /**
  * /api/v1 router (brief §5). `/chat` is mounted BEFORE JWT auth (own API-key
@@ -36,6 +41,11 @@ export function createRouter(): Router {
   router.use(analyticsRouter);
   router.use(referralsRouter);
   router.use(credentialsRouter);
+  router.use('/spaces', spacesRouter);
+  router.use('/feeds', feedsRouter);
+  router.use('/reputation', reputationRouter);
+  router.use('/connections', connectionsRouter);
+  router.use('/integration', integrationRouter);
 
   return router;
 }
