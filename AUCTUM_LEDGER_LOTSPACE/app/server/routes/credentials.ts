@@ -229,3 +229,7 @@ credentialsRouter.post('/credentials/:id/transitions', async (req, res, next) =>
 credentialsRouter.get('/education/tracks', (_req, res) => {
   res.json(listEnvelope([...EDUCATION_TRACKS]));
 });
+
+credentialsRouter.get('/tracks', (_req, res) => {
+  res.json(listEnvelope([...EDUCATION_TRACKS]));
+});

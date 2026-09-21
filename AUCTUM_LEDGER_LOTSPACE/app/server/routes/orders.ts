@@ -1,7 +1,7 @@
 import crypto from 'node:crypto';
 import { Router } from 'express';
-import { db } from '../db/index.js';
-import { memory, type CatalogLotRow, type OrderRow } from '../db/memory.js';
+import { db, query } from '../db/index.js';
+import { memory, type CatalogLotRow, type OrderRow, type PaymentIntentRow } from '../db/memory.js';
 import { emitEvent } from '../lib/kafka.js';
 import { problem, sendProblem } from '../lib/problem.js';
 import { asInt, asString, listEnvelope, singleEnvelope } from './helpers.js';
@@ -57,6 +57,26 @@ ordersRouter.get('/orders/:id', async (req, res, next) => {
       return;
     }
     res.json(singleEnvelope(row));
+  } catch (err) {
+    next(err);
+  }
+});
+
+ordersRouter.get('/orders/:id/payment-status', async (req, res, next) => {
+  try {
+    const orderId = req.params.id;
+    if (db.pg) {
+      const rows = await query<PaymentIntentRow>(
+        'SELECT * FROM payment_intents WHERE order_id = $1 ORDER BY created_at DESC',
+        [orderId],
+      );
+      res.json(singleEnvelope(rows[0] ?? null));
+      return;
+    }
+    const intent = memory.paymentIntents
+      .filter((p) => p.order_id === orderId)
+      .sort((a, b) => (a.created_at < b.created_at ? 1 : -1))[0] ?? null;
+    res.json(singleEnvelope(intent));
   } catch (err) {
     next(err);
   }

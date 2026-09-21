@@ -148,17 +148,30 @@ export interface ReferralRow {
   created_at: string;
 }
 
-export interface RewardLedgerRow {
+export interface MemoryStore {
+  roasters: RoasterRow[];
+  catalogLots: CatalogLotRow[];
+  campaigns: CampaignRow[];
+  automationRules: AutomationRuleRow[];
+  sampleKits: SampleKitRow[];
+  orders: OrderRow[];
+  webhookSubscriptions: WebhookSubscriptionRow[];
+  referralCodes: ReferralCodeRow[];
+  referrals: ReferralRow[];
+  rewardLedger: RewardLedgerRow[];
+  credentials: CredentialRow[];
+  credentialEvents: CredentialEventRow[];
+  paymentIntents: PaymentIntentRow[];
+}
+
+export interface PaymentIntentRow {
   id: string;
-  account_id: string;
-  referral_id: string | null;
-  type: string;
+  order_id: string;
   amount_cents: number;
-  status: string;
-  description: string | null;
+  currency: string;
+  status: 'requires_payment_method' | 'requires_confirmation' | 'requires_action' | 'processing' | 'succeeded' | 'canceled';
+  client_secret: string;
   created_at: string;
-  posted_at: string | null;
-  clawed_back_at: string | null;
 }
 
 export interface CredentialRow {
@@ -199,6 +212,7 @@ export interface MemoryStore {
   rewardLedger: RewardLedgerRow[];
   credentials: CredentialRow[];
   credentialEvents: CredentialEventRow[];
+  paymentIntents: PaymentIntentRow[];
 }
 
 const now = () => new Date().toISOString();
@@ -515,6 +529,7 @@ export function createMemoryStore(): MemoryStore {
     rewardLedger,
     credentials,
     credentialEvents: [],
+    paymentIntents: [],
   };
 }
 

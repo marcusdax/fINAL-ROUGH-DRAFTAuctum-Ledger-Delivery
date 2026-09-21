@@ -7,6 +7,57 @@ import { singleEnvelope } from './helpers.js';
 export const analyticsRouter = Router();
 
 /**
+ * Summary analytics for the growth dashboard. In pg mode this reads the
+ * engagement_events aggregate; in memory mode it derives the same rollup from
+ * the seeded sample-kit and order fixtures.
+ */
+analyticsRouter.get('/analytics', async (_req, res, next) => {
+  try {
+    let sent = 0;
+    let opened = 0;
+    let clicked = 0;
+    let converted = 0;
+    if (db.pg) {
+      try {
+        const rows = await query<{ event_type: string; n: string }>(
+          `SELECT event_type, COUNT(*)::text AS n
+           FROM telemetry.engagement_events
+           GROUP BY event_type`,
+        );
+        for (const row of rows) {
+          const n = Number.parseInt(row.n, 10);
+          if (row.event_type === 'sent') sent = n;
+          else if (row.event_type === 'opened') opened = n;
+          else if (row.event_type === 'clicked') clicked = n;
+          else if (row.event_type === 'converted') converted = n;
+        }
+      } catch {
+        // telemetry schema/table absent (plain postgres without migration) → zeros
+      }
+    } else {
+      sent = memory.sampleKits.length;
+      opened = memory.sampleKits.filter((k) => k.status !== 'requested').length;
+      clicked = memory.sampleKits.filter((k) => k.feedback_submitted_at !== null).length;
+      converted = memory.orders.length;
+    }
+
+    res.json(
+      singleEnvelope({
+        sent,
+        opened,
+        clicked,
+        converted,
+        open_rate: sent > 0 ? opened / sent : 0,
+        click_rate: opened > 0 ? clicked / opened : 0,
+        conversion_rate: sent > 0 ? converted / sent : 0,
+      }),
+    );
+  } catch (err) {
+    next(err);
+  }
+});
+
+/**
  * Campaign performance rollup sourced from telemetry.engagement_events
  * (pg mode). In-memory mode derives funnel counts from kit/order fixtures.
  */

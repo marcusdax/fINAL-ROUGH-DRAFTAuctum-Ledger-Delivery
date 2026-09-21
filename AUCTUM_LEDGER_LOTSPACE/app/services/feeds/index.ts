@@ -15,7 +15,7 @@ const seedFeeds: FeedItem[] = [
       images: ['https://example.com/images/cupping-001.jpg'],
     },
     provenanceRef: 'lot-7a1c0e10-2b4a-4f0a-8a11-0000000000a1',
-    createdAt: '2025-08-15T10:00:00Z',
+    createdAt: new Date('2025-08-15T10:00:00Z'),
   },
   {
     id: 'feed-0002',
@@ -27,7 +27,7 @@ const seedFeeds: FeedItem[] = [
       images: ['https://example.com/images/harvest-002.jpg'],
     },
     provenanceRef: null,
-    createdAt: '2025-08-14T08:30:00Z',
+    createdAt: new Date('2025-08-14T08:30:00Z'),
   },
   {
     id: 'feed-0003',
@@ -39,7 +39,7 @@ const seedFeeds: FeedItem[] = [
       images: [],
     },
     provenanceRef: null,
-    createdAt: '2025-08-13T14:00:00Z',
+    createdAt: new Date('2025-08-13T14:00:00Z'),
   },
   {
     id: 'feed-0004',
@@ -51,7 +51,7 @@ const seedFeeds: FeedItem[] = [
       images: ['https://example.com/images/sale-004.jpg'],
     },
     provenanceRef: 'lot-7a1c0e10-2b4a-4f0a-8a11-0000000000a8',
-    createdAt: '2025-08-12T16:45:00Z',
+    createdAt: new Date('2025-08-12T16:45:00Z'),
   },
   {
     id: 'feed-0005',
@@ -63,7 +63,7 @@ const seedFeeds: FeedItem[] = [
       images: ['https://example.com/images/cupping-005.jpg'],
     },
     provenanceRef: 'lot-7a1c0e10-2b4a-4f0a-8a11-0000000000a3',
-    createdAt: '2025-08-11T09:15:00Z',
+    createdAt: new Date('2025-08-11T09:15:00Z'),
   },
 ];
 
