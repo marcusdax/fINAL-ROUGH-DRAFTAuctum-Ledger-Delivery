@@ -222,6 +222,47 @@ export interface CurriculumTrack {
 }
 
 // ---------------------------------------------------------------------------
+// LotSpace entity types (brief §5.1 — spaces, feeds, connections, integration)
+// ---------------------------------------------------------------------------
+
+export interface Space {
+  id: string
+  name: string
+  archetype: string
+  shopfront: { name: string; description: string; logo_url: string | null }
+  compliance: { verified: boolean; documents: string[] }
+  incomeLedger: { totalEarned: number; currency: string }
+  createdAt: string
+  updatedAt: string
+}
+
+export interface FeedItem {
+  id: string
+  spaceId: string
+  type: 'story' | 'cupping_result' | 'tip' | 'follow' | 'purchase'
+  content: Record<string, unknown>
+  provenanceRef: string | null
+  createdAt: string
+}
+
+export interface Connection {
+  id: string
+  followerSpaceId: string
+  followingSpaceId: string
+  type: 'follow' | 'fan' | 'subscriber' | 'collector'
+  createdAt: string
+}
+
+export interface IntegrationStatus {
+  status: string
+  contexts?: string[]
+  ledger_status: string
+  outbox_depth: number
+  schema_version: string
+  consumer_group: string
+}
+
+// ---------------------------------------------------------------------------
 // AI chat proxy
 // ---------------------------------------------------------------------------
 

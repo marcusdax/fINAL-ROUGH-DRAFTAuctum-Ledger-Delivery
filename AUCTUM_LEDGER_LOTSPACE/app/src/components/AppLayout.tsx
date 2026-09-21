@@ -70,6 +70,15 @@ const NAV_GROUPS: NavGroup[] = [
       { to: 'education/tracks', labelKey: 'nav.tracks', icon: GraduationCap },
     ],
   },
+  {
+    key: 'LOTSPACE',
+    items: [
+      { to: 'spaces', labelKey: 'nav.spaces', icon: Compass },
+      { to: 'feeds', labelKey: 'nav.feeds', icon: MessageSquare },
+      { to: 'connections', labelKey: 'nav.connections', icon: Users },
+      { to: 'integration', labelKey: 'nav.integration', icon: Workflow },
+    ],
+  },
 ]
 
 /** Group headers and education nav labels ship no locale keys; they are
@@ -79,6 +88,10 @@ const NAV_LABEL_FALLBACKS: Record<string, string> = {
   'nav.roasters': 'Roasters',
   'nav.credentials': 'Credentials',
   'nav.tracks': 'Tracks',
+  'nav.spaces': 'Spaces',
+  'nav.feeds': 'Feeds',
+  'nav.connections': 'Connections',
+  'nav.integration': 'Integration',
 }
 
 function LocaleSwitcher() {

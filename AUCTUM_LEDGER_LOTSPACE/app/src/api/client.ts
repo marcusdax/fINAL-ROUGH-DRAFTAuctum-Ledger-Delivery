@@ -8,11 +8,14 @@ import type {
   Campaign,
   ChatMessage,
   ChatResponse,
+  Connection,
   Credential,
   CredentialEvent,
   CredentialEventName,
   CredentialStateName,
   CurriculumTrack,
+  FeedItem,
+  IntegrationStatus,
   ItemEnvelope,
   ListEnvelope,
   Lot,
@@ -20,6 +23,7 @@ import type {
   Reservation,
   Roaster,
   SampleKit,
+  Space,
   WebhookSubscription,
 } from '../types/api'
 
@@ -134,6 +138,10 @@ export const transitionCredential = (
 // -- Education: curriculum tracks --------------------------------------------
 
 export const fetchTracks = () => list<CurriculumTrack>('/education/tracks')
+export const fetchSpaces = () => list<Space>('/spaces')
+export const fetchFeed = () => list<FeedItem>('/feeds')
+export const fetchConnections = () => list<Connection>('/connections')
+export const fetchIntegrationStatus = () => item<IntegrationStatus>('/integration/health')
 
 // -- AI chat proxy -----------------------------------------------------------
 

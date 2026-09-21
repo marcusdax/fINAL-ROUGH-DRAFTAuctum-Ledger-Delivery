@@ -15,7 +15,11 @@
     "automationRules": "自动化规则",
     "webhooks": "Webhooks",
     "growth": "Growth",
-    "referrals": "推荐"
+    "referrals": "推荐",
+    "spaces": "空间",
+    "feeds": "动态",
+    "connections": "连接",
+    "integration": "集成"
   },
   "actions": {
     "refresh": "Refresh"

@@ -15,7 +15,11 @@
     "automationRules": "Quy tắc tự động hóa",
     "webhooks": "Webhook",
     "growth": "Growth",
-    "referrals": "Chương trình giới thiệu"
+    "referrals": "Chương trình giới thiệu",
+    "spaces": "Không gian",
+    "feeds": "Bảng tin",
+    "connections": "Kết nối",
+    "integration": "Tích hợp"
   },
   "actions": {
     "refresh": "Làm mới"

@@ -15,7 +15,11 @@
     "automationRules": "Règles d'automatisation",
     "webhooks": "Webhooks",
     "growth": "Growth",
-    "referrals": "Parrainages"
+    "referrals": "Parrainages",
+    "spaces": "Espaces",
+    "feeds": "Flux",
+    "connections": "Connexions",
+    "integration": "Intégration"
   },
   "actions": {
     "refresh": "Actualiser"

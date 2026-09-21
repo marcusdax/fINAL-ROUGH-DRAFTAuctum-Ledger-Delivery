@@ -1,7 +1,6 @@
 import React from 'react';
 
 interface SpaceProfileProps {
-  spaceId: string;
   archetype: string;
   shopfrontName: string;
   shopfrontDescription: string;
@@ -10,7 +9,6 @@ interface SpaceProfileProps {
 }
 
 export const SpaceProfile: React.FC<SpaceProfileProps> = ({
-  _spaceId,
   archetype,
   shopfrontName,
   shopfrontDescription,

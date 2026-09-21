@@ -15,7 +15,11 @@
     "automationRules": "Automatisierungsregeln",
     "webhooks": "Webhooks",
     "growth": "Growth",
-    "referrals": "Empfehlungen"
+    "referrals": "Empfehlungen",
+    "spaces": "Räume",
+    "feeds": "Feeds",
+    "connections": "Verbindungen",
+    "integration": "Integration"
   },
   "actions": {
     "refresh": "Aktualisieren"

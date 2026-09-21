@@ -18,6 +18,10 @@ const AnalyticsPage = lazy(() => import('./pages/AnalyticsPage'))
 const WebhooksPage = lazy(() => import('./pages/WebhooksPage'))
 const CredentialsPage = lazy(() => import('./pages/CredentialsPage'))
 const TracksPage = lazy(() => import('./pages/TracksPage'))
+const SpacesPage = lazy(() => import('./pages/SpacesPage'))
+const FeedsPage = lazy(() => import('./pages/FeedsPage'))
+const ConnectionsPage = lazy(() => import('./pages/ConnectionsPage'))
+const IntegrationPage = lazy(() => import('./pages/IntegrationPage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
 
 export default function App() {
@@ -42,6 +46,10 @@ export default function App() {
             <Route path="webhooks" element={<WebhooksPage />} />
             <Route path="education/credentials" element={<CredentialsPage />} />
             <Route path="education/tracks" element={<TracksPage />} />
+            <Route path="spaces" element={<SpacesPage />} />
+            <Route path="feeds" element={<FeedsPage />} />
+            <Route path="connections" element={<ConnectionsPage />} />
+            <Route path="integration" element={<IntegrationPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Route>
