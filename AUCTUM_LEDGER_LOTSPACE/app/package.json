@@ -33,7 +33,7 @@
     "react-dom": "^19.2.7",
     "react-hook-form": "^7.83.0",
     "react-i18next": "^17.0.10",
-    "react-router-dom": "^6.30.4",
+    "react-router-dom": "^7.18.4",
     "recharts": "^3.9.2",
     "redis": "^4.7.0",
     "zod": "^4.4.3",
