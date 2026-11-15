@@ -1,0 +1,16 @@
+{
+  "name": "Auctum EUDR Field Plot Surveyor",
+  "short_name": "EUDR Survey",
+  "description": "Offline-first plot geolocation and boundary walking tool for coffee farmers and cooperatives under EU Regulation 2023/1115",
+  "start_url": "/eudr-survey/index.html",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#059669",
+  "icons": [
+    {
+      "src": "/brand/logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

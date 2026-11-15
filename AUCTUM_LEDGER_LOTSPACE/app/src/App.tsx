@@ -22,6 +22,7 @@ const SpacesPage = lazy(() => import('./pages/SpacesPage'))
 const FeedsPage = lazy(() => import('./pages/FeedsPage'))
 const ConnectionsPage = lazy(() => import('./pages/ConnectionsPage'))
 const IntegrationPage = lazy(() => import('./pages/IntegrationPage'))
+const EudrSurveyPage = lazy(() => import('./pages/EudrSurveyPage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
 
 export default function App() {
@@ -50,6 +51,7 @@ export default function App() {
             <Route path="feeds" element={<FeedsPage />} />
             <Route path="connections" element={<ConnectionsPage />} />
             <Route path="integration" element={<IntegrationPage />} />
+            <Route path="eudr-survey" element={<EudrSurveyPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Route>

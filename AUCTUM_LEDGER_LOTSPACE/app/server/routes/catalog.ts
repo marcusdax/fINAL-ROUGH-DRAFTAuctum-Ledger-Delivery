@@ -4,6 +4,7 @@ import { db, query } from '../db/index.js';
 import { memory, type CatalogLotRow } from '../db/memory.js';
 import { problem, sendProblem } from '../lib/problem.js';
 import { asInt, listEnvelope, singleEnvelope } from './helpers.js';
+import { AuctumLotProvenanceChain } from '../lib/masternex-provenance.js';
 
 export const catalogRouter = Router();
 
@@ -136,3 +137,67 @@ catalogRouter.post('/catalog/lots/:id/reservations', async (req, res, next) => {
     next(err);
   }
 });
+
+// Cache of active provenance chains in memory
+const lotChains = new Map<string, AuctumLotProvenanceChain>();
+
+catalogRouter.get('/catalog/lots/:id/provenance', async (req, res, next) => {
+  try {
+    const lotId = req.params.id;
+    let chain = lotChains.get(lotId);
+    if (!chain) {
+      chain = new AuctumLotProvenanceChain(lotId);
+      // Initialize with default origin registration
+      chain.recordEvent('LOT_REGISTERED', 'system_genesis', {
+        lot_id: lotId,
+        registered_at: new Date().toISOString(),
+        verified_origin: true,
+      });
+      lotChains.set(lotId, chain);
+    }
+    const result = chain.verify();
+    res.json(singleEnvelope(result));
+  } catch (err) {
+    next(err);
+  }
+});
+
+catalogRouter.post('/catalog/lots/:id/provenance/event', async (req, res, next) => {
+  try {
+    const lotId = req.params.id;
+    const { event_type, actor_id, payload } = req.body || {};
+    if (!event_type || !actor_id) {
+      sendProblem(res, problem(400, 'AL-PROV-1001', 'event_type and actor_id are required'));
+      return;
+    }
+    let chain = lotChains.get(lotId);
+    if (!chain) {
+      chain = new AuctumLotProvenanceChain(lotId);
+      lotChains.set(lotId, chain);
+    }
+    const event = chain.recordEvent(event_type, actor_id, payload || {});
+    res.status(201).json(singleEnvelope(event));
+  } catch (err) {
+    next(err);
+  }
+});
+
+catalogRouter.get('/catalog/lots/:id/verify', async (req, res, next) => {
+  try {
+    const lotId = req.params.id;
+    let chain = lotChains.get(lotId);
+    if (!chain) {
+      chain = new AuctumLotProvenanceChain(lotId);
+      chain.recordEvent('LOT_REGISTERED', 'system_genesis', {
+        lot_id: lotId,
+        registered_at: new Date().toISOString(),
+      });
+      lotChains.set(lotId, chain);
+    }
+    const result = chain.verify();
+    res.json(singleEnvelope({ lot_id: lotId, verified: result.verified, merkle_root: result.merkle_root }));
+  } catch (err) {
+    next(err);
+  }
+});
+

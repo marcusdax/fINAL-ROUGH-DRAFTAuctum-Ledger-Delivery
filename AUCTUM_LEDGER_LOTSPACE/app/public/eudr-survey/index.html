@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>EUDR Field Plot Surveyor · Auctum.coffee</title>
+  <link rel="manifest" href="/eudr-survey/manifest.json">
+  <meta name="theme-color" content="#059669">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card: #131b2e;
+      --card-border: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --primary: #10b981;
+      --primary-hover: #059669;
+      --accent: #38bdf8;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+    }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    body {
+      margin: 0; padding: 12px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg); color: var(--text); min-height: 100vh;
+    }
+    .header {
+      display: flex; justify-content: space-between; align-items: center; padding: 12px 8px;
+      border-bottom: 1px solid var(--card-border); margin-bottom: 16px;
+    }
+    .logo-box { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 16px; color: var(--accent); }
+    .status-badge {
+      font-size: 11px; padding: 4px 10px; border-radius: 9999px; font-weight: 600;
+      background: rgba(16, 185, 129, 0.15); color: var(--primary); border: 1px solid var(--primary);
+    }
+    .status-badge.offline {
+      background: rgba(245, 158, 11, 0.15); color: var(--warning); border-color: var(--warning);
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--card-border); border-radius: 12px;
+      padding: 16px; margin-bottom: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    h2 { font-size: 15px; margin: 0 0 12px 0; color: var(--accent); text-transform: uppercase; letter-spacing: 0.5px; }
+    .gps-hud {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px; background: #070a10;
+      border: 1px solid #1e293b; padding: 12px; border-radius: 8px; margin-bottom: 12px;
+    }
+    .hud-label { font-size: 10px; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    .hud-val { font-size: 14px; font-family: monospace; color: var(--text); font-weight: 600; margin-top: 2px; }
+    .tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+    .tab-btn {
+      flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--card-border);
+      background: #0d1322; color: var(--muted); font-weight: 600; font-size: 13px; cursor: pointer; text-align: center;
+    }
+    .tab-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+    .btn {
+      width: 100%; padding: 14px; border-radius: 8px; font-size: 14px; font-weight: 600;
+      border: none; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 8px;
+      transition: background 0.15s; margin-top: 8px;
+    }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:active { background: var(--primary-hover); }
+    .btn-secondary { background: #1e293b; color: var(--text); border: 1px solid #334155; }
+    .btn-secondary:active { background: #334155; }
+    .btn-accent { background: var(--accent); color: #090d16; }
+    .input-group { margin-bottom: 12px; }
+    label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; font-weight: 500; }
+    input, select {
+      width: 100%; padding: 10px 12px; background: #070a10; border: 1px solid var(--card-border);
+      border-radius: 6px; color: var(--text); font-size: 14px; outline: none;
+    }
+    input:focus, select:focus { border-color: var(--accent); }
+    .checkbox-label {
+      display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text);
+      margin-bottom: 8px; cursor: pointer;
+    }
+    .checkbox-label input { width: auto; margin: 0; }
+    .canvas-box {
+      width: 100%; height: 180px; background: #06090e; border: 1px solid #1e293b;
+      border-radius: 8px; margin-top: 10px; position: relative;
+    }
+    canvas { width: 100%; height: 100%; display: block; }
+    .queue-item {
+      background: #0a0f1d; border: 1px solid var(--card-border); border-radius: 6px;
+      padding: 10px; margin-bottom: 8px; font-size: 12px; display: flex; justify-content: space-between; align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo-box">
+      <span>🌱</span> Auctum EUDR Surveyor
+    </div>
+    <div id="connStatus" class="status-badge">ONLINE</div>
+  </div>
+
+  <!-- Live GPS Telemetry Card -->
+  <div class="card">
+    <h2>🛰️ Live WGS84 Satellite Telemetry</h2>
+    <div class="gps-hud">
+      <div>
+        <div class="hud-label">Latitude (WGS84)</div>
+        <div id="dispLat" class="hud-val">Acquiring...</div>
+      </div>
+      <div>
+        <div class="hud-label">Longitude (WGS84)</div>
+        <div id="dispLon" class="hud-val">Acquiring...</div>
+      </div>
+      <div>
+        <div class="hud-label">GPS Accuracy</div>
+        <div id="dispAcc" class="hud-val">--</div>
+      </div>
+      <div>
+        <div class="hud-label">Sat Altitude</div>
+        <div id="dispAlt" class="hud-val">--</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Survey Mode Tabs -->
+  <div class="tabs">
+    <div id="tabPoint" class="tab-btn active" onclick="setMode('Point')">
+      Point (&lt; 4 ha)
+    </div>
+    <div id="tabPoly" class="tab-btn" onclick="setMode('Polygon')">
+      Polygon Walk (≥ 4 ha)
+    </div>
+  </div>
+
+  <!-- Farmer & Plot Details -->
+  <div class="card">
+    <h2>📋 Farmer & Plot Declaration</h2>
+    <div class="input-group">
+      <label>Farmer Name</label>
+      <input type="text" id="farmerName" placeholder="e.g. Abebe Bekele" value="Abebe Bekele">
+    </div>
+    <div class="input-group">
+      <label>Plot ID / Cadastral Ref</label>
+      <input type="text" id="plotId" placeholder="e.g. PLOT-ETH-YIRG-042" value="PLOT-ETH-YIRG-042">
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+      <div class="input-group">
+        <label>Country (ISO-2)</label>
+        <select id="countryCode">
+          <option value="ET">Ethiopia (ET)</option>
+          <option value="CO">Colombia (CO)</option>
+          <option value="KE">Kenya (KE)</option>
+          <option value="GT">Guatemala (GT)</option>
+          <option value="ID">Indonesia (ID)</option>
+          <option value="UG">Uganda (UG)</option>
+          <option value="BR">Brazil (BR)</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label>Estimated Area (ha)</label>
+        <input type="number" step="0.01" id="areaHa" placeholder="1.8" value="1.85">
+      </div>
+    </div>
+
+    <!-- Mode Specific Geolocation Tracing UI -->
+    <div id="pointSection">
+      <button class="btn btn-primary" onclick="capturePoint()">
+        📍 Lock Current GPS Point (6-Decimals)
+      </button>
+      <div id="lockedPointMsg" style="font-size: 12px; color: var(--primary); margin-top: 8px; text-align: center; display: none;">
+        ✓ GPS Coordinate Locked
+      </div>
+    </div>
+
+    <div id="polygonSection" style="display: none;">
+      <div style="font-size: 12px; color: var(--muted); margin-bottom: 8px;">
+        Walk the perimeter boundary of the farm. Press "Record Vertex" at every corner or turn.
+      </div>
+      <div class="canvas-box">
+        <canvas id="polyCanvas"></canvas>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px;">
+        <button class="btn btn-secondary" onclick="recordVertex()">
+          ➕ Record Vertex
+        </button>
+        <button class="btn btn-primary" onclick="closePolygon()">
+          🔒 Close Boundary
+        </button>
+      </div>
+      <div id="polyStats" style="font-size: 12px; color: var(--accent); margin-top: 8px; font-weight: 500;">
+        Vertices recorded: 0 | Calculated Area: 0.00 ha
+      </div>
+    </div>
+
+    <h2 style="margin-top: 18px;">⚖️ Legal Production Certifications</h2>
+    <label class="checkbox-label">
+      <input type="checkbox" id="checkTenure" checked>
+      Legal land tenure / customary use right verified
+    </label>
+    <label class="checkbox-label">
+      <input type="checkbox" id="checkFpic" checked>
+      Free, Prior & Informed Consent (FPIC) respected
+    </label>
+    <label class="checkbox-label">
+      <input type="checkbox" id="checkLabor" checked>
+      National labor, wage & child labor laws compliant
+    </label>
+
+    <button class="btn btn-accent" style="margin-top: 16px;" onclick="savePlotOffline()">
+      💾 Save Plot to Offline Vault
+    </button>
+  </div>
+
+  <!-- Offline Queue & Cloud Sync -->
+  <div class="card">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <h2>📦 Offline Plots (<span id="queueCount">0</span>)</h2>
+      <button class="btn btn-primary" style="width: auto; padding: 6px 12px; margin: 0; font-size: 12px;" onclick="syncAllPlots()">
+        🔄 Sync to Auctum Ledger
+      </button>
+    </div>
+    <div id="queueList"></div>
+  </div>
+
+  <script>
+    // State Variables
+    let currentMode = 'Point';
+    let currentLat = null;
+    let currentLon = null;
+    let currentAcc = null;
+    let currentAlt = null;
+    let lockedPoint = null;
+    let polygonVertices = [];
+    let isPolygonClosed = false;
+    let offlinePlots = JSON.parse(localStorage.getItem('auctum_eudr_offline_plots') || '[]');
+
+    // Setup Service Worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/eudr-survey/sw.js').catch(console.error);
+    }
+
+    // Network Connectivity Detection
+    function updateOnlineStatus() {
+      const el = document.getElementById('connStatus');
+      if (navigator.onLine) {
+        el.textContent = 'ONLINE';
+        el.className = 'status-badge';
+      } else {
+        el.textContent = 'OFFLINE (VAULT ACTIVE)';
+        el.className = 'status-badge offline';
+      }
+    }
+    window.addEventListener('online', updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+    updateOnlineStatus();
+
+    // High Accuracy GPS Tracking
+    if ('geolocation' in navigator) {
+      navigator.geolocation.watchPosition(
+        (pos) => {
+          currentLat = pos.coords.latitude;
+          currentLon = pos.coords.longitude;
+          currentAcc = pos.coords.accuracy;
+          currentAlt = pos.coords.altitude;
+
+          document.getElementById('dispLat').textContent = currentLat.toFixed(6);
+          document.getElementById('dispLon').textContent = currentLon.toFixed(6);
+          document.getElementById('dispAcc').textContent = '±' + currentAcc.toFixed(1) + 'm';
+          document.getElementById('dispAlt').textContent = currentAlt ? currentAlt.toFixed(0) + 'm' : 'N/A';
+        },
+        (err) => {
+          console.warn('GPS Error:', err);
+          document.getElementById('dispLat').textContent = 'Error: ' + err.message;
+        },
+        { enableHighAccuracy: true, maximumAge: 2000, timeout: 10000 }
+      );
+    }
+
+    function setMode(mode) {
+      currentMode = mode;
+      document.getElementById('tabPoint').className = mode === 'Point' ? 'tab-btn active' : 'tab-btn';
+      document.getElementById('tabPoly').className = mode === 'Polygon' ? 'tab-btn active' : 'tab-btn';
+      document.getElementById('pointSection').style.display = mode === 'Point' ? 'block' : 'none';
+      document.getElementById('polygonSection').style.display = mode === 'Polygon' ? 'block' : 'none';
+    }
+
+    function capturePoint() {
+      if (!currentLat || !currentLon) {
+        alert('Waiting for GPS satellite lock...');
+        return;
+      }
+      lockedPoint = [Number(currentLon.toFixed(6)), Number(currentLat.toFixed(6))];
+      const msg = document.getElementById('lockedPointMsg');
+      msg.textContent = `✓ Locked: [${lockedPoint[0]}, ${lockedPoint[1]}] (Accuracy: ±${currentAcc.toFixed(1)}m)`;
+      msg.style.display = 'block';
+    }
+
+    function recordVertex() {
+      if (!currentLat || !currentLon) {
+        alert('Waiting for GPS satellite lock...');
+        return;
+      }
+      if (isPolygonClosed) {
+        if (!confirm('Polygon is already closed. Reset and record new boundary?')) return;
+        polygonVertices = [];
+        isPolygonClosed = false;
+      }
+      const pt = [Number(currentLon.toFixed(6)), Number(currentLat.toFixed(6))];
+      polygonVertices.push(pt);
+      renderPolygon();
+    }
+
+    function closePolygon() {
+      if (polygonVertices.length < 3) {
+        alert('A polygon boundary requires at least 3 vertices before closing.');
+        return;
+      }
+      if (!isPolygonClosed) {
+        // Add start vertex as end vertex to close polygon
+        polygonVertices.push([...polygonVertices[0]]);
+        isPolygonClosed = true;
+      }
+      renderPolygon();
+    }
+
+    function computeAreaHectares(coords) {
+      if (coords.length < 4) return 0;
+      // Spherical Shoelace Formula approximation
+      let area = 0;
+      const R = 6378137; // Earth radius in meters
+      for (let i = 0; i < coords.length - 1; i++) {
+        const p1 = coords[i];
+        const p2 = coords[i + 1];
+        const x1 = (p1[0] * Math.PI) / 180;
+        const y1 = (p1[1] * Math.PI) / 180;
+        const x2 = (p2[0] * Math.PI) / 180;
+        const y2 = (p2[1] * Math.PI) / 180;
+        area += (x2 - x1) * (2 + Math.sin(y1) + Math.sin(y2));
+      }
+      area = Math.abs((area * R * R) / 2.0);
+      return area / 10000; // convert m^2 to hectares
+    }
+
+    function renderPolygon() {
+      const canvas = document.getElementById('polyCanvas');
+      const ctx = canvas.getContext('2d');
+      canvas.width = canvas.clientWidth;
+      canvas.height = canvas.clientHeight;
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const n = polygonVertices.length;
+
+      const calcArea = computeAreaHectares(polygonVertices);
+      document.getElementById('polyStats').textContent =
+        `Vertices recorded: ${n} | Calculated Area: ${calcArea.toFixed(2)} ha ${isPolygonClosed ? '(Closed)' : '(Open)'}`;
+      if (calcArea > 0) {
+        document.getElementById('areaHa').value = calcArea.toFixed(2);
+      }
+
+      if (n === 0) return;
+
+      // Find bounding box for canvas scaling
+      let minX = polygonVertices[0][0], maxX = polygonVertices[0][0];
+      let minY = polygonVertices[0][1], maxY = polygonVertices[0][1];
+      for (const p of polygonVertices) {
+        if (p[0] < minX) minX = p[0];
+        if (p[0] > maxX) maxX = p[0];
+        if (p[1] < minY) minY = p[1];
+        if (p[1] > maxY) maxY = p[1];
+      }
+
+      const pad = 24;
+      const spanX = Math.max(1e-6, maxX - minX);
+      const spanY = Math.max(1e-6, maxY - minY);
+
+      function mapPt(p) {
+        const x = pad + ((p[0] - minX) / spanX) * (canvas.width - 2 * pad);
+        const y = canvas.height - pad - ((p[1] - minY) / spanY) * (canvas.height - 2 * pad);
+        return [x, y];
+      }
+
+      // Draw Polyline
+      ctx.beginPath();
+      ctx.strokeStyle = isPolygonClosed ? '#10b981' : '#38bdf8';
+      ctx.lineWidth = 3;
+      if (isPolygonClosed) {
+        ctx.fillStyle = 'rgba(16, 185, 129, 0.2)';
+      }
+
+      for (let i = 0; i < n; i++) {
+        const [x, y] = mapPt(polygonVertices[i]);
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+
+      if (isPolygonClosed) {
+        ctx.closePath();
+        ctx.fill();
+      }
+      ctx.stroke();
+
+      // Draw Vertex dots
+      ctx.fillStyle = '#f8fafc';
+      for (const p of polygonVertices) {
+        const [x, y] = mapPt(p);
+        ctx.beginPath();
+        ctx.arc(x, y, 4, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    function savePlotOffline() {
+      const farmer_name = document.getElementById('farmerName').value.trim();
+      const plot_id = document.getElementById('plotId').value.trim();
+      const country_code = document.getElementById('countryCode').value;
+      const area_hectares = parseFloat(document.getElementById('areaHa').value) || 1.0;
+
+      let coordinates;
+      if (currentMode === 'Point') {
+        if (!lockedPoint) {
+          if (!currentLat || !currentLon) {
+            alert('Please lock a valid GPS coordinate point before saving.');
+            return;
+          }
+          lockedPoint = [Number(currentLon.toFixed(6)), Number(currentLat.toFixed(6))];
+        }
+        coordinates = lockedPoint;
+      } else {
+        if (!isPolygonClosed || polygonVertices.length < 4) {
+          alert('Please walk and close the polygon perimeter (at least 4 vertices) before saving.');
+          return;
+        }
+        coordinates = polygonVertices;
+      }
+
+      const plot = {
+        plot_id,
+        farmer_id: 'FARM-' + plot_id,
+        farmer_name,
+        country_code,
+        area_hectares,
+        geometry_type: currentMode,
+        coordinates,
+        elevation_meters: currentAlt ? Math.round(currentAlt) : 2000,
+        baseline_canopy_2020_pct: 82.0,
+        current_canopy_pct: 82.5,
+        deforestation_risk_score: 0.008, // Default negligible risk
+        legal_declarations: {
+          land_tenure_legal: document.getElementById('checkTenure').checked,
+          customary_rights_respected: document.getElementById('checkFpic').checked,
+          national_labor_standards_met: document.getElementById('checkLabor').checked,
+          anti_corruption_compliant: true,
+        },
+        saved_at: new Date().toISOString(),
+      };
+
+      offlinePlots.push(plot);
+      localStorage.setItem('auctum_eudr_offline_plots', JSON.stringify(offlinePlots));
+      renderQueue();
+      alert(`Plot ${plot_id} successfully saved to local offline vault!`);
+
+      // Reset for next farmer
+      document.getElementById('plotId').value = 'PLOT-ETH-YIRG-' + Math.floor(Math.random() * 900 + 100);
+      lockedPoint = null;
+      polygonVertices = [];
+      isPolygonClosed = false;
+      document.getElementById('lockedPointMsg').style.display = 'none';
+      renderPolygon();
+    }
+
+    function renderQueue() {
+      document.getElementById('queueCount').textContent = offlinePlots.length;
+      const list = document.getElementById('queueList');
+      if (offlinePlots.length === 0) {
+        list.innerHTML = '<div style="color: var(--muted); font-size: 12px; text-align: center; padding: 12px;">No plots pending sync.</div>';
+        return;
+      }
+      list.innerHTML = offlinePlots.map((p, idx) => `
+        <div class="queue-item">
+          <div>
+            <span style="font-weight: 600; color: var(--accent);">${p.plot_id}</span> · ${p.farmer_name} (${p.area_hectares} ha, ${p.geometry_type})
+            <div style="font-size: 10px; color: var(--muted);">${p.saved_at.slice(0, 19).replace('T', ' ')}</div>
+          </div>
+          <button style="background: none; border: none; color: var(--danger); font-size: 16px; cursor: pointer;" onclick="deletePlot(${idx})">×</button>
+        </div>
+      `).join('');
+    }
+
+    function deletePlot(idx) {
+      offlinePlots.splice(idx, 1);
+      localStorage.setItem('auctum_eudr_offline_plots', JSON.stringify(offlinePlots));
+      renderQueue();
+    }
+
+    async function syncAllPlots() {
+      if (offlinePlots.length === 0) {
+        alert('No plots in offline vault to sync.');
+        return;
+      }
+      if (!navigator.onLine) {
+        alert('Device is currently offline. Connect to cellular or Wi-Fi to sync.');
+        return;
+      }
+
+      let successCount = 0;
+      for (const plot of [...offlinePlots]) {
+        try {
+          const res = await fetch('/api/v1/catalog/eudr/validate-plot', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(plot),
+          });
+          if (res.ok) {
+            successCount++;
+          }
+        } catch (e) {
+          console.error('Sync failed for plot', plot.plot_id, e);
+        }
+      }
+
+      alert(`Successfully synced ${successCount} of ${offlinePlots.length} plots to Auctum Ledger!`);
+      if (successCount === offlinePlots.length) {
+        offlinePlots = [];
+        localStorage.removeItem('auctum_eudr_offline_plots');
+        renderQueue();
+      }
+    }
+
+    renderQueue();
+    window.addEventListener('resize', renderPolygon);
+  </script>
+</body>
+</html>

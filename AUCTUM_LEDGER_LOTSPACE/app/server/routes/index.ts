@@ -14,6 +14,7 @@ import { paymentsRouter } from './payments.js';
 import { roastersRouter } from './roasters.js';
 import { sampleKitsRouter } from './sample-kits.js';
 import { webhooksRouter } from './webhooks.js';
+import { eudrRouter } from './eudr.js';
 import { spacesRouter } from '../../services/spaces/index.js';
 import { feedsRouter } from '../../services/feeds/index.js';
 import { reputationRouter } from '../../services/reputation/index.js';
@@ -35,6 +36,7 @@ export function createRouter(): Router {
 
   router.use(roastersRouter);
   router.use(catalogRouter);
+  router.use(eudrRouter);
   router.use(campaignsRouter);
   router.use(automationRulesRouter);
   router.use(sampleKitsRouter);
